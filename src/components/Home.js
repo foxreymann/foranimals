@@ -6,6 +6,7 @@ import gql from 'graphql-tag'
 const POSTS_PER_PAGE = 4
 
 const Home = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts }) => {
+console.log(error)
   if (error) return <h1>Error fetching posts!</h1>
   if (!loading) {
     const areMorePosts = allPosts.length < _allPostsMeta.count
