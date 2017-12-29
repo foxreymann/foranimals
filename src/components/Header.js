@@ -13,6 +13,13 @@ export default () => (
         Home
       </NavLink>
       <NavLink
+        exact to='/news'
+        className='Header-navLink'
+        activeClassName='Header-isActive'
+      >
+        Aktualności
+      </NavLink>
+      <NavLink
         to='/about'
         className='Header-navLink'
         activeClassName='Header-isActive'

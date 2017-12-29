@@ -43,11 +43,11 @@ article {
   text-decoration: underline;
 }
 
-/* Home */
-.Home-ul {
+/* News */
+.News-ul {
   padding: 0;
 }
-.Home-li {
+.News-li {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
@@ -55,28 +55,28 @@ article {
   overflow: hidden;
   border-radius: 5px;
 }
-.Home-link {
+.News-link {
   display: flex;
   color: #000;
 }
-.Home-link:hover {
+.News-link:hover {
   box-shadow: 1px 1px 5px #999;
 }
-.Home-placeholder {
+.News-placeholder {
   background-color: #eee;
   min-width: 100px;
   margin-right: 24px;
 }
-.Home-img {
+.News-img {
   display: block;
   height: 100%;
   max-height: 100px;
 }
-.Home-showMoreWrapper {
+.News-showMoreWrapper {
   display: flex;
   justify-content: center;
 }
-.Home-button {
+.News-button {
   width: 100%;
   font-size: 16px;
   color: white;
