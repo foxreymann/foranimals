@@ -2,6 +2,7 @@ import React from 'react'
 import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
 import Markdown from 'react-markdown'
+import catPlaceholder from '../assets/cat.svg'
 
 const Post = ({ data: { loading, error, post } }) => {
   if (error) return <h1>Error fetching the post!</h1>
@@ -12,7 +13,7 @@ const Post = ({ data: { loading, error, post } }) => {
         <div className='Post-placeholder'>
           <img
             alt={post.title}
-            src={`https://media.graphcms.com/resize=w:650,h:366,fit:crop/${post.coverImage.handle}`}
+            src={ post.coverImage ? `https://media.graphcms.com/resize=w:650,h:366,fit:crop/${post.coverImage.handle}` : catPlaceholder }
           />
         </div>
         <Markdown
