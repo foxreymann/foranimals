@@ -6,7 +6,6 @@ import gql from 'graphql-tag'
 const POSTS_PER_PAGE = 4
 
 const Home = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts }) => {
-console.log(error)
   if (error) return <h1>Error fetching posts!</h1>
   if (!loading) {
     const areMorePosts = allPosts.length < _allPostsMeta.count
@@ -20,7 +19,7 @@ console.log(error)
                   <img
                     alt={post.title}
                     className='Home-img'
-                    src={`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${post.coverImage.handle}`}
+                    src={ post.coverImage ? `https://media.graphcms.com/resize=w:100,h:100,fit:crop/${post.coverImage.handle}` : `placeholder` }
                   />
                 </div>
                 <h3>{post.title}</h3>
