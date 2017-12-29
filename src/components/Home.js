@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'
+import catPlaceholder from '../assets/cat.svg'
 
 const POSTS_PER_PAGE = 4
 
@@ -19,7 +20,7 @@ const Home = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts
                   <img
                     alt={post.title}
                     className='Home-img'
-                    src={ post.coverImage ? `https://media.graphcms.com/resize=w:100,h:100,fit:crop/${post.coverImage.handle}` : `placeholder` }
+                    src={ post.coverImage ? `https://media.graphcms.com/resize=w:100,h:100,fit:crop/${post.coverImage.handle}` : catPlaceholder }
                   />
                 </div>
                 <h3>{post.title}</h3>

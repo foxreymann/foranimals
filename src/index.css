@@ -70,6 +70,7 @@ article {
 .Home-img {
   display: block;
   height: 100%;
+  max-height: 100px;
 }
 .Home-showMoreWrapper {
   display: flex;
