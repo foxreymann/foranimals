@@ -6,7 +6,6 @@ import Home from './Home'
 import News from './News'
 import About from './About'
 import Post from './Post'
-import { Button } from 'reactstrap';
 
 const App = () => (
   <Router>
@@ -17,15 +16,6 @@ const App = () => (
         <Route path='/about' component={About} />
         <Route path='/news' component={News} />
         <Route path='/post/:slug' component={Post} />
-         <Button
-            tag="a"
-            color="success"
-            size="large"
-            href="http://reactstrap.github.io"
-            target="_blank"
-          >
-            View Reactstrap Docs
-          </Button>
       </main>
     </div>
   </Router>
