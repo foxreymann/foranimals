@@ -2,7 +2,36 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
-  return <h2>Homepage</h2>
+  return (
+    <div>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    <h1>Homepage</h1>
+    </div>
+  )
 }
 
 export default Home
