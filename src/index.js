@@ -7,6 +7,7 @@ import { InMemoryCache } from 'apollo-cache-inmemory'
 import { ApolloProvider } from 'react-apollo'
 
 import App from './components/App'
+import 'bootstrap/dist/css/bootstrap.css';
 import './index.css'
 
 import registerServiceWorker from './registerServiceWorker'
