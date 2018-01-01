@@ -12,8 +12,7 @@ class Jumbo extends Component {
             </div>
             <div class="col-lg-7 my-auto">
               <div class="header-content mx-auto">
-                <h1 class="mb-5">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-                <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+                tu bedą 4 linki
               </div>
             </div>
           </div>
