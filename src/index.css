@@ -101,3 +101,12 @@ article {
   height: 366px;
   background-color: #eee;
 }
+
+@media (min-width: 992px) {
+  header.masthead {
+      height: 75vh;
+      min-height: 775px;
+      padding-top: 0;
+      padding-bottom: 0;
+  }
+}
