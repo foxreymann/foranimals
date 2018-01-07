@@ -18,6 +18,13 @@ export default class Header extends React.Component {
       collapsed: !this.state.collapsed
     });
   }
+
+  collapseNavbar() {
+    this.setState({
+      collapsed: true
+    });
+  }
+
   render() {
     return (
     <nav className="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
@@ -34,6 +41,7 @@ export default class Header extends React.Component {
                   exact to='/'
                   className='Header-navLink'
                   activeClassName='Header-isActive'
+                  onClick={this.collapseNavbar}
                 >
                   Strona Główna
                 </NavLink>
@@ -43,6 +51,7 @@ export default class Header extends React.Component {
                   exact to='/news'
                   className='Header-navLink'
                   activeClassName='Header-isActive'
+                  onClick={this.collapseNavbar}
                 >
                   Aktualności
                 </NavLink>
@@ -52,6 +61,7 @@ export default class Header extends React.Component {
                   to='/about'
                   className='Header-navLink'
                   activeClassName='Header-isActive'
+                  onClick={this.collapseNavbar}
                 >
                   About
                 </NavLink>
