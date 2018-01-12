@@ -4,6 +4,7 @@
 
 strona główna  
 *   panel z linkami - adopcje, sterylizacje, aktualności, gabinet  
+*   płatność paypal
 *   płatność payu  
 *   newsletter  
 *   facebook logo / link

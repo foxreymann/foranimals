@@ -102,6 +102,13 @@ article {
   background-color: #eee;
 }
 
+.Jumbo-link {
+  display: block;
+  min-height: 100px;
+  margin-bottom: 30px;
+  background: rgba(253, 197, 57, 0.8);
+}
+
 @media (min-width: 992px) {
   header.masthead {
       height: 75vh;
