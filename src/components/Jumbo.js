@@ -43,7 +43,7 @@ class Jumbo extends Component {
                 <div className="row">
                   {jumboLinks.map(link => (
                     <div className="col-12 col-md-6">
-                      <Link to={link.link} className="Jumbo-link rounded border-primary ">.col-12 .col-md-8</Link>
+                      <a to={link.link} className="btn btn-outline btn-xl js-scroll-trigger Jumbo-link">Start<br/> <br/>Now for Free!</a>
                     </div>
                   ))}
                 </div>

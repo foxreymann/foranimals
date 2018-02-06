@@ -103,11 +103,8 @@ article {
 }
 
 .Jumbo-link {
-  display: block;
   min-height: 100px;
   margin-bottom: 30px;
-  background: rgba(253, 197, 57, 0.8);
-  color: #2980b9;
 }
 
 @media (min-width: 992px) {
