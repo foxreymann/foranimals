@@ -5,25 +5,25 @@ import JumboLink from './JumboLink'
 
 const jumboLinks = [
   {
-    icon: 'fa-handshake',
+    icon: 'far fa-handshake',
     title: 'Adopcje',
     text: 'Wspomóż naszą fundację adoptując naszych podopiecznych.',
     link: '/adopcje'
   },
   {
-    icon: 'fa-handshake',
+    icon: 'fas fa-stethoscope',
+    title: 'Sterylizacje',
+    text: 'Oferujemy możliwość sterylizacji każdego zwierzęcia.',
+    link: '/sterylizacje'
+  },
+  {
+    icon: 'far fa-newspaper',
     title: 'Adropcje',
     text: 'Wspomóż naszą fundację adoptując naszych podopiecznych.',
     link: '/adopcje'
   },
   {
-    icon: 'fa-handshake',
-    title: 'Adropcje',
-    text: 'Wspomóż naszą fundację adoptując naszych podopiecznych.',
-    link: '/adopcje'
-  },
-  {
-    icon: 'fa-handshake',
+    icon: 'far fa-hospital',
     title: 'Adropcje',
     text: 'Wspomóż naszą fundację adoptując naszych podopiecznych.',
     link: '/adopcje'
