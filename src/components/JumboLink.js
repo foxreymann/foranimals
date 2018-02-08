@@ -2,9 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const JumboLink = ({link}) =>
-    <Link to={link.link} className="col-12 col-md-6 btn btn-outline btn-xl js-scroll-trigger Jumbo-link">
-      <h3>{link.title}</h3>
-      <div>{link.text}</div>
-    </Link>
+    <div className="col-12 col-md-6">
+      <Link to={link.link} className="col-md-12 btn btn-outline btn-xl js-scroll-trigger Jumbo-link">
+        <i className={`far ${link.icon}`} />
+        <h3>{link.title}</h3>
+        <div>{link.text}</div>
+      </Link>
+    </div>
 
 export default JumboLink
