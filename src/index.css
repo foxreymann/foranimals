@@ -108,11 +108,19 @@ article {
   white-space: normal;
 }
 
+.Jumbo-logo {
+  max-height: 40vh;
+}
+
+.masterhead {
+  text-align: centre;
+}
+
 @media (min-width: 992px) {
   header.masthead {
-      height: 75vh;
+      height: 80vh;
       min-height: 775px;
-      padding-top: 0;
+      padding-top: 80px;
       padding-bottom: 0;
   }
 }

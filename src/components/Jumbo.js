@@ -35,17 +35,11 @@ class Jumbo extends Component {
     return (
       <header className="masthead">
         <div className="container h-100">
-          <div className="row h-100">
-            <div className="col-lg-5 mx-auto my-auto">
-              <img src={logo} className="img-fluid" alt=""/>
-            </div>
-            <div className="col-lg-7 my-auto">
-              <div className="header-content mx-auto">
-                <div className="row">
-                  {jumboLinks.map(link => <JumboLink link={link} />)}
-                </div>
-              </div>
-            </div>
+          <div className="row">
+            <img src={logo} className="Jumbo-logo img-fluid mx-auto my-auto" alt=""/>
+          </div>
+          <div className="row">
+            {jumboLinks.map(link => <JumboLink link={link} />)}
           </div>
         </div>
       </header>
