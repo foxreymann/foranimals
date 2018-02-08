@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import logo from '../logo.png';
+import JumboLink from './JumboLink'
 
 const jumboLinks = [
   {
     icon: 'fa-handshake',
-    title: 'Adropcje',
+    title: 'Adopcje',
     text: 'Wspomóż naszą fundację adoptując naszych podopiecznych.',
     link: '/adopcje'
   },
@@ -41,11 +42,7 @@ class Jumbo extends Component {
             <div className="col-lg-7 my-auto">
               <div className="header-content mx-auto">
                 <div className="row">
-                  {jumboLinks.map(link => (
-                    <div className="col-12 col-md-6">
-                      <a to={link.link} className="btn btn-outline btn-xl js-scroll-trigger Jumbo-link">Start<br/> <br/>Now for Free!</a>
-                    </div>
-                  ))}
+                  {jumboLinks.map(link => <JumboLink link={link} />)}
                 </div>
               </div>
             </div>
