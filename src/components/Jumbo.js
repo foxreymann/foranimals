@@ -18,15 +18,15 @@ const jumboLinks = [
   },
   {
     icon: 'far fa-newspaper',
-    title: 'Adropcje',
-    text: 'Wspomóż naszą fundację adoptując naszych podopiecznych.',
-    link: '/adopcje'
+    title: 'Aktualności',
+    text: 'Dowiedz się więcej o naszej Fundacji. Przeczytaj ważne informacje.',
+    link: '/aktualnosci'
   },
   {
     icon: 'far fa-hospital',
-    title: 'Adropcje',
-    text: 'Wspomóż naszą fundację adoptując naszych podopiecznych.',
-    link: '/adopcje'
+    title: 'Gabinet',
+    text: 'Posiadamy własny gabinet zabiegowy oraz zespół weterynarzy.',
+    link: '/gabinet'
   }
 ]
 
