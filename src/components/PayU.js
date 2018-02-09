@@ -21,9 +21,10 @@ export default class PayU extends React.Component {
         <input type="hidden" name="merchantPosId" value="220697" />
         <input type="hidden" name="description" value="New order" />
         <input type="hidden" name="currencyCode" value="PLN" />
+        <label>Kwota darowizny: <input type="number" value="20" /> PLN</label>
         <input type="hidden" name="totalAmount" value="1000" />
         <input type="hidden" name="OpenPayu-Signature" value="sender=220697;algorithm=SHA-256;signature=083bef5da2b587e76a142642fbbac16753725b3e7a2fad8a1c0503ba1e038b69" />
-        <button type="submit" formtarget="_blank" id="" class=""></button>
+        <input type="submit" formtarget="_blank" value="Przekaż darowiznę z PayU" />
       </form>
     )
   }
