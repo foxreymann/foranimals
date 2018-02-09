@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import payu from '../payu.svg'
+import PayU from './PayU'
 
 const Payments = () =>
   <section class="bg-primary text-center">
@@ -25,31 +26,9 @@ const Payments = () =>
             <img src={payu} className="img-fluid mx-auto my-auto" alt=""/>
           </div>
           <div className="row">
- <form method="POST" action="https://secure.payu.com/api/v2_1/orders" id="payu-payment-form" class="">
-<input type="hidden" name="notifyUrl" value="http://foranimals.org.pl/" />
-<input type="hidden" name="continueUrl" value="http://foranimals.org.pl/" />
-<input type="hidden" name="products[0].name" value="Darowizna" />
-<input type="hidden" name="products[0].unitPrice" value="1000" />
-<input type="hidden" name="products[0].quantity" value="1" />
-<input type="hidden" name="customerIp" value="62.31.87.16" />
-<input type="hidden" name="merchantPosId" value="220697" />
-<input type="hidden" name="description" value="New order" />
-<input type="hidden" name="currencyCode" value="PLN" />
-<input type="hidden" name="totalAmount" value="1000" />
-<input type="hidden" name="OpenPayu-Signature" value="sender=220697;algorithm=SHA-256;signature=083bef5da2b587e76a142642fbbac16753725b3e7a2fad8a1c0503ba1e038b69" /><button type="submit" formtarget="_blank" id="" class=""></button>
-</form>
+						<PayU />
           </div>
         </div>
-        {/*
-        <div class="col-md-8 mx-auto">
-          <h2 class="section-heading">Discover what all the buzz is about!</h2>
-          <p>Our app is available on any mobile device! Download now to get started!</p>
-          <div class="badges">
-            <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""/></a>
-            <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""/></a>
-          </div>
-        </div>
-        */}
       </div>
     </div>
   </section>
