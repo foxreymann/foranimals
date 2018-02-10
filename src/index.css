@@ -74,6 +74,7 @@ header h3 {
 .Header-navLink {
   font-size: 8px;
   margin-right: 16px;
+  font-weight: bold;
 }
 
 .btn-outline:focus, .btn-outline:hover {
