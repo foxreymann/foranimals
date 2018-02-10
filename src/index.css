@@ -28,7 +28,8 @@ article {
 /* Navbar styles*/
 #mainNav.navbar {
   background-color: #7b4397; /* purple */
-  background-color: #194816; /* green */
+  background-color: #86B86B; /* green */
+  background-color: #4D4D4D;
   color: white;
 }
 
@@ -38,10 +39,8 @@ article {
 
 /* Masthead styles */
 header.masthead {
-  background: linear-gradient(to bottom,#7b4397,#dc2430); /* Fox original */
-  background: linear-gradient(to bottom,#194816,#0d5d16);
-  /*background-color: #611b4c;*/
-
+  /*background: linear-gradient(to bottom,#7b4397,#dc2430); /* Fox original */
+  background: linear-gradient(to bottom,#86B86B,#86B86B);
 }
 
 /*header.masthead .container {
