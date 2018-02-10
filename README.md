@@ -22,7 +22,7 @@ NEWS / aktualności
 
 osobna strona dla każdej aktualności  
 
-o nas  
+ABOUT / o nas  
 *   text  
 
 OFFICE / gabinet  
