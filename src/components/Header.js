@@ -43,7 +43,27 @@ export default class Header extends React.Component {
                   activeClassName='Header-isActive'
                   onClick={this.collapseNavbar}
                 >
-                  HOME / Strona Główna
+                  Strona Główna
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  exact to='/adopt'
+                  className='Header-navLink'
+                  activeClassName='Header-isActive'
+                  onClick={this.collapseNavbar}
+                >
+                  Adopcje
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  exact to='/residents'
+                  className='Header-navLink'
+                  activeClassName='Header-isActive'
+                  onClick={this.collapseNavbar}
+                >
+                  Rezydenci
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -53,7 +73,37 @@ export default class Header extends React.Component {
                   activeClassName='Header-isActive'
                   onClick={this.collapseNavbar}
                 >
-                  NEWS / Aktualności
+                  Aktualności
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  exact to='/about'
+                  className='Header-navLink'
+                  activeClassName='Header-isActive'
+                  onClick={this.collapseNavbar}
+                >
+                  O Nas
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  exact to='/office'
+                  className='Header-navLink'
+                  activeClassName='Header-isActive'
+                  onClick={this.collapseNavbar}
+                >
+                  Gabinet
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  exact to='/sterilizations'
+                  className='Header-navLink'
+                  activeClassName='Header-isActive'
+                  onClick={this.collapseNavbar}
+                >
+                  Sterylizajce
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -63,17 +113,17 @@ export default class Header extends React.Component {
                   activeClassName='Header-isActive'
                   onClick={this.collapseNavbar}
                 >
-                  HOW TO HELP? / jak pomóc?
+                  Jak Pomóc?
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink
-                  to='/about'
+                  to='/contact'
                   className='Header-navLink'
                   activeClassName='Header-isActive'
                   onClick={this.collapseNavbar}
                 >
-                  About
+                  Kontakt
                 </NavLink>
               </li>
             </ul>
