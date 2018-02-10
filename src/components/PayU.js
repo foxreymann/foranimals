@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import payuSvg from '../payu.svg';
 
 export default class PayU extends React.Component {
   constructor(props) {
@@ -30,7 +31,10 @@ export default class PayU extends React.Component {
         <input type="hidden" name="currencyCode" value="PLN" />
         <input type="hidden" name="totalAmount" value={this.state.donation * 100} />
         <input type="hidden" name="OpenPayu-Signature" value="sender=220697;algorithm=SHA-256;signature=083bef5da2b587e76a142642fbbac16753725b3e7a2fad8a1c0503ba1e038b69" />
-        <input type="submit" formtarget="_blank" value="Przekaż darowiznę z PayU" />
+        <button type="submit" formtarget="_blank" class="btn btn-primary btn-xl btn-donate">
+          Przekaż darowiznę z
+          <img src={payuSvg} className="" alt=""/>
+        </button>
       </form>
     )
   }
