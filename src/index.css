@@ -18,7 +18,8 @@ article {
 
 /* Navbar styles*/
 #mainNav.navbar {
-  background-color: #611b4c;
+  background-color: #7b4397; /* purple */
+  background-color: #194816; /* green */
   color: white;
 }
 
@@ -26,17 +27,20 @@ article {
   color: white;
 }
 
-
-
 /* Masthead styles */
 header.masthead {
-  background: none;
-  background-color: #611b4c;
+  background: linear-gradient(to bottom,#7b4397,#dc2430); /* Fox original */
+  background: linear-gradient(to bottom,#194816,#0d5d16);
+  /*background-color: #611b4c;*/
+
 }
 
-.Jumbo-logo img {
-  margin: 50px 0;
-}
+/*header.masthead .container {
+  background-image: url('/static/media/logo.ec278d0d.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px 200px;
+}*/
 
 .Header-header {
   padding: 24px 32px;
