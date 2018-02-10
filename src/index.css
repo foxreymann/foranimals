@@ -7,7 +7,6 @@
   #ECECEC Light Grey
 */
 
-
 body {
   font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,7 +25,7 @@ article {
   max-width: 650px;
 }
 
-/* Navbar styles*/
+/* Navbar styles */
 #mainNav.navbar {
   background-color: #7b4397; /* purple */
   background-color: #86B86B; /* green */
@@ -34,26 +33,46 @@ article {
   color: white;
 }
 
-#mainNav.navbar-shrink .navbar-nav > li > a {
+#mainNav.navbar-shrink .navbar-nav > li > a, #mainNav .navbar-toggler {
   color: white;
+  font-size: 14px;
+}
+
+#mainNav .navbar-toggler {
+  font-weight: bold;
+  outline: 1px solid #4D4D4D;
+}
+
+.bg-primary {
+  background: linear-gradient(to bottom,#FFBC2C,#FFBC2C);
+}
+
+.btn-primary {
+  background-color: #ECECEC;
+  border-color: #ECECEC;
+  color: #4D4D4D;
+}
+
+.btn-donate {
+  height: 4rem;
+}
+
+.btn-donate img {
+  display: block;
+  height: 3rem;
 }
 
 /* Masthead styles */
 header.masthead {
   /*background: linear-gradient(to bottom,#7b4397,#dc2430); /* Fox original */
   background: linear-gradient(to bottom,#86B86B,#86B86B);
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 header h3 {
   font-weight: bold;
 }
-
-/*header.masthead .container {
-  background-image: url('/static/media/logo.ec278d0d.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 200px 200px;
-}*/
 
 .Header-header {
   padding: 24px 32px;
@@ -169,9 +188,10 @@ header h3 {
 
 @media (min-width: 992px) {
   header.masthead {
-      height: 80vh;
+    padding-top: 4rem;
+      /*height: 80vh;
       min-height: 775px;
       padding-top: 80px;
-      padding-bottom: 0;
+      padding-bottom: 0;*/
   }
 }
