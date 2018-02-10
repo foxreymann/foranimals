@@ -1,6 +1,8 @@
 import React from 'react';
 import payuSvg from '../payu.svg';
 
+const URL = 'http://dave:8080'
+
 export default class PayU extends React.Component {
   constructor(props) {
     super(props);
@@ -16,9 +18,22 @@ export default class PayU extends React.Component {
     })
   }
 
+  makeDonation = async () => {
+    try {
+      const res = await fetch(URL)
+      const payuUrl = (await res.json()).redirect
+      this.setState({
+        payuUrl: payuUrl
+      })
+      document.getElementById('payu').click()
+    } catch (e) {
+      console.log(e)
+    }
+  }
+
   render() {
     return (
-      <form method="POST" action="https://secure.payu.com/api/v2_1/orders" id="payu-payment-form" class="">
+      <div>
         <label>Kwota darowizny: <input type="number" onChange={this.updateDonation} value={this.state.donation} /> PLN</label>
         <input type="hidden" name="notifyUrl" value="http://foranimals.org.pl/" />
         <input type="hidden" name="continueUrl" value="http://foranimals.org.pl/" />
