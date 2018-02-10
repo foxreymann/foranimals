@@ -43,7 +43,7 @@ export default class Header extends React.Component {
                   activeClassName='Header-isActive'
                   onClick={this.collapseNavbar}
                 >
-                  Strona Główna
+                  HOME / Strona Główna
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -53,7 +53,17 @@ export default class Header extends React.Component {
                   activeClassName='Header-isActive'
                   onClick={this.collapseNavbar}
                 >
-                  Aktualności
+                  NEWS / Aktualności
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  exact to='/how-to-help'
+                  className='Header-navLink'
+                  activeClassName='Header-isActive'
+                  onClick={this.collapseNavbar}
+                >
+                  HOW TO HELP? / jak pomóc?
                 </NavLink>
               </li>
               <li className="nav-item">

@@ -2,7 +2,7 @@
 
 # Site map  
 
-strona główna  
+HOME / strona główna  
 *   panel z linkami - adopcje, sterylizacje, aktualności, gabinet  
 *   płatność paypal
 *   płatność payu  
@@ -10,14 +10,14 @@ strona główna
 *   facebook logo / link
 *   zanox
 
-adopcje  
+ADOPTIONS / adopcje  
 *   lista zwierząt do adopcji  
 
-rezydenci
+RESIDENTS / rezydenci
 *   jak zostać opiekunem wirtualnym
 *   lista rezydnetów
 
-aktualności  
+NEWS / aktualności  
 *   lista aktualności  
 
 osobna strona dla każdej aktualności  
@@ -25,17 +25,17 @@ osobna strona dla każdej aktualności
 o nas  
 *   text  
 
-gabinet  
+OFFICE / gabinet  
 *   text  
 
-sterylizajce  
+STERILIZATIONS / sterylizajce  
 *   link to akcjasterylizacji.pl  
 *   text  
 
-jak pomóc?
+HOW TO HELP? / jak pomóc?
 *   copy text from /archiwum
 
-kontakt  
+CONTACT / kontakt  
 *   dane kontraktowe  
 
 # Additional features  
