@@ -36,8 +36,8 @@ class Jumbo extends Component {
       <header className="masthead">
         <div className="container">
           <div className="row">
-            <div class="col-12 d-flex justify-content-center p-5">
-              <img src={logo} className="Jumbo-logo img-fluid" alt="logo image"/>
+            <div class="col-12 d-flex justify-content-center mx-auto my-auto">
+              <img src={logo} className="Jumbo-logo m-3" alt="logo image"/>
             </div>
           </div>
           <div className="row">
