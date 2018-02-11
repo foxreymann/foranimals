@@ -53,17 +53,7 @@ article {
   color: #4D4D4D;
 }
 
-/* Masthead styles */
-header.masthead {
-  /*background: linear-gradient(to bottom,#7b4397,#dc2430); /* Fox original */
-  background: linear-gradient(to bottom,#86B86B,#86B86B);
-  padding-top: 0;
-  padding-bottom: 0;
-}
 
-header h3 {
-  font-weight: bold;
-}
 
 .Header-header {
   padding: 24px 32px;
@@ -93,11 +83,53 @@ header h3 {
     background-color: #ECECEC;
 }
 
-
 .Header-isActive {
   font-weight: bold;
   text-decoration: underline;
 }
+
+/* Jumbo Masthead styles */
+header.masthead {
+  /*background: linear-gradient(to bottom,#7b4397,#dc2430); /* Fox original */
+  background: linear-gradient(to bottom,#86B86B,#86B86B);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+header h3 {
+  font-weight: bold;
+}
+
+header.masthead .Jumbo-logo {
+  /* max-width: 400px;
+  max-height: 400px; */
+}
+
+.Jumbo-link {
+  min-height: 100px;
+  margin-bottom: 30px;
+  white-space: normal;
+}
+
+/* .Jumbo-logo {
+  max-height: 40vh;
+} */
+
+.btn {
+    border-radius: 300px;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.btn-outline {
+    color: #fff;
+    border: 1px solid;
+    border-color: #fff;
+}
+.btn-xl {
+    font-size: 11px;
+}
+
 
 
 /* Donate */
@@ -184,25 +216,19 @@ header h3 {
   background-color: #eee;
 }
 
-.Jumbo-link {
-  min-height: 100px;
-  margin-bottom: 30px;
-  white-space: normal;
-}
-
-.Jumbo-logo {
-  max-height: 40vh;
-}
-
-.masterhead {
-  text-align: centre;
+footer {
+  /* padding: 25px 0; */
+  text-align: center;
+  color: rgba(255,255,255,.3);
+  background-color: #222;
 }
 
 @media (min-width: 992px) {
   header.masthead {
     padding-top: 4rem;
+    min-height: 500px;
       /*height: 80vh;
-      min-height: 775px;
+
       padding-top: 80px;
       padding-bottom: 0;*/
   }
