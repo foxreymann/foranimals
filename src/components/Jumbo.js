@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import logo from '../logo.png';
+import logo from '../assets/logo.png';
 import JumboLink from './JumboLink'
 
 const jumboLinks = [
@@ -36,8 +36,8 @@ class Jumbo extends Component {
       <header className="masthead">
         <div className="container">
           <div className="row">
-            <div class="col-12 d-flex justify-content-center mx-auto my-auto">
-              <img src={logo} className="Jumbo-logo m-3" alt="logo image"/>
+            <div class="col-6 mx-auto text-center">
+              <img src={logo} className="Jumbo-logo" alt="logo image"/>
             </div>
           </div>
           <div className="row">
