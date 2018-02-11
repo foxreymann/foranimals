@@ -4,8 +4,8 @@ import PayU from './PayU'
 
 const Payments = () =>
   <section class="bg-primary text-center">
-    <div class="container">
-      <h2>Szybka pomoc</h2>
+    <div class="container p-5">
+      <h2 class="pb-5">Szybka pomoc</h2>
       <div className="row">
         <div className="col-md-12 col-lg-6">
           <div class="paypal-wrap">
