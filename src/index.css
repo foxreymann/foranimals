@@ -111,9 +111,10 @@ header.masthead .Jumbo-logo {
   white-space: normal;
 }
 
-/* .Jumbo-logo {
-  max-height: 40vh;
-} */
+.Jumbo-logo {
+  height: 100%;
+  width: 100%;
+}
 
 .btn {
     border-radius: 300px;
