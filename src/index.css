@@ -114,6 +114,8 @@ header.masthead .Jumbo-logo {
 .Jumbo-logo {
   height: 100%;
   width: 100%;
+  max-height: 500px;
+  max-width: 500px;
 }
 
 .btn {
@@ -133,7 +135,7 @@ header.masthead .Jumbo-logo {
 
 
 
-/* Donate */
+/* Payments */
 
 .paypal-wrap {
 
@@ -226,8 +228,8 @@ footer {
 
 @media (min-width: 992px) {
   header.masthead {
-    padding-top: 4rem;
-    min-height: 500px;
+    /* padding-top: 4rem;
+    min-height: 500px; */
       /*height: 80vh;
 
       padding-top: 80px;

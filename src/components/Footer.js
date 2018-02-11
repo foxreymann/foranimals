@@ -4,8 +4,8 @@ export default () => (
   <div>
     <footer>
       <div class="container">
-        <p>&copy; 2018 Fundacja For Animals. All Rights Reserved.</p>
-        <ul class="list-inline">
+        <p class="pt-3">&copy; 2018 Fundacja For Animals. All Rights Reserved.</p>
+        <ul class="list-inline pb-3">
           <li class="list-inline-item">
             <a href="#">Privacy</a>
           </li>
