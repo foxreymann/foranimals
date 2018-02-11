@@ -40,7 +40,7 @@ class Jumbo extends Component {
               <img src={logo} className="Jumbo-logo" alt="logo image"/>
             </div>
           </div>
-          <div className="row">
+          <div className="row p-3">
             {jumboLinks.map(link => <JumboLink link={link} />)}
           </div>
         </div>

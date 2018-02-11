@@ -114,8 +114,8 @@ header.masthead .Jumbo-logo {
 .Jumbo-logo {
   height: 100%;
   width: 100%;
-  max-height: 500px;
-  max-width: 500px;
+  max-height: 400px;
+  max-width: 400px;
 }
 
 .btn {
