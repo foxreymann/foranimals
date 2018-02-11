@@ -26,6 +26,7 @@ article {
 }
 
 /* Navbar styles */
+
 #mainNav.navbar {
   background-color: #7b4397; /* purple */
   background-color: #86B86B; /* green */
@@ -53,8 +54,6 @@ article {
   color: #4D4D4D;
 }
 
-
-
 .Header-header {
   padding: 24px 32px;
   margin-bottom: 32px;
@@ -69,7 +68,6 @@ article {
   max-width: 650px;
   margin: 0 auto;
 }
-
 
 .Header-navLink {
   font-size: 8px;
@@ -88,7 +86,9 @@ article {
   text-decoration: underline;
 }
 
+
 /* Jumbo Masthead styles */
+
 header.masthead {
   /*background: linear-gradient(to bottom,#7b4397,#dc2430); /* Fox original */
   background: linear-gradient(to bottom,#86B86B,#86B86B);
@@ -134,7 +134,6 @@ header.masthead .Jumbo-logo {
 }
 
 
-
 /* Payments */
 
 .paypal-wrap {
@@ -156,6 +155,7 @@ header.masthead .Jumbo-logo {
 
 
 /* News */
+
 .News-ul {
   padding: 0;
 }
@@ -202,6 +202,7 @@ header.masthead .Jumbo-logo {
 }
 
 /* About */
+
 .About-infoHeader {
   text-align: center;
 }
@@ -214,6 +215,7 @@ header.masthead .Jumbo-logo {
 }
 
 /* Post */
+
 .Post-placeholder {
   height: 366px;
   background-color: #eee;
@@ -228,11 +230,6 @@ footer {
 
 @media (min-width: 992px) {
   header.masthead {
-    /* padding-top: 4rem;
-    min-height: 500px; */
-      /*height: 80vh;
 
-      padding-top: 80px;
-      padding-bottom: 0;*/
   }
 }
