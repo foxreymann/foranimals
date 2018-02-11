@@ -53,15 +53,6 @@ article {
   color: #4D4D4D;
 }
 
-.btn-donate {
-  height: 4rem;
-}
-
-.btn-donate img {
-  display: block;
-  height: 3rem;
-}
-
 /* Masthead styles */
 header.masthead {
   /*background: linear-gradient(to bottom,#7b4397,#dc2430); /* Fox original */
@@ -107,6 +98,27 @@ header h3 {
   font-weight: bold;
   text-decoration: underline;
 }
+
+
+/* Donate */
+
+.paypal-wrap {
+
+}
+
+.payu-wrap label input {
+  width: 3rem;
+}
+
+.btn-donate {
+  height: 4rem;
+}
+
+.paypal-wrap i, .payu-wrap img {
+  display: block;
+  height: 3rem;
+}
+
 
 /* News */
 .News-ul {
