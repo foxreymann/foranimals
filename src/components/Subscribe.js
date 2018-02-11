@@ -27,4 +27,10 @@ const formProps = {
   }
 }
 
-export default () => <SubscribeForm {...formProps}/>
+export default () =>
+  <section class="bg-primary text-center">
+    <div class="container">
+      <h2>Newsletter</h2>
+      <SubscribeForm {...formProps}/>
+    </div>
+  </section>
