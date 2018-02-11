@@ -115,16 +115,6 @@ export default class Header extends React.Component {
                 Jak Pomóc?
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink
-                to='/contact'
-                className='Header-navLink'
-                activeClassName='Header-isActive'
-                onClick={this.collapseNavbar}
-              >
-                Kontakt
-              </NavLink>
-            </li>
           </ul>
         </Navbar>
       </Collapse>
