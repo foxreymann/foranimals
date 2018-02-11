@@ -1,5 +1,5 @@
 import React from 'react';
-import payuSvg from '../payu.svg';
+import payuSvg from '../assets/payu.svg';
 
 const URL = 'http://dave:8080'
 
