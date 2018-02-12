@@ -20,7 +20,7 @@ const News = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts
                   <img
                     alt={post.title}
                     className='News-img'
-                    src={ post.coverImage ? `https://media.graphcms.com/resize=w:100,h:100,fit:crop/${post.coverImage.handle}` : catPlaceholder }
+                    src={ post.image ? `https://media.graphcms.com/resize=w:100,h:100,fit:crop/${post.image.handle}` : catPlaceholder }
                   />
                 </div>
                 <h3>{post.title}</h3>
@@ -43,12 +43,12 @@ const News = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts
 
 export const allPosts = gql`
   query allPosts($first: Int!, $skip: Int!) {
-    allPosts(orderBy: dateAndTime_DESC, first: $first, skip: $skip) {
+    allPosts(orderBy: date_DESC, first: $first, skip: $skip) {
       id
       slug
       title
-      dateAndTime
-      coverImage {
+      date
+      image {
         handle
       }
     },
