@@ -9,13 +9,11 @@ const Payments = () =>
       <div className="row">
         <div className="col-md-12 col-lg-6">
           <div class="paypal-wrap pt-5">
-            <div class="d-flex justify-content-center">
-              <i className="fab fa-cc-paypal fa-3x mb-5" />
-            </div>
+            <i className="fab fa-cc-paypal fa-3x mb-5" />
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
               <input type="hidden" name="cmd" value="_s-xclick" />
               <input type="hidden" name="hosted_button_id" value="ER2HYC6HSTJWY" />
-              <button type="submit" formtarget="_blank" class="btn btn-block btn-primary btn-xl btn-donate mt-3 mb-3">
+              <button type="submit" formtarget="_blank" class="btn btn-block btn-primary btn-xl btn-donate mt-3 mb-3 pl-2 pr-2">
                 Przekaż darowiznę z PayPal
               </button>
               <img alt="" border="0" src="https://www.paypalobjects.com/pl_PL/i/scr/pixel.gif" />
