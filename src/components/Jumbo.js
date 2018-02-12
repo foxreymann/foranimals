@@ -8,25 +8,25 @@ const jumboLinks = [
     icon: 'far fa-handshake',
     title: 'Adopcje',
     text: 'Wspomóż naszą fundację adoptując naszych podopiecznych.',
-    link: '/adopcje'
+    link: '/adpotions'
   },
   {
     icon: 'fas fa-stethoscope',
     title: 'Sterylizacje',
     text: 'Oferujemy możliwość sterylizacji każdego zwierzęcia.',
-    link: '/sterylizacje'
+    link: '/sterlisations'
   },
   {
     icon: 'far fa-newspaper',
     title: 'Aktualności',
     text: 'Dowiedz się więcej o naszej Fundacji. Przeczytaj ważne informacje.',
-    link: '/aktualnosci'
+    link: '/news'
   },
   {
     icon: 'far fa-hospital',
     title: 'Gabinet',
     text: 'Posiadamy własny gabinet zabiegowy oraz zespół weterynarzy.',
-    link: '/gabinet'
+    link: '/office'
   }
 ]
 

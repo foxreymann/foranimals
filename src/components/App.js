@@ -14,6 +14,7 @@ const App = () => (
       <Header />
         <Route exact path='/' component={Home} />
         <Route path='/about' component={About} />
+        <Route path='/adopcje' component={News} />
         <Route path='/news' component={News} />
         <Route path='/post/:slug' component={Post} />
       <Footer />
