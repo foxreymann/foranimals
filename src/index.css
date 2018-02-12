@@ -34,10 +34,11 @@ body {
   /* background-color: #86B86B; green */
 }
 
-a {
-  color: deepskyblue;
+/* a {
+  color: #ECECEC;
   text-decoration: none;
-}
+} */
+
 article {
   margin: 0 auto;
   max-width: 650px;
@@ -247,6 +248,12 @@ footer {
   text-align: center;
   color: rgba(255,255,255,.3);
   background-color: #4D4D4D;
+
+
+}
+
+footer a, footer p {
+  color: #ECECEC;
 }
 
 @media (min-width: 992px) {
