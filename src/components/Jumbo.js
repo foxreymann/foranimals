@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import logo from '../logo.png';
+import logo from '../assets/logo-lg.png';
 import JumboLink from './JumboLink'
 
 const jumboLinks = [
@@ -33,14 +33,14 @@ const jumboLinks = [
 class Jumbo extends Component {
   render() {
     return (
-      <header className="masthead">
+      <header className="masthead pb-3">
         <div className="container">
           <div className="row">
-            <div class="col-12 d-flex justify-content-center p-5">
-              <img src={logo} className="Jumbo-logo img-fluid" alt="logo image"/>
+            <div class="col-12 mx-auto text-center p-5">
+              <img src={logo} className="Jumbo-logo" alt="logo image"/>
             </div>
           </div>
-          <div className="row">
+          <div className="row p-3">
             {jumboLinks.map(link => <JumboLink link={link} />)}
           </div>
         </div>
