@@ -5,7 +5,7 @@ import Markdown from 'react-markdown'
 import catPlaceholder from '../assets/cat.svg'
 
 const Post = ({ data: { loading, error, post } }) => {
-  if (error) return <h1>Error fetching the post!</h1>
+  if (error) return <h1 className="text-center mt-5">Error fetching the post!</h1>
   if (!loading) {
     return (
       <article>
@@ -24,7 +24,7 @@ const Post = ({ data: { loading, error, post } }) => {
       </article>
     )
   }
-  return <h2>Loading post...</h2>
+  return <h2 className="mt-5">Loading post...</h2>
 }
 
 export const singlePost = gql`

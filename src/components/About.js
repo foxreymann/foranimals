@@ -4,7 +4,7 @@ import { graphql } from 'react-apollo'
 import catPlaceholder from '../assets/cat.svg'
 
 const About = ({ data: { loading, error, allAuthors } }) => {
-  if (error) return <h1>Error fetching authors!</h1>
+  if (error) return <h1 className="text-center m-5">Error fetching authors!</h1>
   if (!loading) {
     return (
       <div>
@@ -24,7 +24,7 @@ const About = ({ data: { loading, error, allAuthors } }) => {
       </div>
     )
   }
-  return <h2>Loading author...</h2>
+  return <h2 className="text-center mt-5">Loading author...</h2>
 }
 
 export const allAuthors = gql`
