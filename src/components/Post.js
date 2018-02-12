@@ -13,7 +13,7 @@ const Post = ({ data: { loading, error, post } }) => {
         <div className='Post-placeholder'>
           <img
             alt={post.title}
-            src={ post.coverImage ? `https://media.graphcms.com/resize=w:650,h:366,fit:crop/${post.coverImage.handle}` : catPlaceholder }
+            src={ post.image ? `https://media.graphcms.com/resize=w:650,h:366,fit:crop/${post.image.handle}` : catPlaceholder }
           />
         </div>
         <Markdown
@@ -32,11 +32,11 @@ export const singlePost = gql`
       id
       slug
       title
-      coverImage {
+      image {
         handle
       }
       content
-      dateAndTime
+      date
     }
   }
 `
