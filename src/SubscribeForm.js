@@ -66,7 +66,7 @@ class SubscribeForm extends React.Component {
               disabled={this.state.status === "sending" || this.state.status === "success"}
               onClick={this.onSubmit}
               type="submit"
-              class="btn"
+              class="btn btn-block btn-primary btn-xl btn-donate mt-3 mb-3"
             >
               {messages.btnLabel}
             </button>

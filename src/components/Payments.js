@@ -15,8 +15,7 @@ const Payments = () =>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
               <input type="hidden" name="cmd" value="_s-xclick" />
               <input type="hidden" name="hosted_button_id" value="ER2HYC6HSTJWY" />
-
-              <button type="submit" formtarget="_blank" class="btn btn-primary btn-xl btn-donate mt-3 mb-3">
+              <button type="submit" formtarget="_blank" class="btn btn-block btn-primary btn-xl btn-donate mt-3 mb-3">
                 Przekaż darowiznę z PayPal
               </button>
               <img alt="" border="0" src="https://www.paypalobjects.com/pl_PL/i/scr/pixel.gif" />

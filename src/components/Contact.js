@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () =>
-  <section class="text-center">
+  <section class="contact text-center">
     <div class="container p-5">
       <div className="row">
         <div class="col-12 col-md-6">
@@ -25,20 +25,20 @@ export default () =>
 
           <h3>Katowice:</h3>
           <ul class="list-unstyled">
-            <li>e-mail: pini1@foranimals.org.pl</li>
+            <li>e-mail: <a href="mailto:pini1@foranimals.org.pl" target="_top">pini1@foranimals.org.pl</a></li>
             <li>tel.: 668-400-510</li>
           </ul>
 
           <h3>Łódź:</h3>
           <ul class="list-unstyled">
             <li>Anna (‘ansk’): </li>
-            <li>e-mail: ansk@foranimals.org.pl</li>
-            <li>http://www.foranimals-lodz.pl</li>
+            <li>e-mail: <a href="mailto:ansk@foranimals.org.pl">ansk@foranimals.org.pl</a></li>
+            <li>web: <a href="http://www.foranimals-lodz.pl" target="_top">http://www.foranimals-lodz.pl</a></li>
           </ul>
 
           <h3>Grudziądz:</h3>
           <ul class="list-unstyled">
-            <li>e-mail: koty.grudziadz@poczta.onet.pl</li>
+            <li>e-mail: <a href="mailto:koty.grudziadz@poczta.onet.pl" target="_top">koty.grudziadz@poczta.onet.pl</a></li>
           </ul>
         </div>
       </div>

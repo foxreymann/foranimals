@@ -18,6 +18,14 @@ body {
   color: #4D4D4D;
 }
 
+
+a {
+
+
+}
+
+
+
 /* .bg-primary {
   background: linear-gradient(to bottom,#FFBC2C,#FFBC2C);
 }
@@ -70,7 +78,7 @@ article {
   color: #ECECEC;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary.active, .btn-primary:focus {
   background-color: #FFBC2C;
   border-color: #FFBC2C;
   color: #4D4D4D;
@@ -161,7 +169,7 @@ main {
 }
 
 .btn-xl {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 
@@ -182,6 +190,22 @@ main {
 .paypal-wrap i, .payu-wrap img {
   display: block;
   height: 3rem;
+}
+
+
+/* Subscribe */
+
+input {
+  height: 2.5rem;
+  font-size: 1.25rem;
+}
+
+.subscribe input {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  min-width: 250px;
+  max-width: 600px;
 }
 
 
@@ -252,17 +276,35 @@ main {
   background-color: #eee;
 }
 
+
+/* Contact */
+
+.contact a {
+  color: #4D4D4D;
+}
+
+.contact a:hover, .contact a:focus {
+  color: #86B86B;
+}
+
+
+/* Footer */
+
 footer {
   text-align: center;
   color: rgba(255,255,255,.3);
   background-color: #4D4D4D;
-
-
-}
-
-footer a, footer p {
   color: #ECECEC;
 }
+
+footer a {
+  color: #ECECEC;
+}
+
+footer a:hover, footer a:focus {
+  color: #FFBC2C;
+}
+
 
 @media (min-width: 992px) {
   header.masthead {
