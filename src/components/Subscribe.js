@@ -28,9 +28,9 @@ const formProps = {
 }
 
 export default () =>
-  <section class="text-center">
-    <div class="container subscribe">
-      <h2 class="pb-3">Subscribe to our newsletter</h2>
+  <section className="text-center">
+    <div className="container subscribe">
+      <h2 className="pb-3">Subscribe to our newsletter</h2>
       <SubscribeForm {...formProps}/>
     </div>
   </section>
