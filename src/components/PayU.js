@@ -1,7 +1,7 @@
 import React from 'react';
 import payuSvg from '../assets/payu.svg';
 
-const URL = 'http://dave:8081'
+const URL = 'https://foranimals.herokuapp.com'
 
 export default class PayU extends React.Component {
   constructor(props) {
