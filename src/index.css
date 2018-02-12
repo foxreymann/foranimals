@@ -19,6 +19,9 @@ body {
   padding-top: 3.5rem;
 }
 
+.btn {
+  white-space: normal;
+}
 
 /* .bg-primary {
   background: linear-gradient(to bottom,#FFBC2C,#FFBC2C);
