@@ -16,15 +16,12 @@ body {
   line-height: 1.5;
   background-color: #ECECEC;
   color: #4D4D4D;
+  padding-top: 3.5rem;
 }
 
-
-a {
-
-
+.btn {
+  white-space: normal;
 }
-
-
 
 /* .bg-primary {
   background: linear-gradient(to bottom,#FFBC2C,#FFBC2C);
@@ -63,14 +60,19 @@ article {
 
 #mainNav.navbar-shrink .navbar-nav > li > a, #mainNav .navbar-toggler {
   color: white;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #mainNav .navbar-toggler {
   font-weight: bold;
   outline: 1px solid #4D4D4D;
+  font-size: 16px;
+  padding: 1rem;
 }
 
+#mainNav.navbar-shrink .navbar-nav > li {
+  padding: 0.5rem 0;
+}
 
 .btn-primary {
   background-color: #86B86B;
@@ -122,7 +124,7 @@ article {
 header.masthead {
   /*background: linear-gradient(to bottom,#7b4397,#dc2430); /* Fox original */
   background: linear-gradient(to bottom,#61854d,#86B86B);
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
   padding-bottom: 0;
 }
 
@@ -271,9 +273,15 @@ input {
 
 /* Post */
 
+article {
+  padding: 2rem;
+  word-wrap: break-word;
+}
+
 .Post-placeholder {
   height: 366px;
   background-color: #eee;
+  padding: 2rem 0;
 }
 
 
