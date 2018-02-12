@@ -1,6 +1,6 @@
 import React from 'react'
 
-const URL = 'http://dave:8080'
+const URL = 'http://dave:8081'
 
 export default class PayU extends React.Component {
   constructor(props) {
@@ -19,7 +19,7 @@ export default class PayU extends React.Component {
 
   makeDonation = async () => {
     try {
-      const res = await fetch(URL)
+      const res = await fetch(URL + '?amount=' + this.state.donation)
       const payuUrl = (await res.json()).redirect
       this.setState({
         payuUrl: payuUrl
