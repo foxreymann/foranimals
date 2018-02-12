@@ -114,7 +114,7 @@ article {
 header.masthead {
   /*background: linear-gradient(to bottom,#7b4397,#dc2430); /* Fox original */
   background: linear-gradient(to bottom,#86B86B,#6b9356);
-  background: linear-gradient(to bottom,#FFBC2C,#FFBC2C);
+  background: linear-gradient(to bottom,#c19845,#FFBC2C);
   padding-top: 3rem;
   padding-bottom: 0;
 }
@@ -130,7 +130,7 @@ header.masthead .Jumbo-logo {
 
 main {
   background: linear-gradient(to bottom,#FFBC2C,#FFBC2C);
-  background: linear-gradient(to bottom,#86B86B,#6b9356);
+  background: linear-gradient(to bottom,#86B86B,#86B86B);
 }
 
 
