@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import PayU from './PayU'
 
 const Payments = () =>
-  <section class="bg-primary text-center">
+  <section class="text-center">
     <div class="container p-5">
-      <h2 class="pb-5">Szybka pomoc</h2>
+      <h2 class="">Szybka pomoc</h2>
       <div className="row">
         <div className="col-md-12 col-lg-6">
-          <div class="paypal-wrap">
+          <div class="paypal-wrap pt-5">
             <div class="d-flex justify-content-center">
-              <i className="fab fa-cc-paypal fa-3x" />
+              <i className="fab fa-cc-paypal fa-3x mb-5" />
             </div>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
               <input type="hidden" name="cmd" value="_s-xclick" />
@@ -24,7 +24,7 @@ const Payments = () =>
           </div>
         </div>
         <div className="col-md-12 col-lg-6">
-          <div class="payu-wrap">
+          <div class="payu-wrap pt-5">
             <PayU />
           </div>
         </div>

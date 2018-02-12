@@ -33,7 +33,7 @@ const jumboLinks = [
 class Jumbo extends Component {
   render() {
     return (
-      <header className="masthead">
+      <header className="masthead pb-3">
         <div className="container">
           <div className="row">
             <div class="col-12 mx-auto text-center p-5">
