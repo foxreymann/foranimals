@@ -8,6 +8,8 @@ export default class Header extends React.Component {
     super(props);
 
     this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.collapseNavbar = this.collapseNavbar.bind(this);
+
     this.state = {
       collapsed: true
     };
