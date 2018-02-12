@@ -45,7 +45,7 @@ class Jumbo extends Component {
         </header>
         <main>
           <div className="container">
-            <div className="row pt-5 pb-3">
+            <div className="row pt-2 pb-3">
               {jumboLinks.map(link => <JumboLink link={link} />)}
             </div>
           </div>
