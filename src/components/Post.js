@@ -10,6 +10,7 @@ const Post = ({ data: { loading, error, post } }) => {
     return (
       <article>
         <h1>{post.title}</h1>
+        <div>{post.date}</div>
         <div className='Post-placeholder'>
           <img
             alt={post.title}
