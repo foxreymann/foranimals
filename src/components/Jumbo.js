@@ -33,18 +33,24 @@ const jumboLinks = [
 class Jumbo extends Component {
   render() {
     return (
-      <header className="masthead pb-3">
-        <div className="container">
-          <div className="row">
-            <div class="col-12 mx-auto text-center p-5">
-              <img src={logo} className="Jumbo-logo" alt="logo image"/>
+      <div>
+        <header className="masthead pb-3">
+          <div className="container">
+            <div className="row">
+              <div class="col-12 mx-auto text-center p-5">
+                <img src={logo} className="Jumbo-logo" alt="logo image"/>
+              </div>
             </div>
           </div>
-          <div className="row p-3">
-            {jumboLinks.map(link => <JumboLink link={link} />)}
+        </header>
+        <main>
+          <div className="container">
+            <div className="row pt-5 pb-3">
+              {jumboLinks.map(link => <JumboLink link={link} />)}
+            </div>
           </div>
-        </div>
-      </header>
+        </main>
+      </div>
     )
   }
 }
