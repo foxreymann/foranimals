@@ -227,7 +227,6 @@ article, .News-ul {
   border-radius: 5px;
 }
 .News-link {
-  display: flex;
   color: #000;
 }
 .News-link:hover {
@@ -238,11 +237,13 @@ article, .News-ul {
   min-width: 100px;
   margin-right: 24px;
 }
+
 .News-img {
-  display: block;
+  /*display: block;
   height: 100%;
-  max-height: 100px;
+  max-height: 100px;*/
 }
+
 .News-showMoreWrapper {
   display: flex;
   justify-content: center;
@@ -291,9 +292,6 @@ article {
 .About-author {
   margin-bottom: 72px;
 }
-
-
-
 
 /* Contact */
 
