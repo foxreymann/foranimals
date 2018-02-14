@@ -1,12 +1,12 @@
 import React from 'react'
 
 const Sterilizations = () => (
-  <article class="">
+  <article className="">
     <h2>Akcja Sterylizacji &#8211; Marzec 2018</h2>
 
     <h3>Ogólnie o&nbsp;Akcji</h3>
 
-    <a href="https://www.akcjasterylizacji.pl/" target="_blank" rel="noopener">Portal Akcja Sterylizacji</a>
+    <h3><a href="https://www.akcjasterylizacji.pl/" target="_blank" rel="noopener">Portal Akcja Sterylizacji</a></h3>
 
     <p>W&nbsp;tym roku po&nbsp;raz kolejny ruszamy z&nbsp;Ogólnopolską Akcją Sterylizacji.</p>
     <p>Naszym celem jest popularyzacja tej&nbsp;humanitarnej metody ograniczenia nadpopulacji zwierząt domowych &#8211; w&nbsp;szczególności psów i&nbsp;kotów.</p>
@@ -23,7 +23,7 @@ const Sterilizations = () => (
 
     <p>Jako termin akcji proponujemy cały <strong>miesiąc marzec</strong> a&nbsp;<strong>maksymalne ceny zabiegów</strong>, wraz z&nbsp;opieka pooperacyjną (zdjęcie szwów, ewentualne podawanie antybiotyków), przy zabiegach bezproblemowych, proponujemy następujące:</p>
 
-    <table class="table table-striped" cellspacing="0" border="0">
+    <table className="table table-striped" cellSpacing="0" border="0">
       <tbody>
         <tr>
           <th>Zwierzak</th>
@@ -58,12 +58,16 @@ const Sterilizations = () => (
 
     <p><strong>Partnerzy:</strong></p>
 
-    <p><img class="" src="http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-300x240.jpg" alt="Sterylised cat 140x95_20140904c_wiz" height="240" width="300" srcset="http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-300x240.jpg 300w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-768x614.jpg 768w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-1024x819.jpg 1024w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-600x480.jpg 600w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /><img src="http://www.akcjasterylizacji.pl/static/kuna.jpg" /></p>
-    <p>&nbsp;</p>
+    <p>
+      <img className="w-100 h-100" src="http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-300x240.jpg" alt="Sterylised cat 140x95_20140904c_wiz" height="240" width="300" srcset="http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-300x240.jpg 300w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-768x614.jpg 768w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-1024x819.jpg 1024w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-600x480.jpg 600w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" />
+      <img src="http://www.akcjasterylizacji.pl/static/kuna.jpg" />
+    </p>
+
     <p><span ><b>Sterylizując swojego pupila chronisz go przed&nbsp;wieloma chorobami oraz&nbsp;masz pewność, że&nbsp;na pewno nie będziesz miał/a udziału w&nbsp;powiększeniu zwierzęcego nieszczęścia &#8211; BEZDOMNOŚCI I&nbsp;ZNĘCANIA SIĘ</b>.</span></p>
     <p><span ><strong>Znowu niechciane kociaki albo szczeniaki??</strong></span></p>
     <p><span ><strong>Możesz temu zapobiec !</strong></span></p>
     <p><span >Ponad 50 % urodzonych każdego roku kociąt i&nbsp;szczeniąt ginie tragicznie lub umiera z&nbsp;braku opieki-nie stracza dla nich ludzkich domów.Sterylizacja jest jedynym humanitarym sposobem zmniejszania nadpopulacji zwierząt oraz&nbsp;rozwiązania wielu problemów zdrowotnych u&nbsp;zwierząt domowych.To rutynowy zabieg chirurgiczny wykonywany przez lekarzy weterynarii , dający stuprocnetową pewność uniknięcia niechcianej ciąży.</span></p>
+
     <p><span >WYSTERYLIZOWANY KOCUR</span></p>
 
     <ul>
@@ -72,7 +76,6 @@ const Sterilizations = () => (
       <li>nie ucieka, nie włóczy się , nie wdaje się w&nbsp;bójki ,jest łagodniejszy i&nbsp;spokojniejszy</li>
     </ul>
 
-    <p>&nbsp;</p>
     <p><span >WYSTERYLIZOWANA KOTKA</span></p>
 
     <ul>
@@ -159,11 +162,13 @@ const Sterilizations = () => (
       <li>Ustal zasadę: Ty jesz przy stole ludzkie jedzenie, Twój&nbsp;pupil swoje smakołyki ze&nbsp;swojej miski. Ty mu z&nbsp;miski nie wyjadasz, więc dlaczego w&nbsp;drugą stronę obowiązywać mają inne zasady? A&nbsp;poważnie &#8211; zwierzęta nie powinny być żywione regularnie &#8222;ludzkim&#8221; jedzeniem &#8211; obejrzyj filmik: <a href="https://www.youtube.com/watch?v=NQCwHluBqFc">https://www.youtube.com/watch?v=NQCwHluBqFc</a></li>
     </ul>
 
-    <p>&nbsp;</p>
-    <p><iframe width="500" height="375" src="https://www.youtube.com/embed/J6tuOQZe9Ck?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
-    <p><iframe width="500" height="375" src="https://www.youtube.com/embed/h1LyaKlwvGo?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
-    <p><iframe width="500" height="281" src="https://www.youtube.com/embed/yDvMdYx8k1M?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
-    <p><iframe width="500" height="375" src="https://www.youtube.com/embed/TyTAcJASttQ?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+    <div className="mt-5">
+      <iframe className="w-100 h-100 mb-5" src="https://www.youtube.com/embed/J6tuOQZe9Ck?feature=oembed" frameborder="0" allowfullscreen></iframe>
+      <iframe className="w-100 h-100 mb-5" src="https://www.youtube.com/embed/h1LyaKlwvGo?feature=oembed" frameborder="0" allowfullscreen></iframe>
+      <iframe className="w-100 h-100 mb-5" src="https://www.youtube.com/embed/yDvMdYx8k1M?feature=oembed" frameborder="0" allowfullscreen></iframe>
+      <iframe className="w-100 h-100 mb-5" src="https://www.youtube.com/embed/TyTAcJASttQ?feature=oembed" frameborder="0" allowfullscreen></iframe>
+    </div>
+
 
   </article>
 )
