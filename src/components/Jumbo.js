@@ -8,7 +8,7 @@ const jumboLinks = [
     icon: 'far fa-handshake',
     title: 'Adopcje',
     text: 'Wspomóż naszą fundację adoptując naszych podopiecznych.',
-    link: '/adpotions'
+    link: '/adopt'
   },
   {
     icon: 'fas fa-stethoscope',
