@@ -120,6 +120,7 @@ export default class Header extends React.Component {
           </ul>
         </Navbar>
       </Collapse>
+      <i className='fab fa-facebook fa-2x' />
     </nav>
     )
   }
