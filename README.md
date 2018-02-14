@@ -2,7 +2,7 @@
 
 # Site map  
 
-HOME / strona główna  
+V HOME / strona główna  
 *   panel z linkami - adopcje, sterylizacje, aktualności, gabinet  
 *   płatność paypal
 *   płatność payu  
@@ -17,7 +17,7 @@ RESIDENTS / rezydenci
 *   jak zostać opiekunem wirtualnym
 *   lista rezydnetów
 
-NEWS / aktualności  
+V NEWS / aktualności  
 *   lista aktualności  
 
 osobna strona dla każdej aktualności  
@@ -25,18 +25,15 @@ osobna strona dla każdej aktualności
 ABOUT / o nas  
 *   text  
 
-OFFICE / gabinet  
+V OFFICE / gabinet  
 *   text  
 
-STERILIZATIONS / sterylizajce  
+V STERILIZATIONS / sterylizajce  
 *   link to akcjasterylizacji.pl  
 *   text  
 
 HOW TO HELP? / jak pomóc?
 *   copy text from /archiwum
-
-CONTACT / kontakt  
-*   dane kontraktowe  
 
 # Additional features  
 
