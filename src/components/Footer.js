@@ -4,18 +4,8 @@ export default () => (
   <div>
     <footer>
       <div className="container p-4">
-        <p className="mt-3">&copy; 2018 Fundacja For Animals. All Rights Reserved.</p>
-        <ul className="list-inline">
-          <li className="list-inline-item">
-            <a href="#">Privacy</a>
-          </li>
-          <li className="list-inline-item">
-            <a href="#">Terms</a>
-          </li>
-          <li className="list-inline-item">
-            <a href="#">FAQ</a>
-          </li>
-        </ul>
+        <p className="mt-3">&copy; {(new Date().getFullYear())} Fundacja For Animals.</p>
+        <a href="
       </div>
     </footer>
   </div>
