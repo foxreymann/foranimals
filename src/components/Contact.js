@@ -19,7 +19,7 @@ export default () =>
             <li>02 1020 2313 0000 3102 0161 2043</li>
           </ul>
           <ul className="list-unstyled">
-            <li><a href='./regulamin.pdf' target="_blanl">REGULAMIN DAROWIZN</a></li>
+            <li><a href='./regulamin.pdf' target="_blank" rel="noopener">REGULAMIN DAROWIZN</a></li>
           </ul>
         </div>
         <div className="col-12 col-md-6">
@@ -35,7 +35,7 @@ export default () =>
           <ul className="list-unstyled">
             <li>Anna (‘ansk’): </li>
             <li>e-mail: <a href="mailto:ansk@foranimals.org.pl">ansk@foranimals.org.pl</a></li>
-            <li>web: <a href="http://www.foranimals-lodz.pl" target="_top">http://www.foranimals-lodz.pl</a></li>
+            <li>web: <a href="http://www.foranimals-lodz.pl" target="_blank" rel="noopener">http://www.foranimals-lodz.pl</a></li>
           </ul>
 
           <h3>Grudziądz:</h3>
