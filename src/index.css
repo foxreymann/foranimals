@@ -110,6 +110,12 @@ a .fa-facebook, a .fa-facebook:visited, a .fa-facebook:active, a .fa-facebook:ho
   color: white;
 }
 
+#facebook-button {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
 /* Jumbo Masthead styles */
 
 header.masthead {
@@ -319,7 +325,7 @@ footer a:hover, footer a:focus {
 
 
 @media (min-width: 992px) {
-  header.masthead {
-
+  #facebook-button {
+    top: 15px;
   }
 }
