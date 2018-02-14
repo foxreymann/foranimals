@@ -4,8 +4,6 @@ const Sterilizations = () => (
                         <article id="post-39" class=" bd-article-6 clearfix post-39 page type-page status-publish hentry">
     <div class=" bd-layoutbox-26 bd-no-margins clearfix">
     <div class="bd-container-inner">
-        <h2 class=" bd-postheader-6">
-    Sterylizacje</h2>
 	
 		<div class=" bd-layoutbox-14 bd-no-margins clearfix">
     <div class="bd-container-inner">
@@ -27,7 +25,7 @@ const Sterilizations = () => (
     <div class="bd-container-inner">
         	
 		<div class=" bd-postcontent-10 bd-tagstyles" >
-    <h2>Akcja Sterylizacji &#8211; Marzec 2017</h2>
+    <h2>Akcja Sterylizacji &#8211; Marzec 2018</h2>
 <h3>Ogólnie o&nbsp;Akcji</h3>
 <p>W&nbsp;tym roku po&nbsp;raz kolejny ruszamy z&nbsp;Ogólnopolską Akcją Sterylizacji.</p>
 <p>Naszym celem jest popularyzacja tej&nbsp;humanitarnej metody ograniczenia nadpopulacji zwierząt domowych &#8211; w&nbsp;szczególności psów i&nbsp;kotów.</p>
