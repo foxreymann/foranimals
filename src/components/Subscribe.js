@@ -4,12 +4,11 @@ import SubscribeForm from '../SubscribeForm'
 const formProps = {
   action: 'https://foranimals.us17.list-manage.com/subscribe/post?u=8ce191ed37a0fc0aca5ecd011&amp;id=cdc577d0c9',
   messages: {
-    inputPlaceholder: "First Name",
-    inputPlaceholder: "Email Address",
-    btnLabel: "Subscribe",
-    sending: "Please wait...",
-    success: "Please check your email to verify address",
-    error: "Error, please re-enter your email address"
+    inputPlaceholder: "Podaj swój e-mail",
+    btnLabel: "Zapisz się",
+    sending: "Zapisuję...",
+    success: "Sprawdź swojego mejla aby potwierdzić subskrypcję",
+    error: "Jesteś już na naszej liście"
   },
   styles: {
     sending: {
@@ -30,7 +29,7 @@ const formProps = {
 export default () =>
   <section className="text-center">
     <div className="container subscribe">
-      <h2 className="pb-3">Subscribe to our newsletter</h2>
+      <h2 className="pb-3">Newsletter</h2>
       <SubscribeForm {...formProps}/>
     </div>
   </section>
