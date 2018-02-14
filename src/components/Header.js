@@ -89,7 +89,7 @@ export default class Header extends React.Component {
             </li>
             <li className="nav-item">
               <NavLink
-                exact to='/office'
+                exact to='/clinic'
                 className='Header-navLink'
                 activeClassName='Header-isActive'
                 onClick={this.collapseNavbar}

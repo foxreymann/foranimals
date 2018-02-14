@@ -14,7 +14,7 @@ const jumboLinks = [
     icon: 'fas fa-stethoscope',
     title: 'Sterylizacje',
     text: 'Oferujemy możliwość sterylizacji każdego zwierzęcia.',
-    link: '/sterlisations'
+    link: '/sterlizations'
   },
   {
     icon: 'far fa-newspaper',
@@ -26,7 +26,7 @@ const jumboLinks = [
     icon: 'far fa-hospital',
     title: 'Gabinet',
     text: 'Posiadamy własny gabinet zabiegowy oraz zespół weterynarzy.',
-    link: '/office'
+    link: '/clinic'
   }
 ]
 
