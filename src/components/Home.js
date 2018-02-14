@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Ad from './Ad'
 import Jumbo from './Jumbo'
 import Payments from './Payments'
 import Subscribe from './Subscribe'
@@ -11,6 +12,7 @@ const Home = () => {
       <Jumbo />
       <Payments />
       <Subscribe />
+      <Ad />
       <Contact />
     </div>
   )
