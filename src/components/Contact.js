@@ -33,7 +33,7 @@ export default () =>
           <ul className="list-unstyled">
             <li>Anna (‘ansk’): </li>
             <li>e-mail: <a href="mailto:ansk@foranimals.org.pl">ansk@foranimals.org.pl</a></li>
-            <li>web: <a href="http://www.foranimals-lodz.pl" target="_top">http://www.foranimals-lodz.pl</a></li>
+            <li>web: <a href="http://www.foranimals-lodz.pl" target="_blank" rel="noopener">http://www.foranimals-lodz.pl</a></li>
           </ul>
 
           <h3>Grudziądz:</h3>
