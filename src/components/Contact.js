@@ -6,21 +6,19 @@ export default () =>
       <div className="row">
         <div className="col-12 col-md-6">
           <h2 className="pb-3">Dane Fundacji:</h2>
+          <h3>Adres:</h3>
           <ul className="list-unstyled">
-            <li>Adres:</li>
             <li>Fundacja For Animals</li>
             <li>ul. 11 Listopada 4</li>
             <li>40-384 Katowice</li>
             <li>KRS: 0000265307</li>
           </ul>
+          <h3>Konto bankowe:</h3>
           <ul className="list-unstyled">
-            <li>Konto bankowe:</li>
             <li>Bank PKO BP, konto nr:</li>
             <li>02 1020 2313 0000 3102 0161 2043</li>
           </ul>
-          <ul className="list-unstyled">
-            <li><a href='./regulamin.pdf' target="_blanl">REGULAMIN DAROWIZN</a></li>
-          </ul>
+          <a href='./regulamin.pdf' target="_blank">REGULAMIN DAROWIZN</a>
         </div>
         <div className="col-12 col-md-6">
           <h2 className="pb-3">Ważne kontakty:</h2>
