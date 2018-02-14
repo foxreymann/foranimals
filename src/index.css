@@ -106,6 +106,9 @@ body {
   text-decoration: underline;
 }
 
+a .fa-facebook, a .fa-facebook:visited, a .fa-facebook:active, a .fa-facebook:hover {
+  color: white;
+}
 
 /* Jumbo Masthead styles */
 

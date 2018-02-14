@@ -120,7 +120,9 @@ export default class Header extends React.Component {
           </ul>
         </Navbar>
       </Collapse>
-      <i className='fab fa-facebook fa-2x' />
+      <a href="https://www.facebook.com/Fundacja-For-Animals-202065053142451/" target="_blank" rel="noopener">
+        <i className='fab fa-facebook fa-2x' />
+      </a>
     </nav>
     )
   }
