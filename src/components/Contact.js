@@ -17,7 +17,9 @@ export default () =>
             <li>Konto bankowe:</li>
             <li>Bank PKO BP, konto nr:</li>
             <li>02 1020 2313 0000 3102 0161 2043</li>
-            <li>REGULAMIN DAROWIZN</li>
+          </ul>
+          <ul className="list-unstyled">
+            <li><a href='./regulamin.pdf' target="_blanl">REGULAMIN DAROWIZN</a></li>
           </ul>
         </div>
         <div className="col-12 col-md-6">
