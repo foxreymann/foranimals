@@ -16,7 +16,7 @@ body {
   line-height: 1.5;
   background-color: #ECECEC;
   color: #4D4D4D;
-  padding-top: 3.5rem;
+  padding-top: 3rem;
 }
 
 .btn {
@@ -39,6 +39,7 @@ body {
   background-color: #86B86B; /* green */
   background-color: #4D4D4D;
   color: white;
+
 }
 
 #mainNav.navbar-shrink .navbar-nav > li > a, #mainNav .navbar-toggler {
@@ -50,11 +51,15 @@ body {
   font-weight: bold;
   outline: 1px solid #4D4D4D;
   font-size: 16px;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 #mainNav.navbar-shrink .navbar-nav > li {
   padding: 0.5rem 0;
+}
+
+#navbarResponsive {
+  padding: 0.25rem;
 }
 
 .btn-primary {
