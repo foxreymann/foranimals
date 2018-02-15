@@ -30,7 +30,7 @@ const About = () => (
     <p>Jesteśmy Organizacją Pożytku Publicznego (OPP). Fundacja For Animals należy do&nbsp;<a title="Koalicja dla Zwierząt" href="http://www.koalicja.org.pl/" target="_blank">Koalicji dla Zwierząt</a>.</p>
 <p >Fundacja For Animals powstała pod&nbsp;koniec 2006 roku, ustanowiona przez zaangażowanych miłośników zwierząt. Jest organizacją pozarządową działającą na&nbsp;terenie całej Polski ze&nbsp;szczególnym uwzględnieniem województw, gdzie znajdują się oddziały Fundacji czyli: Śląskiego, Dolnośląskiego oraz&nbsp;Łódzkiego. Od&nbsp;2009 roku jest na&nbsp;liście Ministra i&nbsp;posiada statut Organizacji Pożytku Publicznego zwanego OPP. Siedziba Fundacji mieści się w&nbsp;Katowicach przy ulicy 11 Listopada 4. Tam także znajduję się Gabinet Weterynaryjny prowadzony przez Fundację. Fundacja opiera się na&nbsp;pracy wolontariuszy, którzy&nbsp;są także miłośnikami zwierząt.</p>
 <p >Bardzo istotnym zagadnieniem dla Fundacji jest organizacja akcji: „Ogólnopolska Akcja  sterylizacji”. W&nbsp;ramach tego projektu staramy się przybliżyć mieszkańcom idee sterylizacji zwierząt domowych, tym samym ograniczając liczbę wyrzucanych i&nbsp;porzucanych zwierząt. W&nbsp;ramach tej&nbsp;akcji pozyskujemy chętne do&nbsp;współpracy lecznice weterynaryjne, które skłonne są umieścić nasze plakaty oraz&nbsp;dla osób chętnych do&nbsp;sterylizacji obniżyć cenę zabiegu sterylizacji. Akcja ta spotkała się z&nbsp;ogromnym odzewem zarówno ze&nbsp;strony weterynarzy jak i&nbsp;mieszkańców.Akcja ta organizowana jest od&nbsp;10 lat i&nbsp;w&nbsp;roku 2015 zaangażowanych w&nbsp;nią było ponad 1000 placówek weterynaryjnych.</p>
-<p >Zapraszamy na&nbsp;stronę akcji www.akcjasterylziacji.pl</p>
+<p >Zapraszamy na&nbsp;stronę akcji <a href="http://akcjasterylizacji.pl/">www.akcjasterylziacji.pl</a></p>
 <p ><strong>Najważniejsze cele naszej Fundacji to&nbsp;:</strong></p>
 <ul>
 <li >ograniczenie populacji bezdomnych zwierzą, przede wszystkim poprzez sterylizację i&nbsp;kastrację psów, kotów</li>
@@ -49,14 +49,12 @@ const About = () => (
 <p >A&nbsp;wszystko się zaczęło od&nbsp;pomocy bezdomnym i&nbsp;wyrzuconym zwierzętom,  ich dokarmiania, potem leczenia i&nbsp;sterylizacji , szukania domów tym oswojonym.Potrzebujących pomocy zwierząt jest coraz więcej i&nbsp;w&nbsp;pewnym momencie zaistniała potrzeba zebrania działań w&nbsp;formę bardziej zorganizowaną.</p>
 <p >Razem z&nbsp;grupą wolontariuszy podjęliśmy działania od&nbsp;razu ogólnopolskie-10.10.2016 roku powołaliśmy do&nbsp;życia Fundację For Animals.</p>
 <p >Grupy wolontariuszy z&nbsp;Łodzi przyłączały się do&nbsp;nas i&nbsp;od razu powstał oddział Fundacji Łódż na&nbsp;czele z&nbsp;prężną, zorganizowaną szefową Anną.</p>
-<p>http://www.foranimals-lodz.pl/</p>
+<p><a href='http://www.foranimals-lodz.pl/'>www.foranimals-lodz.pl</a></p>
 <p>&nbsp;</p>
 <p><img title="Save a&nbsp;Life!" src="./img/kid-cat.jpg" alt="Save a&nbsp;Life!" /></p>
 <p>Fundacja w&nbsp;latach 2008, 2009 oraz&nbsp;2010 pozyskała certyfikaty jakości pracy wydany przez <strong>Stowarzyszenie Wspierania Inicjatyw Społecznych Meritum</strong>.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p><u><strong>Sprawozdania merytoryczne jak i&nbsp;finansowe z&nbsp;działalności z&nbsp;2011, 2012, 2013 ,2014,2015roku znajdują sie na&nbsp;stronie OPP </strong></u></p>
-<p><u><strong>http://sprawozdaniaopp.mpips.gov.pl &#8211; proszę wpisać w&nbsp;rubryce nr&nbsp;KRS nasz numer: 0000265307</strong></u></p>
+<h3>Sprawozdania</h3>
+<p>Sprawozdania merytoryczne jak i&nbsp;finansowe z&nbsp;działalności z&nbsp;2011, 2012, 2013, 2014, 2015 roku znajdują sie na&nbsp;stronie <a href="http://sprawozdaniaopp.mpips.gov.pl">OOP</a> Proszę wpisać w&nbsp;rubryce nr&nbsp;KRS nasz numer: 0000265307</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 </div>
