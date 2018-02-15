@@ -1,7 +1,7 @@
 import React from 'react'
 
 const HowToHelp = () => (
-<div>
+                        <article id="post-37" class=" bd-article-6 clearfix post-37 page type-page status-publish hentry">
 <h1>
   Polecenie zapłaty dla FFA
 </h1>
@@ -159,33 +159,33 @@ const HowToHelp = () => (
   <ul>
     <li>
 
-      -&nbsp;&nbsp;Poprawność
+      Poprawność
       działania Polecenia Zapłaty gwarantowana jest odpowiednimi
       regulacjami prawnymi w tym Ustawą o prawie
       bankowym.
     </li>
     <li>
 
-      -&nbsp;&nbsp;Do
+      Do
       rozliczeń w formie Polecenia Zapłaty wymagana jest zgoda
       płatnika.
     </li>
     <li>
 
-      -&nbsp;&nbsp;Zgoda
+      Zgoda
       udzielana jest w 2 egzemplarzach – po jednym dla wierzyciela
       i banku.
     </li>
     <li>
 
-      -&nbsp;&nbsp;Płatnik
+      Płatnik
       posiada pełną kontrolę – zachowuje możliwość anulowania
       pojedynczej transakcji lub rezygnacji z wspierania fundacji
       za pomocą Polecenia Zapłaty.
     </li>
     <li>
 
-      -&nbsp;&nbsp;W
+      W
       przypadku wątpliwości związanych z kwotą obciążenia płatnik
       może do wyjaśnienia sprawy anulować każdą
       transakcję.Pieniądze wracają wówczas niezwłocznie na rachunek
@@ -193,13 +193,13 @@ const HowToHelp = () => (
     </li>
     <li>
 
-      -&nbsp;&nbsp;Wszystkie
+      Wszystkie
       transakcje dokonane za pomocą Polecenia Zapłaty są odnotowane
       na wyciągu bankowym, który otrzymuje płatnik.
     </li>
     <li>
 
-      -&nbsp;&nbsp;To
+      To
       wierzyciel i bank dbają o prawidłowe, terminowe i bezbłędne
       przeprowadzenie transakcji. Nad prawidłowym przepływem danych
       czuwa Krajowa Izba Rozliczeniowa za pomocą
@@ -207,20 +207,20 @@ const HowToHelp = () => (
     </li>
     <li>
 
-      -&nbsp;&nbsp;W
+      W
       pełni elektroniczna forma przepływu informacji i rozliczeń
       redukuje możliwość powstania prostych błędów popełnianych
       przy dyspozycjach wypisywanych ręcznie.
     </li>
     <li>
 
-      -&nbsp;&nbsp;Komunikacja
+      Komunikacja
       elektroniczna wierzyciel – bank eliminuje niedoskonałości
       korespondencji pocztowej.
     </li>
     <li>
 
-      -&nbsp;&nbsp;Płatnik
+      Płatnik
       nie jest narażony na niedogodności osobistego dokonywania
       przelewów, a w szczególności operowania
       gotówką.<br />
@@ -290,7 +290,7 @@ const HowToHelp = () => (
     zaszyfrowane w tych 26-ciu cyfrach.
   </p>
 </div>
-</div>
+</article>
 )
 
 export default HowToHelp
