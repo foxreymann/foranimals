@@ -47,11 +47,7 @@ const HowToHelp = () => (
   </div>
   <p>
 
-    <a href=
-    "http://www.foranimals.org.pl/archiwum/?mode=download&amp;cmd=21">
-    polecenie zaplaty1</a><br />
-    <small>formularz_zgody_zal_11.doc,
-    31&nbsp;KB</small>
+    <a href='./polecenie_zaplaty.doc'>ściągnij polecenie zaplaty</a>
   </p>
   <p>
 
@@ -62,11 +58,7 @@ const HowToHelp = () => (
   </p>
   <p>
 
-    <a href=
-    "http://www.foranimals.org.pl/archiwum/?mode=download&amp;cmd=22">
-    polecenie zaplaty - cofnięcie</a><br />
-    <small>cofniecie_zgody_zal_21.doc,
-    29&nbsp;KB</small>
+    <a href='./cofnij.doc'>ściągnij cofnięcie polecenia zapłaty</a>
   </p>
   <p>
 
