@@ -1,0 +1,11 @@
+--2018-02-15 20:51:37--  http://www.foranimals.org.pl/archiwum/?mode=articles
+Resolving www.foranimals.org.pl (www.foranimals.org.pl)... 185.208.164.147
+Connecting to www.foranimals.org.pl (www.foranimals.org.pl)|185.208.164.147|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘index.html?mode=articles’
+
+index.html?mode=articles                                      [<=>                                                                                                                                  ]       0  --.-KB/s               index.html?mode=articles                                      [ <=>                                                                                                                                 ]  14.72K  --.-KB/s    in 0.06s   
+
+2018-02-15 20:51:37 (230 KB/s) - ‘index.html?mode=articles’ saved [15070]
+

@@ -9,6 +9,7 @@ import Post from './Post'
 import Footer from './Footer'
 import Sterilizations from './Sterilizations'
 import Clinic from './Clinic'
+import HowToHelp from './HowToHelp'
 
 const App = () => (
   <Router>
@@ -20,6 +21,7 @@ const App = () => (
         <Route path='/sterilizations' component={Sterilizations} />
         <Route path='/clinic' component={Clinic} />
         <Route path='/post/:slug' component={Post} />
+        <Route path='/how-to-help' component={HowToHelp} />
       <Footer />
     </div>
   </Router>
