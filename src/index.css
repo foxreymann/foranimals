@@ -1,10 +1,7 @@
 /* Global styles */
 
 /* Color Hunt Pallette
-  #FFBC2C Yellow
-  #86B86B Green
-  #4D4D4D Dark Grey
-  #ECECEC Light Grey
+  #FFBC2C Yellow, #86B86B Green, #4D4D4D Dark Grey, #ECECEC Light Grey
 */
 
 body {
@@ -22,15 +19,6 @@ body {
 .btn {
   white-space: normal;
 }
-
-/* .bg-primary {
-  background: linear-gradient(to bottom,#FFBC2C,#FFBC2C);
-}
-
-.bg-secondary {
-  background-color: #4D4D4D; /*dark grey
-} */
-
 
 /* Navbar styles */
 
@@ -169,6 +157,13 @@ main {
 
 .btn-xl {
   font-size: 12px;
+}
+
+
+/* Content (posts, etc) */
+
+.content {
+  min-height: calc(100vh - 136px);
 }
 
 
