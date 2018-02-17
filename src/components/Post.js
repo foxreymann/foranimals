@@ -17,7 +17,7 @@ const Post = ({ data: { loading, error, post } }) => {
         <div className='Post-placeholder'>
           <img
             alt={post.title}
-            src={ post.image ? `https://media.graphcms.com/resize=w:650,h:366,fit:crop/${post.image.handle}` : catPlaceholder }
+            src={ post.image ? `https://media.graphcms.com/resize=w:600,fit:crop/${post.image.handle}` : catPlaceholder }
           />
         </div>
         <h2>{post.title}</h2>

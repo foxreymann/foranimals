@@ -209,8 +209,22 @@ input {
 /* News */
 
 article, .News-ul {
-  margin: 0 auto;
+  margin: 20px auto;
   max-width: 650px;
+}
+
+article {
+  background-color: white;
+  /*border: 1px solid #CCC;*/
+}
+
+article a {
+  color: #4D4D4D;
+  text-decoration: underline;
+}
+
+article a:hover, article a:focus {
+  color: #86B86B;
 }
 
 .News-ul {
@@ -219,7 +233,7 @@ article, .News-ul {
 
 .News-li {
   margin-bottom: 16px;
-  border: 1px solid #4D4D4D;
+  /*border: 1px solid #CCC;*/
   overflow: hidden;
   border-radius: 5px;
   background-color: white;
@@ -272,9 +286,7 @@ article {
 }
 
 .Post-placeholder {
-  /*height: 366px;*/
-  background-color: #eee;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .Post-placeholder img {
@@ -304,7 +316,6 @@ article {
 .contact a:hover, .contact a:focus {
   color: #86B86B;
 }
-
 
 /* Footer */
 
