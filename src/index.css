@@ -219,12 +219,21 @@ article {
 }
 
 article a {
-  color: #4D4D4D;
+  color: #86B86B;
   text-decoration: underline;
 }
 
 article a:hover, article a:focus {
-  color: #86B86B;
+  color: #4D4D4D;
+}
+
+article div > a {
+  color: white;
+  text-decoration: none;
+}
+
+article div > a:hover, article div > a:focus {
+  text-decoration: none;
 }
 
 .News-ul {

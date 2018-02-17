@@ -61,16 +61,16 @@ const Sterilizations = () => (
     <p><strong>Partnerzy:</strong></p>
 
     <p>
-      <img className="w-100 h-100" src="http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-300x240.jpg" alt="Sterylised cat 140x95_20140904c_wiz" height="240" width="300" srcset="http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-300x240.jpg 300w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-768x614.jpg 768w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-1024x819.jpg 1024w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-600x480.jpg 600w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" />
+      <img className="" src="http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-300x240.jpg" alt="Sterylised cat 140x95_20140904c_wiz" height="240" width="300" srcset="http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-300x240.jpg 300w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-768x614.jpg 768w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-1024x819.jpg 1024w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-600x480.jpg 600w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" />
       <img src="http://www.akcjasterylizacji.pl/static/kuna.jpg" />
     </p>
 
-    <p><span ><b>Sterylizując swojego pupila chronisz go przed&nbsp;wieloma chorobami oraz&nbsp;masz pewność, że&nbsp;na pewno nie będziesz miał/a udziału w&nbsp;powiększeniu zwierzęcego nieszczęścia &#8211; BEZDOMNOŚCI I&nbsp;ZNĘCANIA SIĘ</b>.</span></p>
-    <p><span ><strong>Znowu niechciane kociaki albo szczeniaki??</strong></span></p>
-    <p><span ><strong>Możesz temu zapobiec !</strong></span></p>
-    <p><span >Ponad 50 % urodzonych każdego roku kociąt i&nbsp;szczeniąt ginie tragicznie lub umiera z&nbsp;braku opieki-nie stracza dla nich ludzkich domów.Sterylizacja jest jedynym humanitarym sposobem zmniejszania nadpopulacji zwierząt oraz&nbsp;rozwiązania wielu problemów zdrowotnych u&nbsp;zwierząt domowych.To rutynowy zabieg chirurgiczny wykonywany przez lekarzy weterynarii , dający stuprocnetową pewność uniknięcia niechcianej ciąży.</span></p>
+    <p><span><b>Sterylizując swojego pupila chronisz go przed&nbsp;wieloma chorobami oraz&nbsp;masz pewność, że&nbsp;na pewno nie będziesz miał/a udziału w&nbsp;powiększeniu zwierzęcego nieszczęścia &#8211; BEZDOMNOŚCI I&nbsp;ZNĘCANIA SIĘ</b>.</span></p>
+    <p><span><strong>Znowu niechciane kociaki albo szczeniaki??</strong></span></p>
+    <p><span><strong>Możesz temu zapobiec !</strong></span></p>
+    <p><span>Ponad 50 % urodzonych każdego roku kociąt i&nbsp;szczeniąt ginie tragicznie lub umiera z&nbsp;braku opieki-nie stracza dla nich ludzkich domów.Sterylizacja jest jedynym humanitarym sposobem zmniejszania nadpopulacji zwierząt oraz&nbsp;rozwiązania wielu problemów zdrowotnych u&nbsp;zwierząt domowych.To rutynowy zabieg chirurgiczny wykonywany przez lekarzy weterynarii , dający stuprocnetową pewność uniknięcia niechcianej ciąży.</span></p>
 
-    <p><span >WYSTERYLIZOWANY KOCUR</span></p>
+    <p><span>WYSTERYLIZOWANY KOCUR</span></p>
 
     <ul>
       <li>nie znaczy terenu swoich zapachem</li>
