@@ -6,8 +6,8 @@ const Sterilizations = () => (
 
     <h3>Ogólnie o&nbsp;Akcji</h3>
 
-    <div class="btn btn-primary btn-xl btn-donate mt-3 mb-3">
-      <a href="https://www.akcjasterylizacji.pl/" target="_blank" rel="noopener">Portal Akcja Sterylizacji</a>
+    <div class="btn btn-primary btn-xl mt-3 mb-3">
+      <a href="https://www.akcjasterylizacji.pl/" target="_blank" rel="noopener noreferrer" className="mt-3 mb-3">Portal Akcja Sterylizacji</a>
     </div>
 
     <p>W&nbsp;tym roku po&nbsp;raz kolejny ruszamy z&nbsp;Ogólnopolską Akcją Sterylizacji.</p>
