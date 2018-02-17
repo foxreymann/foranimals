@@ -20,6 +20,9 @@ body {
   white-space: normal;
 }
 
+.img-fluid {
+  max-height: 400px;
+}
 /* Navbar styles */
 
 #mainNav.navbar {
@@ -265,8 +268,8 @@ article div > a:hover, article div > a:focus, article div > a:active {
 
 .News-img {
   /*display: block;
-  height: 100%;
-  max-height: 100px;*/
+  height: 100%; */
+  max-height: 400px;
 }
 
 .News-showMoreWrapper {
@@ -300,7 +303,14 @@ article {
 
 .Post-placeholder img {
   height: 100%;
-  width: 100%;
+  /*width: 100%;*/
+  max-height: 400px;
+}
+
+article figure img {
+  height: 100%;
+  /*width: 100%;*/
+  max-height: 300px;
 }
 
 /* About */

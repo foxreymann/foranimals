@@ -21,7 +21,7 @@ const News = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts
           {allPosts.map(post => (
             <li className='News-li mb-5' key={`post-${post.id}`}>
               <Link to={`/post/${post.slug}`} className='News-link'>
-                <div className='News-placeholder'>
+                <div className='News-placeholder text-center'>
                   <img
                     alt={post.title}
                     className='News-img img-fluid'

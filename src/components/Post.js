@@ -14,10 +14,11 @@ const Post = ({ data: { loading, error, post } }) => {
   if (!loading) {
     return (
       <article className="content">
-        <div className='Post-placeholder'>
+        <div className='Post-placeholder text-center'>
           <img
             alt={post.title}
             src={ post.image ? `https://media.graphcms.com/resize=w:600,fit:crop/${post.image.handle}` : catPlaceholder }
+            className="img-fluid"
           />
         </div>
         <h2>{post.title}</h2>
