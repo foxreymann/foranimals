@@ -164,14 +164,14 @@ const Sterilizations = () => (
       <li>Ustal zasadę: Ty jesz przy stole ludzkie jedzenie, Twój&nbsp;pupil swoje smakołyki ze&nbsp;swojej miski. Ty mu z&nbsp;miski nie wyjadasz, więc dlaczego w&nbsp;drugą stronę obowiązywać mają inne zasady? A&nbsp;poważnie &#8211; zwierzęta nie powinny być żywione regularnie &#8222;ludzkim&#8221; jedzeniem &#8211; obejrzyj filmik: <a href="https://www.youtube.com/watch?v=NQCwHluBqFc">https://www.youtube.com/watch?v=NQCwHluBqFc</a></li>
     </ul>
 
-    <div className="mt-5">
-      <iframe className="w-100 h-100 mb-5" src="https://www.youtube.com/embed/J6tuOQZe9Ck?feature=oembed" frameborder="0" allowfullscreen></iframe>
-      <iframe className="w-100 h-100 mb-5" src="https://www.youtube.com/embed/h1LyaKlwvGo?feature=oembed" frameborder="0" allowfullscreen></iframe>
-      <iframe className="w-100 h-100 mb-5" src="https://www.youtube.com/embed/yDvMdYx8k1M?feature=oembed" frameborder="0" allowfullscreen></iframe>
-      <iframe className="w-100 h-100 mb-5" src="https://www.youtube.com/embed/TyTAcJASttQ?feature=oembed" frameborder="0" allowfullscreen></iframe>
+    <div className="text-center mt-5">
+      <div className="img-fluid">
+        <iframe className="mb-5 img-fluid" src="https://www.youtube.com/embed/J6tuOQZe9Ck?feature=oembed" frameborder="0" allowfullscreen></iframe>
+        <iframe className="mb-5 img-fluid" src="https://www.youtube.com/embed/h1LyaKlwvGo?feature=oembed" frameborder="0" allowfullscreen></iframe>
+        <iframe className="mb-5 img-fluid" src="https://www.youtube.com/embed/yDvMdYx8k1M?feature=oembed" frameborder="0" allowfullscreen></iframe>
+        <iframe className="mb-5 img-fluid" src="https://www.youtube.com/embed/TyTAcJASttQ?feature=oembed" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
-
-
   </article>
 )
 
