@@ -7,18 +7,18 @@ import Moment from 'react-moment'
 
 const POSTS_PER_PAGE = 4
 
-const Adopt = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts }) => {
+const Adopt = ({ data: { loading, error, allAdoptions, _allAdoptionsMeta }, loadMoreAdoptions }) => {
   if (error) return (
     <div className="content">
       <h1 className="text-center">Error fetching posts!</h1>
     </div>
   )
   if (!loading) {
-    const areMorePosts = allPosts.length < _allPostsMeta.count
+    const areMoreAdoptions = allAdoptions.length < _allAdoptionsMeta.count
     return (
       <section className="content">
         <ul className='News-ul'>
-          {allPosts.map(post => (
+          {allAdoptions.map(post => (
             <li className='News-li mb-5' key={`post-${post.id}`}>
               <Link to={`/post/${post.slug}`} className='News-link'>
                 <div className='News-placeholder'>
@@ -37,9 +37,9 @@ const Adopt = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePost
           ))}
         </ul>
         <div className='News-showMoreWrapper'>
-          {areMorePosts
-            ? <button className='News-button' onClick={() => loadMorePosts()}>
-              {loading ? 'Loading...' : 'Show More Posts'}
+          {areMoreAdoptions
+            ? <button className='News-button' onClick={() => loadMoreAdoptions()}>
+              {loading ? 'Loading...' : 'Show More Adoptions'}
             </button>
             : ''}
         </div>
@@ -53,38 +53,37 @@ const Adopt = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePost
   )
 }
 
-export const allPosts = gql`
-  query allPosts($first: Int!, $skip: Int!) {
-    allPosts(orderBy: date_DESC, first: $first, skip: $skip) {
+export const allAdoptions = gql`
+  query allAdoptions($first: Int!, $skip: Int!) {
+    allAdoptions(orderBy: date_DESC, first: $first, skip: $skip) {
       id
-      slug
-      title
+      name
       date
       image {
         handle
       }
     },
-    _allPostsMeta {
+    _allAdoptionsMeta {
       count
     }
   }
 `
 
-export const allPostsQueryVars = {
+export const queryVars = {
   skip: 0,
   first: POSTS_PER_PAGE
 }
 
-export default graphql(allPosts, {
+export default graphql(allAdoptions, {
   options: {
-    variables: allPostsQueryVars
+    variables: queryVars
   },
   props: ({ data }) => ({
     data,
-    loadMorePosts: () => {
+    loadMoreAdoptions: () => {
       return data.fetchMore({
         variables: {
-          skip: data.allPosts.length
+          skip: data.allAdoptions.length
         },
         updateQuery: (previousResult, { fetchMoreResult }) => {
           if (!fetchMoreResult) {
@@ -92,7 +91,7 @@ export default graphql(allPosts, {
           }
           return Object.assign({}, previousResult, {
             // Append the new posts results to the old one
-            allPosts: [...previousResult.allPosts, ...fetchMoreResult.allPosts]
+            allAdoptions: [...previousResult.allAdoptions, ...fetchMoreResult.allAdoptions]
           })
         }
       })
