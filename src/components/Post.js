@@ -21,7 +21,7 @@ const Post = ({ data: { loading, error, post } }) => {
           />
         </div>
         <h2>{post.title}</h2>
-        <div>
+        <div className="mb-3">
           <Moment format="DD/MM/YYYY">
             {post.date}
           </Moment>
