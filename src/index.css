@@ -219,21 +219,23 @@ article, .News-ul {
 
 .News-li {
   margin-bottom: 16px;
-  border: 1px solid #eee;
+  border: 1px solid #4D4D4D;
   overflow: hidden;
   border-radius: 5px;
+  background-color: white;
+  padding: 20px;
 }
 
 .News-link {
-  color: #000;
+  color: #4D4D4D;
 }
 
-.News-link:hover {
-  /*box-shadow: 1px 1px 5px #999;*/
+.News-link:hover, .News-link:focus {
+  color: #86B86B;
 }
 
 .News-placeholder {
-  background-color: #eee;
+  /*background-color: #4D4D4D;*/
   min-width: 100px;
   margin-right: 24px;
 }
