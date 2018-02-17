@@ -223,7 +223,7 @@ article a {
   text-decoration: underline;
 }
 
-article a:hover, article a:focus {
+article a:hover, article a:focus, a:active {
   color: #4D4D4D;
 }
 
@@ -232,7 +232,7 @@ article div > a {
   text-decoration: none;
 }
 
-article div > a:hover, article div > a:focus {
+article div > a:hover, article div > a:focus, article div > a:active {
   text-decoration: none;
 }
 
@@ -322,7 +322,7 @@ article {
   color: #4D4D4D;
 }
 
-.contact a:hover, .contact a:focus {
+.contact a:hover, .contact a:focus, .contact a:active {
   color: #86B86B;
 }
 
@@ -339,7 +339,7 @@ footer a {
   color: #ECECEC;
 }
 
-footer a:hover, footer a:focus {
+footer a:hover, footer a:focus, footer a:active {
   color: #FFBC2C;
 }
 
