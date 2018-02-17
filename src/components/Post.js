@@ -6,10 +6,14 @@ import catPlaceholder from '../assets/cat.svg'
 import Moment from 'react-moment';
 
 const Post = ({ data: { loading, error, post } }) => {
-  if (error) return <h1 className="text-center mt-5">Error fetching the post!</h1>
+  if (error) return (
+    <div className="content">
+      <h1 className="text-center mt-5">Error fetching the post!</h1>
+    </div>
+  )
   if (!loading) {
     return (
-      <article>
+      <article className="content">
         <div className='Post-placeholder'>
           <img
             alt={post.title}
@@ -29,7 +33,11 @@ const Post = ({ data: { loading, error, post } }) => {
       </article>
     )
   }
-  return <h2 className="mt-5">Loading post...</h2>
+  return (
+    <div className="content">
+      <h2 className="text-center">Loading post...</h2>
+    </div>
+  )
 }
 
 export const singlePost = gql`

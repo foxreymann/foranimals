@@ -7,11 +7,15 @@ import catPlaceholder from '../assets/cat.svg'
 const POSTS_PER_PAGE = 4
 
 const News = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts }) => {
-  if (error) return <h1 className="text-center mt-5 mb-5">Error fetching posts!</h1>
+  if (error) return (
+    <div className="content">
+      <h1 className="text-center">Error fetching posts!</h1>
+    </div>
+  )
   if (!loading) {
     const areMorePosts = allPosts.length < _allPostsMeta.count
     return (
-      <section className="mt-5">
+      <section className="content">
         <ul className='News-ul'>
           {allPosts.map(post => (
             <li className='News-li' key={`post-${post.id}`}>
@@ -38,7 +42,11 @@ const News = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts
       </section>
     )
   }
-  return <h2 className="text-center mt-5 mb-5">Loading posts...</h2>
+  return (
+    <div className="content">
+      <h2 className="text-center">Loading posts...</h2>
+    </div>
+  )
 }
 
 export const allPosts = gql`
