@@ -35,7 +35,7 @@ const Clinic = () => (
     <li>sterylizacja,</li>
     <li>wizyty domowe</li>
   </ul>
-  
+
 </article>
 )
 
