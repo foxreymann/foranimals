@@ -22,7 +22,7 @@ V NEWS / aktualności
 
 osobna strona dla każdej aktualności  
 
-ABOUT / o nas  
+V ABOUT / o nas  
 *   text  
 
 V OFFICE / gabinet  
@@ -32,7 +32,7 @@ V STERILIZATIONS / sterylizajce
 *   link to akcjasterylizacji.pl  
 *   text  
 
-HOW TO HELP? / jak pomóc?
+V HOW TO HELP? / jak pomóc?
 *   copy text from /archiwum
 
 # Additional features  

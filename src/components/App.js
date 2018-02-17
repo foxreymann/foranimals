@@ -5,6 +5,7 @@ import Header from './Header'
 import Home from './Home'
 import News from './News'
 import About from './About'
+import Adopt from './Adopt'
 import Post from './Post'
 import Footer from './Footer'
 import Sterilizations from './Sterilizations'
@@ -22,6 +23,7 @@ const App = () => (
         <Route path='/clinic' component={Clinic} />
         <Route path='/post/:slug' component={Post} />
         <Route path='/how-to-help' component={HowToHelp} />
+        <Route path='/adopt' component={Adopt} />
       <Footer />
     </div>
   </Router>
