@@ -1,12 +1,14 @@
 import React from 'react'
 
 const Sterilizations = () => (
-  <article className="">
+  <article>
     <h2>Akcja Sterylizacji &#8211; Marzec 2018</h2>
 
     <h3>Ogólnie o&nbsp;Akcji</h3>
 
-    <h3><a href="https://www.akcjasterylizacji.pl/" target="_blank" rel="noopener">Portal Akcja Sterylizacji</a></h3>
+    <div class="btn btn-primary btn-xl btn-donate mt-3 mb-3">
+      <a href="https://www.akcjasterylizacji.pl/" target="_blank" rel="noopener">Portal Akcja Sterylizacji</a>
+    </div>
 
     <p>W&nbsp;tym roku po&nbsp;raz kolejny ruszamy z&nbsp;Ogólnopolską Akcją Sterylizacji.</p>
     <p>Naszym celem jest popularyzacja tej&nbsp;humanitarnej metody ograniczenia nadpopulacji zwierząt domowych &#8211; w&nbsp;szczególności psów i&nbsp;kotów.</p>
