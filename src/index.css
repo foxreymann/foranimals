@@ -160,11 +160,13 @@ main {
 }
 
 
-/* Content (posts, etc) */
+/* nt (posts, etc) */
 
 .content {
   min-height: calc(100vh - 120px);
   padding: 25px;
+
+  word-wrap: break-word;
 }
 
 
@@ -214,20 +216,22 @@ article, .News-ul {
 .News-ul {
   padding: 0;
 }
+
 .News-li {
-  display: flex;
-  align-items: center;
   margin-bottom: 16px;
   border: 1px solid #eee;
   overflow: hidden;
   border-radius: 5px;
 }
+
 .News-link {
   color: #000;
 }
+
 .News-link:hover {
   /*box-shadow: 1px 1px 5px #999;*/
 }
+
 .News-placeholder {
   background-color: #eee;
   min-width: 100px;
