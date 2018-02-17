@@ -60,10 +60,10 @@ const Sterilizations = () => (
 
     <p><strong>Partnerzy:</strong></p>
 
-    <p>
-      <img className="" src="http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-300x240.jpg" alt="Sterylised cat 140x95_20140904c_wiz" height="240" width="300" srcset="http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-300x240.jpg 300w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-768x614.jpg 768w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-1024x819.jpg 1024w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz-600x480.jpg 600w, http://foranimals.org.pl/wp-content/uploads/2017/03/Sterylised-cat-140x95_20140904c_wiz.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" />
-      <img src="http://www.akcjasterylizacji.pl/static/kuna.jpg" />
-    </p>
+    <div className="text-center">
+      <img className="img-fluid" src="https://media.graphcms.com/output=format:jpg/resize=width:150,height:150/YbZhc6hLTaaYS8u8leJg" />
+      <img className="img-fluid" src="https://media.graphcms.com/output=format:jpg/resize=width:215,height:215/f1EodXKJRAGH0YzsPmuI" />
+    </div>
 
     <p><span><b>Sterylizując swojego pupila chronisz go przed&nbsp;wieloma chorobami oraz&nbsp;masz pewność, że&nbsp;na pewno nie będziesz miał/a udziału w&nbsp;powiększeniu zwierzęcego nieszczęścia &#8211; BEZDOMNOŚCI I&nbsp;ZNĘCANIA SIĘ</b>.</span></p>
     <p><span><strong>Znowu niechciane kociaki albo szczeniaki??</strong></span></p>
@@ -165,7 +165,7 @@ const Sterilizations = () => (
     </ul>
 
     <div className="text-center mt-5">
-      <div className="img-fluid">
+      <div className="">
         <iframe className="mb-5 img-fluid" src="https://www.youtube.com/embed/J6tuOQZe9Ck?feature=oembed" frameborder="0" allowfullscreen></iframe>
         <iframe className="mb-5 img-fluid" src="https://www.youtube.com/embed/h1LyaKlwvGo?feature=oembed" frameborder="0" allowfullscreen></iframe>
         <iframe className="mb-5 img-fluid" src="https://www.youtube.com/embed/yDvMdYx8k1M?feature=oembed" frameborder="0" allowfullscreen></iframe>
