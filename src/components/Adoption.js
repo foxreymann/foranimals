@@ -1,11 +1,25 @@
 import React from 'react';
+import Markdown from 'react-markdown'
 
-const Adoption = ({movie}) =>
-  <div>
-    <Link to={`/${movie.id}`}>
-      <h3>{movie.title}</h3>
-      <img src={`${POSTER_PATH}${movie.poster_path}`} />
-    </Link>
-  </div>
+class Adoption extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {date: new Date()};
+    this.state.adoption = props.adoption
+  }
+
+  render() {
+    const adoption = this.state.adoption
+    return (
+      <article className="Post">
+        <h2>{adoption.name}</h2>
+        <Markdown
+          source={adoption.desc}
+          escapeHtml={false}
+        />
+      </article>
+    );
+  }
+}
 
 export default Adoption
