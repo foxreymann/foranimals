@@ -141,8 +141,8 @@ main {
 .Jumbo-logo {
   height: 100%;
   width: 100%;
-  max-height: 400px;
-  max-width: 400px;
+  max-height: 350px;
+  max-width: 350px;
 }
 
 .btn {
