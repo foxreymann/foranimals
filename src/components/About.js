@@ -4,7 +4,7 @@ const About = () => (
   <article>
     <h2>O&nbsp;nas</h2>
 
-    <p>Jesteśmy Organizacją Pożytku Publicznego (OPP). Fundacja For Animals należy do&nbsp;<a title="Koalicja dla Zwierząt" href="http://www.koalicja.org.pl/" target="_blank">Koalicji dla Zwierząt</a>.</p>
+    <p>Jesteśmy Organizacją Pożytku Publicznego (OPP). Fundacja For Animals należy do&nbsp;<a title="Koalicja dla Zwierząt" href="http://www.koalicja.org.pl/" target="_blank" rel="noopener noreferrer">Koalicji dla Zwierząt</a>.</p>
 
     <p >Fundacja For Animals powstała pod&nbsp;koniec 2006 roku, ustanowiona przez zaangażowanych miłośników zwierząt. Jest organizacją pozarządową działającą na&nbsp;terenie całej Polski ze&nbsp;szczególnym uwzględnieniem województw, gdzie znajdują się oddziały Fundacji czyli: Śląskiego, Dolnośląskiego oraz&nbsp;Łódzkiego. Od&nbsp;2009 roku jest na&nbsp;liście Ministra i&nbsp;posiada statut Organizacji Pożytku Publicznego zwanego OPP. Siedziba Fundacji mieści się w&nbsp;Katowicach przy ulicy 11 Listopada 4. Tam także znajduję się Gabinet Weterynaryjny prowadzony przez Fundację. Fundacja opiera się na&nbsp;pracy wolontariuszy, którzy&nbsp;są także miłośnikami zwierząt.</p>
 
@@ -40,7 +40,7 @@ const About = () => (
     <p>A&nbsp;wszystko się zaczęło od&nbsp;pomocy bezdomnym i&nbsp;wyrzuconym zwierzętom,  ich dokarmiania, potem leczenia i&nbsp;sterylizacji , szukania domów tym oswojonym.Potrzebujących pomocy zwierząt jest coraz więcej i&nbsp;w&nbsp;pewnym momencie zaistniała potrzeba zebrania działań w&nbsp;formę bardziej zorganizowaną.</p>
 
     <p>Razem z&nbsp;grupą wolontariuszy podjęliśmy działania od&nbsp;razu ogólnopolskie-10.10.2016 roku powołaliśmy do&nbsp;życia Fundację For Animals.</p>
-    
+
     <p >Grupy wolontariuszy z&nbsp;Łodzi przyłączały się do&nbsp;nas i&nbsp;od razu powstał oddział Fundacji Łódż na&nbsp;czele z&nbsp;prężną, zorganizowaną szefową Anną.</p>
 
     <p><a href='http://www.foranimals-lodz.pl/'>www.foranimals-lodz.pl</a></p>
