@@ -65,6 +65,12 @@ body {
   color: #4D4D4D;
 }
 
+.btn-primary:not([disabled]):not(.disabled):active {
+  background-color: #FFBC2C;
+  border-color: #FFBC2C;
+  color: #4D4D4D;
+}
+
 .Header-header {
   padding: 24px 32px;
   margin-bottom: 32px;
