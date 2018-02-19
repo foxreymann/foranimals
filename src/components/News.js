@@ -22,11 +22,13 @@ const News = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts
             <li className='News-li mb-5' key={`post-${post.id}`}>
               <Link to={`/post/${post.slug}`} className='News-link'>
                 <div className='News-placeholder text-center'>
-                  <img
-                    alt={post.title}
-                    className='News-img img-fluid'
-                    src={ post.image ? `https://media.graphcms.com/resize=w:600,fit:crop/${post.image.handle}` : catPlaceholder }
-                  />
+                  { post.image ?
+                    <img
+                      alt={post.title}
+                      className='News-img img-fluid'
+                      src={`https://media.graphcms.com/resize=w:600,fit:crop/${post.image.handle}` }
+                    /> : ''
+                  }
                 </div>
                 <h5 className="mt-3"><Moment format="DD/MM/YYYY">
                   {post.date}
@@ -39,7 +41,7 @@ const News = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts
         <div className='News-showMoreWrapper'>
           {areMorePosts
             ? <button className='News-button' onClick={() => loadMorePosts()}>
-              {loading ? 'Loading...' : 'Show More Posts'}
+              {loading ? 'Ładuję...' : 'Pokaż więcej'}
             </button>
             : ''}
         </div>
