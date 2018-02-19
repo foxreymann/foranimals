@@ -13,7 +13,6 @@ const Adopt = ({ data: { loading, error, allAdoptions, _allAdoptionsMeta }, load
     </div>
   )
   if (!loading) {
-console.log(allAdoptions)
     const areMoreAdoptions = allAdoptions.length < _allAdoptionsMeta.count
     return (
       <section>
