@@ -2,7 +2,6 @@ import React from 'react'
 import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
 import Markdown from 'react-markdown'
-import catPlaceholder from '../assets/cat.svg'
 import Moment from 'react-moment';
 
 const Post = ({ data: { loading, error, post } }) => {
