@@ -1,4 +1,5 @@
 import React from 'react';
+import Markdown from 'react-markdown'
 
 class Adoption extends React.Component {
   constructor(props) {
@@ -8,11 +9,14 @@ class Adoption extends React.Component {
   }
 
   render() {
+    const adoption = this.state.adoption
     return (
       <article className="Post">
-        <h2>{this.state.adoption.name}</h2>
-        <h1>Hello, world!</h1>
-        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+        <h2>{adoption.name}</h2>
+        <Markdown
+          source={adoption.desc}
+          escapeHtml={false}
+        />
       </article>
     );
   }
