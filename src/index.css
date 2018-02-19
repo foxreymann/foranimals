@@ -110,9 +110,7 @@ a .fa-facebook, a .fa-facebook:visited, a .fa-facebook:active, a .fa-facebook:ho
 /* Jumbo Masthead styles */
 
 header.masthead {
-  /*background: linear-gradient(to bottom,#7b4397,#dc2430); /* Fox original */
   background: linear-gradient(to bottom,#61854d,#86B86B);
-  /* padding-top: 3rem; */
   padding-bottom: 0;
 }
 
@@ -121,7 +119,6 @@ header h3 {
 }
 
 main {
-  /* background: linear-gradient(to bottom,#FFBC2C,#FFBC2C); */
   background: linear-gradient(to bottom,#86B86B,#86B86B);
 }
 
@@ -130,7 +127,6 @@ main {
   min-height: 100px;
   margin-bottom: 30px;
   white-space: normal;
-  /* background-color: #86B86B; */
 }
 
 .Jumbo-logo {
@@ -256,14 +252,10 @@ article div > a:hover, article div > a:focus, article div > a:active {
 }
 
 .News-placeholder {
-  /*background-color: #4D4D4D;*/
   min-width: 100px;
-  /*margin-right: 24px;*/
 }
 
 .News-img {
-  /*display: block;
-  height: 100%; */
   max-height: 400px;
 }
 
