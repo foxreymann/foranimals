@@ -61,8 +61,8 @@ const Sterilizations = () => (
     <p><strong>Partnerzy:</strong></p>
 
     <div className="text-center">
-      <img className="img-fluid" src="https://media.graphcms.com/output=format:jpg/resize=width:150,height:150/YbZhc6hLTaaYS8u8leJg" />
-      <img className="img-fluid" src="https://media.graphcms.com/output=format:jpg/resize=width:215,height:215/f1EodXKJRAGH0YzsPmuI" />
+      <img className="img-fluid" src="https://media.graphcms.com/output=format:jpg/resize=width:150,height:150/YbZhc6hLTaaYS8u8leJg" alt="partner"/>
+      <img className="img-fluid" src="https://media.graphcms.com/output=format:jpg/resize=width:215,height:215/f1EodXKJRAGH0YzsPmuI" alt="partner"/>
     </div>
 
     <p><span><b>Sterylizując swojego pupila chronisz go przed&nbsp;wieloma chorobami oraz&nbsp;masz pewność, że&nbsp;na pewno nie będziesz miał/a udziału w&nbsp;powiększeniu zwierzęcego nieszczęścia &#8211; BEZDOMNOŚCI I&nbsp;ZNĘCANIA SIĘ</b>.</span></p>
