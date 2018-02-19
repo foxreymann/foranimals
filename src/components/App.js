@@ -11,7 +11,7 @@ import Footer from './Footer'
 import Sterilizations from './Sterilizations'
 import Clinic from './Clinic'
 import HowToHelp from './HowToHelp'
-import Residents from './Residents'
+import Residents from './ResidentsPage'
 
 const App = () => (
   <Router>
