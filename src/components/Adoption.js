@@ -13,7 +13,10 @@ class Adoption extends React.Component {
     const adoption = this.state.adoption
     const gallery = []
     adoption.image.map(image => {
-      gallery.push('bla')
+      gallery.push({
+        original: 'http://lorempixel.com/1000/600/nature/1/',
+        thumbnail: 'http://lorempixel.com/250/150/nature/1/',
+      })
     })
 console.log(gallery)
     return (
