@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { Collapse, Navbar } from 'reactstrap';
-import { NavLink as StrapNavLink} from 'reactstrap'
 
 export default class Header extends React.Component {
   constructor(props) {
