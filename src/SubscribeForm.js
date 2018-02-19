@@ -16,7 +16,8 @@ class SubscribeForm extends React.Component {
     e.preventDefault()
     if (!this.input.value || this.input.value.length < 5 || this.input.value.indexOf("@") === -1) {
       this.setState({
-        status: "error"
+        status: "error",
+        msg: "Błąd. Wpisałeś dobry adres email?"
       })
       return
     }
@@ -31,7 +32,7 @@ class SubscribeForm extends React.Component {
         if (err) {
           this.setState({
             status: 'error',
-            msg: err
+            msg: data.msg
           })
         } else if (data.result !== 'success') {
           this.setState({
@@ -72,8 +73,8 @@ class SubscribeForm extends React.Component {
             </button>
           </div>
           {status === "sending" && <p style={styles.sending} dangerouslySetInnerHTML={{ __html: messages.sending }} />}
-          {status === "success" && <p style={styles.success} dangerouslySetInnerHTML={{ __html: messages.success || msg }} />}
-          {status === "error" && <p style={styles.error} dangerouslySetInnerHTML={{ __html: messages.error || msg }} />}
+          {status === "success" && <p style={styles.success} dangerouslySetInnerHTML={{ __html: msg }} />}
+          {status === "error" && <p style={styles.error} dangerouslySetInnerHTML={{ __html: msg }} />}
         </form>
       </div>
     )
@@ -87,11 +88,9 @@ SubscribeForm.propTypes = {
 
 SubscribeForm.defaultProps = {
   messages: {
-    inputPlaceholder: "Votre email",
-    btnLabel: "Envoyer",
-    sending: "Envoi en cours...",
-    success: "Merci de votre intérêt!<p>Nous devons confirmer votre adresse e-mail. Pour compléter le processus d'abonnement, veuillez cliquer sur le lien contenu dans l'e-mail que nous venons de vous envoyer.</p>",
-    error: "Oops, impossible d'enregistrer cette adresse"
+    inputPlaceholder: "Podaj swój e-mail",
+    btnLabel: "Zapisz się",
+    sending: "Zapisuję...",
   },
   styles: {
     sending: {
