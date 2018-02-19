@@ -2,8 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'
-import catPlaceholder from '../assets/cat.svg'
-import Moment from 'react-moment'
 
 const POSTS_PER_PAGE = 4
 
@@ -14,27 +12,11 @@ const Adopt = ({ data: { loading, error, allAdoptions, _allAdoptionsMeta }, load
     </div>
   )
   if (!loading) {
+console.log(allAdoptions)
     const areMoreAdoptions = allAdoptions.length < _allAdoptionsMeta.count
     return (
-      <section className="content">
+      <section>
         <ul className='News-ul'>
-          {allAdoptions.map(post => (
-            <li className='News-li mb-5' key={`post-${post.id}`}>
-              <Link to={`/post/${post.slug}`} className='News-link'>
-                <div className='News-placeholder'>
-                  <img
-                    alt={post.title}
-                    className='News-img img-fluid'
-                    src={ post.image ? `https://media.graphcms.com/resize=w:600,fit:crop/${post.image.handle}` : catPlaceholder }
-                  />
-                </div>
-                <h5 className="mt-3"><Moment format="DD/MM/YYYY">
-                  {post.date}
-                </Moment></h5>
-                <h4 className="mt-2">{post.title}</h4>
-              </Link>
-            </li>
-          ))}
         </ul>
         <div className='News-showMoreWrapper'>
           {areMoreAdoptions
@@ -62,6 +44,10 @@ export const allAdoptions = gql`
       image {
         handle
       }
+      desc
+      sex
+      species
+      neutered
     },
     _allAdoptionsMeta {
       count
