@@ -14,15 +14,15 @@ const Post = ({ data: { loading, error, post } }) => {
   if (!loading) {
     return (
       <article className="content Post">
-        <div className='Post-placeholder text-center'>
-          { post.image ?
+        { post.image ?
+          <div className='Post-placeholder text-center'>
             <img
               alt={post.title}
               className='News-img img-fluid'
               src={`https://media.graphcms.com/resize=w:600,fit:crop/${post.image.handle}` }
-            /> : ''
-          }
-        </div>
+            />
+          </div> : null
+        }
         <h2>{post.title}</h2>
         <div className="mb-3">
           <Moment format="DD/MM/YYYY">
