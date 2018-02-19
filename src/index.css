@@ -120,11 +120,6 @@ header h3 {
   font-weight: bold;
 }
 
-header.masthead .Jumbo-logo {
-  /* max-width: 400px;
-  max-height: 400px; */
-}
-
 main {
   /* background: linear-gradient(to bottom,#FFBC2C,#FFBC2C); */
   background: linear-gradient(to bottom,#86B86B,#86B86B);
@@ -301,16 +296,9 @@ article {
   padding: 1rem 0;
 }
 
-.Post-placeholder img {
-  height: 100%;
-  /*width: 100%;*/
-  max-height: 400px;
-}
-
-article figure img {
-  height: 100%;
-  /*width: 100%;*/
-  max-height: 300px;
+.Post img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* About */
