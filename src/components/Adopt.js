@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { graphql } from 'react-apollo'
+import Adoption from './Adoption'
 import gql from 'graphql-tag'
 
 const POSTS_PER_PAGE = 4
@@ -17,6 +18,7 @@ console.log(allAdoptions)
     return (
       <section>
         <ul className='News-ul'>
+          {allAdoptions.map(adoption => <Adoption key={adoption.id} adoption={adoption} />)}
         </ul>
         <div className='News-showMoreWrapper'>
           {areMoreAdoptions

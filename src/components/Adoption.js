@@ -1,11 +1,8 @@
 import React from 'react';
 
-const Adoption = ({movie}) =>
+const Adoption = ({adoption}) =>
   <div>
-    <Link to={`/${movie.id}`}>
-      <h3>{movie.title}</h3>
-      <img src={`${POSTER_PATH}${movie.poster_path}`} />
-    </Link>
+    Adoption
   </div>
 
 export default Adoption
