@@ -11,6 +11,7 @@ import Footer from './Footer'
 import Sterilizations from './Sterilizations'
 import Clinic from './Clinic'
 import HowToHelp from './HowToHelp'
+import Residents from './Residents'
 
 const App = () => (
   <Router>
@@ -24,6 +25,7 @@ const App = () => (
         <Route path='/post/:slug' component={Post} />
         <Route path='/how-to-help' component={HowToHelp} />
         <Route path='/adopt' component={Adopt} />
+        <Route path='/residents' component={Residents} />
       <Footer />
     </div>
   </Router>
