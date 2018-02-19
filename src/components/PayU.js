@@ -38,7 +38,7 @@ export default class PayU extends React.Component {
           <img src={payuSvg} className="mb-2" alt="" style={{height:"50px"}}/>
         </div>
         <div className="d-flex justify-content-center flex-column mx-auto">
-          <label>Kwota darowizny: <input type="" onChange={this.updateDonation} value={this.state.donation} /> PLN</label>
+          <label>Kwota darowizny: <input type="number" onChange={this.updateDonation} value={this.state.donation} /> PLN</label>
           <input type="submit" onClick={this.makeDonation} value="Przekaż darowiznę z PayU" className="btn btn-block btn-primary btn-xl btn-donate mt-3 mb-3"/>
           <a href={this.state.payuUrl} id="payu" />
         </div>
