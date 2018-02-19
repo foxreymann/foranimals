@@ -13,20 +13,27 @@ class Adoption extends React.Component {
     const adoption = this.state.adoption
     const gallery = []
     adoption.image.map(image => {
-      gallery.push({
-        original: 'http://lorempixel.com/1000/600/nature/1/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/1/',
-      })
+      console.log(gallery);
+      gallery.push(image.handle);
     })
 
     return (
-      <article className="Post">
-        <h2>{adoption.name}</h2>
-        <Markdown
-          source={adoption.desc}
-          escapeHtml={false}
-        />
-      </article>
+      <div>
+        <article className="Post">
+          <h2>{adoption.name}</h2>
+          <Markdown
+            source={adoption.desc}
+            escapeHtml={false}
+          />
+        <ul className="list-unstyled d-flex flex-wrap">
+            {gallery.map(handle => (
+              <li className="mr-2 mb-2"><img
+                src={`https://media.graphcms.com/resize=w:150,fit:crop/${handle}` }
+              /></li>
+            ))}
+          </ul>
+        </article>
+      </div>
     );
   }
 }

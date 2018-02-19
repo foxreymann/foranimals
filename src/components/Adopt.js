@@ -15,9 +15,9 @@ const Adopt = ({ data: { loading, error, allAdoptions, _allAdoptionsMeta }, load
     const areMoreAdoptions = allAdoptions.length < _allAdoptionsMeta.count
     return (
       <section>
-        <ul className='News-ul'>
+        <div className='News-ul'>
           {allAdoptions.map(adoption => <Adoption key={adoption.id} adoption={adoption} />)}
-        </ul>
+        </div>
         <div className='News-showMoreWrapper'>
           {areMoreAdoptions
             ? <button className='News-button' onClick={() => loadMoreAdoptions()}>
