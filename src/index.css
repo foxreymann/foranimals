@@ -171,7 +171,7 @@ main {
 }
 
 .payu-wrap label input {
-  width: 3rem;
+  width: 5rem;
 }
 
 .btn-donate {
@@ -337,5 +337,9 @@ footer a:hover, footer a:focus, footer a:active {
 @media (min-width: 992px) {
   #facebook-button {
     top: 15px;
+  }
+
+  .payu-wrap label input {
+    width: 6rem;
   }
 }
