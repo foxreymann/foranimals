@@ -7,7 +7,7 @@ const Payments = () =>
     <div className="container p-5">
       <h2 className="">Szybka pomoc</h2>
       <div className="row">
-        <div className="col-md-12 col-lg-6">
+        <div className="col-md-12 col-lg-4 offset-lg-1">
           <div className="paypal-wrap pt-5">
             <i className="fab fa-cc-paypal fa-3x mb-5" />
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -20,7 +20,7 @@ const Payments = () =>
             </form>
           </div>
         </div>
-        <div className="col-md-12 col-lg-6">
+        <div className="col-md-12 col-lg-4 offset-lg-2">
           <div className="payu-wrap pt-5">
             <PayU />
           </div>
