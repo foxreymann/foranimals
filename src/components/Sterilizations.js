@@ -6,7 +6,7 @@ const Sterilizations = () => (
 
     <h3>Ogólnie o&nbsp;Akcji</h3>
 
-    <div class="btn btn-primary btn-xl mt-3 mb-3">
+    <div className="btn btn-primary btn-xl mt-3 mb-3">
       <a href="https://www.akcjasterylizacji.pl/" target="_blank" rel="noopener noreferrer" className="mt-3 mb-3">Portal Akcja Sterylizacji</a>
     </div>
 
@@ -61,8 +61,8 @@ const Sterilizations = () => (
     <p><strong>Partnerzy:</strong></p>
 
     <div className="text-center">
-      <img className="img-fluid" src="https://media.graphcms.com/output=format:jpg/resize=width:150,height:150/YbZhc6hLTaaYS8u8leJg" />
-      <img className="img-fluid" src="https://media.graphcms.com/output=format:jpg/resize=width:215,height:215/f1EodXKJRAGH0YzsPmuI" />
+      <img className="img-fluid" src="https://media.graphcms.com/output=format:jpg/resize=width:150,height:150/YbZhc6hLTaaYS8u8leJg" alt="partner"/>
+      <img className="img-fluid" src="https://media.graphcms.com/output=format:jpg/resize=width:215,height:215/f1EodXKJRAGH0YzsPmuI" alt="partner"/>
     </div>
 
     <p><span><b>Sterylizując swojego pupila chronisz go przed&nbsp;wieloma chorobami oraz&nbsp;masz pewność, że&nbsp;na pewno nie będziesz miał/a udziału w&nbsp;powiększeniu zwierzęcego nieszczęścia &#8211; BEZDOMNOŚCI I&nbsp;ZNĘCANIA SIĘ</b>.</span></p>
@@ -166,10 +166,10 @@ const Sterilizations = () => (
 
     <div className="text-center mt-5">
       <div className="">
-        <iframe className="mb-5 img-fluid" src="https://www.youtube.com/embed/J6tuOQZe9Ck?feature=oembed" frameborder="0" allowfullscreen></iframe>
-        <iframe className="mb-5 img-fluid" src="https://www.youtube.com/embed/h1LyaKlwvGo?feature=oembed" frameborder="0" allowfullscreen></iframe>
-        <iframe className="mb-5 img-fluid" src="https://www.youtube.com/embed/yDvMdYx8k1M?feature=oembed" frameborder="0" allowfullscreen></iframe>
-        <iframe className="mb-5 img-fluid" src="https://www.youtube.com/embed/TyTAcJASttQ?feature=oembed" frameborder="0" allowfullscreen></iframe>
+        <iframe title="Cat Spay" className="mb-5 img-fluid" src="https://www.youtube.com/embed/J6tuOQZe9Ck?feature=oembed" frameBorder="0" allowFullScreen></iframe>
+        <iframe title="Quick Spay" className="mb-5 img-fluid" src="https://www.youtube.com/embed/h1LyaKlwvGo?feature=oembed" frameBorder="0" allowFullScreen></iframe>
+        <iframe title="Dog Castration" className="mb-5 img-fluid" src="https://www.youtube.com/embed/yDvMdYx8k1M?feature=oembed" frameBorder="0" allowFullScreen></iframe>
+        <iframe title="Cat Neuter Surgery" className="mb-5 img-fluid" src="https://www.youtube.com/embed/TyTAcJASttQ?feature=oembed" frameBorder="0" allowFullScreen></iframe>
       </div>
     </div>
   </article>

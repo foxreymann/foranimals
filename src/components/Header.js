@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem } from 'reactstrap';
+import { Collapse, Navbar } from 'reactstrap';
 import { NavLink as StrapNavLink} from 'reactstrap'
 
 export default class Header extends React.Component {

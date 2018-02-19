@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Ad from './Ad'
 import Jumbo from './Jumbo'
 import Payments from './Payments'

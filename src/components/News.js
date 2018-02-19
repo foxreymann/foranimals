@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'
-import catPlaceholder from '../assets/cat.svg'
 import Moment from 'react-moment'
 
 const POSTS_PER_PAGE = 4

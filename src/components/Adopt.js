@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { graphql } from 'react-apollo'
 import Adoption from './Adoption'
 import gql from 'graphql-tag'
