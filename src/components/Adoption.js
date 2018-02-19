@@ -18,7 +18,7 @@ class Adoption extends React.Component {
         thumbnail: 'http://lorempixel.com/250/150/nature/1/',
       })
     })
-console.log(gallery)
+
     return (
       <article className="Post">
         <h2>{adoption.name}</h2>
