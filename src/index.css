@@ -24,6 +24,10 @@ body {
 .img-fluid {
   max-height: 400px;
 }
+
+.green {
+  color: #4d4d4d;
+}
 /* Navbar styles */
 
 .News-ul div > img {
@@ -326,7 +330,7 @@ article {
 }
 
 .Residents-list-header {
-  background: linear-gradient(to bottom,#ffbc2c,#fff 20%, #fff 80%, #ffbc2c)
+  background: rgba(255, 188, 44, 0.8);
 }
 
 /* Contact */
