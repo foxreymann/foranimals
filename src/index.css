@@ -14,6 +14,7 @@ body {
   background-color: #ECECEC;
   color: #4D4D4D;
   padding-top: 3rem;
+  background-image: url("assets/cat-paws.png");
 }
 
 .btn {
@@ -116,9 +117,10 @@ a .fa-facebook, a .fa-facebook:visited, a .fa-facebook:active, a .fa-facebook:ho
 /* Jumbo Masthead styles */
 
 header.masthead {
-  background: linear-gradient(to bottom,#61854d,#86B86B);
   padding-bottom: 0;
+  background: linear-gradient(to bottom,#61854d,#86B86B);
 }
+
 
 header h3 {
   font-weight: bold;
