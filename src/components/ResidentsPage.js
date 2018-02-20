@@ -6,14 +6,13 @@ export default () =>
   <div>
     <article>
 <h2>Jeśli nie możesz mieć zwierzaka...</h2>
-<p>Jeśli:
+<p>Jeśli:</p>
 <ul>
   <li>nie możesz przygarnąć bezdomnego kota</li>
   <li>chcesz pomóc konkretnemu kotu</li>
   <li>czujesz się na siłach co miesiąc opłacać na konto Fundacji stałą kwotę na utrzymanie swojego kota</li>
 </ul>
-...to wirtualna adopcja jest właśnie dla ciebie.
-</p>
+<p>...to wirtualna adopcja jest właśnie dla ciebie.</p>
 
 <p>Minimalny miesięczny koszt utrzymania jednego kota wynosi 40 PLN ale wielkość wpłaty zależy do Ciebie, liczy się każda złotówka.</p>
 
@@ -35,7 +34,7 @@ fakt, bo być może ktoś inny będzie chciał zaadoptować go wirtualnie.</p>
 <h2>Jak zostać wirtualnym opiekunem?</h2>
 <ol>
 <li>Wybierz kota, którego chcesz adoptować.</li>
-<li>Napisz do nas (pini1@foranimals.org.pl), że chcesz zostać jego wirtualnym opiekunem i podaj, jakie informacje mamy umieścić pod jego opisem.</li>
+<li>Napisz do nas ( <a href='mailto:pini1@foranimals.org.pl'>pini1@foranimals.org.pl</a> ), że chcesz zostać jego wirtualnym opiekunem i podaj, jakie informacje mamy umieścić pod jego opisem.</li>
 <li>Co miesiąc wpłacasz dowolną kwotę  na konto Fundacji podając w tytule przelewu: „adopcja wirtualna, kot, nr (nr kota na stronie adopcyjnej fundacji), oraz okres, którego dotyczy wpłata.  Np: adopcja wirtualna kot nr 132, lipiec-wrzesień 2018</li>
 </ol>
 
@@ -43,7 +42,7 @@ fakt, bo być może ktoś inny będzie chciał zaadoptować go wirtualnie.</p>
 
 
 
-<p>Konto fundacji do wpłat:</p>
+<p><b>Konto fundacji do wpłat:</b></p>
 <p>
 Fundacja For Animals<br/>
 ul.11 Listopada 4<br/>
