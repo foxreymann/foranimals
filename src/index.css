@@ -26,6 +26,16 @@ body {
 }
 /* Navbar styles */
 
+.News-ul div > img {
+  /*opacity: 0.8;*/
+}
+
+.News-ul div > img:hover {
+  outline: 1px solid #4D4D4D;
+  opacity: 1;
+}
+
+
 #mainNav.navbar {
   background-color: #7b4397; /* purple */
   background-color: #86B86B; /* green */
