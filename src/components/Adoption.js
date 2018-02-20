@@ -14,7 +14,6 @@ class Adoption extends React.Component {
     const adoption = this.state.adoption
     const gallery = []
     adoption.image.map(image => {
-      console.log(gallery);
       gallery.push(image.handle);
     })
 
@@ -23,8 +22,8 @@ class Adoption extends React.Component {
         <article className="Post">
           <h2>{adoption.name}</h2>
           <ul className="list-unstyled d-flex flex-wrap">
-            {gallery.map(handle => (
-              <li className="mr-2 mb-2">
+            {gallery.map((handle, i) => (
+              <li className="mr-2 mb-2" key={i}>
                 <ModalImage
                   small={`https://media.graphcms.com/resize=w:150,fit:crop/${handle}`}
                   large={`https://media.graphcms.com/resize=w:500,fit:crop/${handle}`}
