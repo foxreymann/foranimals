@@ -55,7 +55,7 @@ Bank PKO BP, konto nr:<br/>
 02 1020 2313 0000 3102 0161 2043
 </p>
     </article>
-    <article>
+    <article className="Residents-list-header">
       <h2>Nasi rezydenci :</h2>
     </article>
 

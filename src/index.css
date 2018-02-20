@@ -325,6 +325,10 @@ article {
   margin-bottom: 72px;
 }
 
+.Residents-list-header {
+  background: linear-gradient(to bottom,#ffbc2c,#fff 20%, #fff 80%, #ffbc2c)
+}
+
 /* Contact */
 
 .contact a {
