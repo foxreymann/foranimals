@@ -45,21 +45,26 @@ const HowToHelp = () => (
     40-387
     Katowice
   </div>
-  <p>
 
-    <a href='./polecenie_zaplaty.doc'>ściągnij polecenie zaplaty</a>
+  <p>
+    <div className="btn btn-primary btn-xl mt-2 mb-2 pt-2 pb-2">
+      <a href='./polecenie_zaplaty.doc'>ściągnij polecenie zaplaty</a>
+    </div>
   </p>
-  <p>
 
+  <p>
     Możesz w każdej
     chwili zrezygnować jeżeli przestaniesz mieć możliwość
     przelewania datków. Wystarczy, że wypełnisz i prześlesz do nas
     formularz:
   </p>
-  <p>
 
-    <a href='./cofnij.doc'>ściągnij cofnięcie polecenia zapłaty</a>
+  <p>
+    <div className="btn btn-primary btn-xl mt-2 mb-2 pt-2 pb-2">
+      <a href='./cofnij.doc'>ściągnij cofnięcie polecenia zapłaty</a>
+    </div>
   </p>
+
   <p>
 
     <strong>Co to jest
