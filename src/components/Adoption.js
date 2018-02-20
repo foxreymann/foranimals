@@ -14,9 +14,7 @@ class Adoption extends React.Component {
   render() {
     const adoption = this.state.adoption
     const gallery = []
-    adoption.image.map(image => {
-      gallery.push(image.handle);
-    })
+    adoption.image.map(image => gallery.push(image.handle))
 
     return (
       <div>
