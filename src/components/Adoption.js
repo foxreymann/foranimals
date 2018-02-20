@@ -2,6 +2,7 @@ import React from 'react';
 import Markdown from 'react-markdown';
 import ModalImage from 'react-modal-image'
 import Carer from './Carer'
+import Neutered from './Neutered'
 
 class Adoption extends React.Component {
   constructor(props) {
@@ -15,6 +16,7 @@ class Adoption extends React.Component {
     const adoption = this.state.adoption
     const gallery = []
     adoption.image.map(image => gallery.push(image.handle))
+console.log(adoption)
 
     return (
       <div>
@@ -38,6 +40,9 @@ class Adoption extends React.Component {
             source={adoption.desc}
             escapeHtml={false}
           />
+          { typeof adoption.neutered !== 'undefined' ?
+            <Neutered neutered={adoption.neutered} /> : null
+          }
         </article>
       </div>
     );
