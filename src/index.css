@@ -129,16 +129,6 @@ a .fa-facebook, a .fa-facebook:visited, a .fa-facebook:active, a .fa-facebook:ho
 header.masthead {
   padding-bottom: 0;
   background: linear-gradient(to bottom,#61854d,#86B86B);
-
-/*header.masthead::after {
-  display: block;
-  position: relative;
-  margin-top: -300px;
-  height: 300px;
-  width: 100%;
-  background-image: url("assets/cat-paws3.png");
-  content: ''; */
-
 }
 
 
@@ -148,7 +138,7 @@ header h3 {
 }
 
 .main {
-  background: linear-gradient(to bottom,#86B86B,#86B86B);
+  background: #86B86B;
 }
 
 
