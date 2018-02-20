@@ -1,6 +1,7 @@
 import React from 'react';
 import Markdown from 'react-markdown';
 import ModalImage from 'react-modal-image'
+import Carer from './Carer'
 
 class Adoption extends React.Component {
   constructor(props) {
@@ -12,9 +13,9 @@ class Adoption extends React.Component {
 
   render() {
     const adoption = this.state.adoption
+console.log(adoption)
     const gallery = []
     adoption.image.map(image => {
-      console.log(gallery);
       gallery.push(image.handle);
     })
 
@@ -22,9 +23,12 @@ class Adoption extends React.Component {
       <div>
         <article className="Post">
           <h2>{adoption.name}</h2>
+          { adoption.carer ?
+            <Carer carers={adoption.carer} /> : null
+          }
           <ul className="list-unstyled d-flex flex-wrap">
             {gallery.map(handle => (
-              <li className="mr-2 mb-2">
+              <li className="mr-2 mb-2" key={handle}>
                 <ModalImage
                   small={`https://media.graphcms.com/resize=w:150,fit:crop/${handle}`}
                   large={`https://media.graphcms.com/resize=w:500,fit:crop/${handle}`}
