@@ -4,9 +4,7 @@ import Adoptions from './Adoptions'
 class AdoptionsPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      adoption: props.adoption
-    }
+    this.state = {}
   }
 
   render() {
