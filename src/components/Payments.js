@@ -2,7 +2,7 @@ import React from 'react'
 import PayU from './PayU'
 
 const Payments = () =>
-  <section className="text-center bg-grey">
+  <section className="text-center">
     <div className="container p-5">
       <h2 className="">Szybka pomoc</h2>
       <div className="row">

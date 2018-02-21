@@ -14,7 +14,8 @@ body {
   /*background-color: #86B86B;*/
   color: #4D4D4D;
   padding-top: 3rem;
-  background: url("assets/cat-paws3.png"), linear-gradient(to bottom,#61854d,#86B86B);
+  background: url("assets/cat-paws3.png"), #86B86B;
+  /*background-size:100% 300px;*/
 }
 
 .bg-white {
@@ -35,7 +36,7 @@ body {
 
 .bg-grey {
   background-color: #ECECEC;
-  /*background-image: url("assets/cat-paws3.png");*/
+  background-image: url("assets/cat-paws3.png");
 }
 
 .btn {
