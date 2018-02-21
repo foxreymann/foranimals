@@ -17,6 +17,10 @@ body {
   background: url("assets/cat-paws3.png"), linear-gradient(to bottom,#61854d,#86B86B);
 }
 
+.bg-white {
+  background-color: white;
+}
+
 .bg-green {
   background-color: #86B86B;
   background-image: url("assets/cat-paws3.png");
@@ -258,7 +262,7 @@ article, .News-ul {
 }
 
 article {
-  background-color: white;
+  background-color: #ECECEC;
   /*border: 1px solid #CCC;*/
 }
 

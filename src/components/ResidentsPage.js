@@ -3,7 +3,7 @@ import Residents from './Residents'
 
 
 export default () =>
-  <div className="residentsPage bg-green">
+  <div className="residentsPage">
     <article className="header">
       <h2>Jeśli nie możesz mieć zwierzaka...</h2>
       <h3>Jeśli:</h3>

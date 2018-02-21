@@ -60,7 +60,7 @@ const Sterilizations = () => (
 
     <p><strong>Partnerzy:</strong></p>
 
-    <div className="text-center">
+    <div className="text-center bg-white mb-3">
       <img className="img-fluid" src="https://media.graphcms.com/output=format:jpg/resize=width:150,height:150/YbZhc6hLTaaYS8u8leJg" alt="partner"/>
       <img className="img-fluid" src="https://media.graphcms.com/output=format:jpg/resize=width:215,height:215/f1EodXKJRAGH0YzsPmuI" alt="partner"/>
     </div>
