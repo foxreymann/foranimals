@@ -15,9 +15,9 @@ export default () =>
           <li>czujesz się na siłach co miesiąc opłacać na konto Fundacji stałą kwotę na utrzymanie swojego kota</li>
         </ul>
 
-        <p>...to wirtualna adopcja jest właśnie dla ciebie.</p>
+        <h3>...to wirtualna adopcja jest właśnie dla ciebie.</h3>
       </section>
-      
+
       <p>Minimalny miesięczny koszt utrzymania jednego kota wynosi 40 PLN ale wielkość wpłaty zależy do Ciebie, liczy się każda złotówka.</p>
 
       <p>Nie pokrywa to wprawdzie ewentualnych kosztów leczenia, badań, zabiegów
