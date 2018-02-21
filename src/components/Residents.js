@@ -30,7 +30,7 @@ const Residents = ({ data: { loading, error, allResidents, _allResidentsMeta }, 
   }
   return (
     <div className="content">
-      <h2 className="text-center">Loading posts...</h2>
+      <h2 className="text-center">Ładuję...</h2>
     </div>
   )
 }
