@@ -1,6 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { Collapse, Navbar } from 'reactstrap';
+import * as Scroll from 'react-scroll';
+
+const scroll = Scroll.animateScroll;
+const options = { duration: 0 }
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -18,12 +22,14 @@ export default class Header extends React.Component {
     this.setState({
       collapsed: !this.state.collapsed
     });
+    scroll.scrollToTop(options);
   }
 
   collapseNavbar() {
     this.setState({
       collapsed: true
     });
+    scroll.scrollToTop(options);
   }
 
   render() {
