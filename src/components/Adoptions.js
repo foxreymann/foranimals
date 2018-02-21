@@ -5,7 +5,7 @@ import gql from 'graphql-tag'
 
 const POSTS_PER_PAGE = 4
 
-const Adopt = ({ data: { loading, error, allAdoptions, _allAdoptionsMeta }, loadMoreAdoptions }) => {
+const Adoptions = ({ data: { loading, error, allAdoptions, _allAdoptionsMeta }, loadMoreAdoptions }) => {
   if (error) return (
     <div className="content">
       <h1 className="text-center">Error fetching posts!</h1>
@@ -83,4 +83,4 @@ export default graphql(allAdoptions, {
       })
     }
   })
-})(Adopt)
+})(Adoptions)
