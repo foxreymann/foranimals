@@ -56,15 +56,17 @@ body {
 }
 /* Navbar styles */
 
+
 .gallery img {
   opacity: 0.9;
+  outline: 4px solid white;
+  margin: 4px;
 }
 
 .gallery img:hover {
-  outline: 3px solid #4D4D4D;
+  outline: 4px solid #4D4D4D;
   opacity: 1;
 }
-
 
 #mainNav.navbar {
   background-color: #7b4397; /* purple */
