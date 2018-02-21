@@ -166,10 +166,10 @@ const Sterilizations = () => (
 
     <div className="text-center mt-5">
       <div className="">
-        <iframe title="Cat Spay" className="mb-5 img-fluid" src="https://www.youtube.com/embed/J6tuOQZe9Ck?feature=oembed" frameBorder="0" allowFullScreen></iframe>
-        <iframe title="Quick Spay" className="mb-5 img-fluid" src="https://www.youtube.com/embed/h1LyaKlwvGo?feature=oembed" frameBorder="0" allowFullScreen></iframe>
-        <iframe title="Dog Castration" className="mb-5 img-fluid" src="https://www.youtube.com/embed/yDvMdYx8k1M?feature=oembed" frameBorder="0" allowFullScreen></iframe>
-        <iframe title="Cat Neuter Surgery" className="mb-5 img-fluid" src="https://www.youtube.com/embed/TyTAcJASttQ?feature=oembed" frameBorder="0" allowFullScreen></iframe>
+        <iframe title="Cat Spay" className="mb-2 mr-2 img-fluid" src="https://www.youtube.com/embed/J6tuOQZe9Ck?feature=oembed" frameBorder="0" allowFullScreen></iframe>
+        <iframe title="Quick Spay" className="mb-2 mr-2 img-fluid" src="https://www.youtube.com/embed/h1LyaKlwvGo?feature=oembed" frameBorder="0" allowFullScreen></iframe>
+        <iframe title="Dog Castration" className="mb-2 mr-2 img-fluid" src="https://www.youtube.com/embed/yDvMdYx8k1M?feature=oembed" frameBorder="0" allowFullScreen></iframe>
+        <iframe title="Cat Neuter Surgery" className="mb-2 mr-2 img-fluid" src="https://www.youtube.com/embed/TyTAcJASttQ?feature=oembed" frameBorder="0" allowFullScreen></iframe>
       </div>
     </div>
   </article>
