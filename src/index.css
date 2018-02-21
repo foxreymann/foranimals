@@ -68,6 +68,11 @@ body {
   opacity: 1;
 }
 
+#react-modal-image-img {
+  outline: none;
+  opacity: 1;
+}
+
 #mainNav.navbar {
   background-color: #7b4397; /* purple */
   background-color: #86B86B; /* green */
