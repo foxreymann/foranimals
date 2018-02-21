@@ -1,11 +1,9 @@
 import React from 'react'
 
 export default ({carers}) =>
-  <div className="d-flex flex-wrap">
+  <div>
     <span>Opiekunowie:</span>
-    <ul className="d-flex flex-wrap carers list-unstyled">
-      {carers.map(carer => (
-        <li key={carer}>{carer}</li>
-      ))}
-    </ul>
+    {carers.map(carer => (
+      <span className="comma" key={carer}> {carer}</span>
+    ))}
   </div>

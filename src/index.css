@@ -18,6 +18,10 @@ body {
   /*background-size:100% 300px;*/
 }
 
+.comma:not(:last-child):after {
+  content: ",  ";
+}
+
 .bg-white {
   padding: 20px;
   margin: -10px -10px 10px -10px;
