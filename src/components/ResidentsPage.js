@@ -5,19 +5,19 @@ import Residents from './Residents'
 export default () =>
   <div className="residentsPage">
     <article className="header">
-      <h2>Jeśli nie możesz mieć zwierzaka...</h2>
-      <h3>Jeśli:</h3>
+      <section className="">
+        <h2>Jeśli nie możesz mieć zwierzaka...</h2>
+        <h3>Jeśli:</h3>
 
-      <ul className="residents">
-        <li>nie możesz przygarnąć bezdomnego kota</li>
-        <li>chcesz pomóc konkretnemu kotu</li>
-        <li>czujesz się na siłach co miesiąc opłacać na konto Fundacji stałą kwotę na utrzymanie swojego kota</li>
-      </ul>
+        <ul className="residents">
+          <li>nie możesz przygarnąć bezdomnego kota</li>
+          <li>chcesz pomóc konkretnemu kotu</li>
+          <li>czujesz się na siłach co miesiąc opłacać na konto Fundacji stałą kwotę na utrzymanie swojego kota</li>
+        </ul>
 
-      <p>...to wirtualna adopcja jest właśnie dla ciebie.</p>
-    </article>
-
-    <article>
+        <p>...to wirtualna adopcja jest właśnie dla ciebie.</p>
+      </section>
+      
       <p>Minimalny miesięczny koszt utrzymania jednego kota wynosi 40 PLN ale wielkość wpłaty zależy do Ciebie, liczy się każda złotówka.</p>
 
       <p>Nie pokrywa to wprawdzie ewentualnych kosztów leczenia, badań, zabiegów
