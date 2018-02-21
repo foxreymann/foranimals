@@ -18,7 +18,7 @@ const News = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts
       <section className="content">
         <ul className='News-ul'>
           {allPosts.map(post => (
-            <li className='News-li mb-5' key={`post-${post.id}`}>
+            <li className='News-li mb-4' key={`post-${post.id}`}>
               <Link to={`/post/${post.slug}`} className='News-link'>
                 <div className='News-placeholder text-center'>
                   { post.image ?
@@ -48,9 +48,9 @@ const News = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts
     )
   }
   return (
-    <div className="content">
+    <article className="content">
       <h2 className="text-center">Ładuję...</h2>
-    </div>
+    </article>
   )
 }
 

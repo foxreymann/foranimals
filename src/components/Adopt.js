@@ -29,25 +29,25 @@ const Adopt = ({ data: { loading, error, allAdoptions, _allAdoptionsMeta }, load
     )
   }
   return (
-    <div className="content">
+    <article className="content">
       <h2 className="text-center">Ładuję...</h2>
-    </div>
+    </article>
   )
 }
 
 export const allAdoptions = gql`
   query allAdoptions($first: Int!, $skip: Int!) {
     allAdoptions(orderBy: date_DESC, first: $first, skip: $skip) {
-      id
-      name
-      date
-      image {
-        handle
-      }
-      desc
-      sex
-      species
-      neutered
+        id
+        name
+        date
+        image {
+          handle
+        }
+        desc
+        sex
+        species
+        neutered
     },
     _allAdoptionsMeta {
       count

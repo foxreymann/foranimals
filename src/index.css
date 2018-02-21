@@ -23,8 +23,8 @@ body {
 }
 
 .bg-white {
-  padding: 20px;
-  margin: -10px -10px 10px -10px;
+  /*padding: 20px;
+  margin: 0 -10px;*/
   background-color: white;
 }
 
@@ -56,12 +56,12 @@ body {
 }
 /* Navbar styles */
 
-.News-ul div > img {
-  /*opacity: 0.8;*/
+.gallery img {
+  opacity: 0.9;
 }
 
-.News-ul div > img:hover {
-  outline: 1px solid #4D4D4D;
+.gallery img:hover {
+  outline: 3px solid #4D4D4D;
   opacity: 1;
 }
 
@@ -207,8 +207,7 @@ header h3 {
 
 .content {
   min-height: calc(100vh - 120px);
-  padding: 25px;
-
+  /*padding: 25px;*/
   word-wrap: break-word;
 }
 
@@ -269,16 +268,20 @@ input {
   margin: 0 0.5rem;
 }
 
-
 /* News */
 
 article, .News-ul {
   margin: 20px auto;
-  max-width: 700px;
+  max-width: 840px;
+}
+
+article.adopt {
+  margin: 20px auto;
 }
 
 article {
   background-color: #ECECEC;
+  /*background-color: white;*/
   /*border: 1px solid #CCC;*/
 }
 
@@ -305,11 +308,11 @@ article div > a:hover, article div > a:focus, article div > a:active {
 }
 
 .News-li {
-  margin-bottom: 16px;
+  /*margin-bottom: 16px;*/
   /*border: 1px solid #CCC;*/
   overflow: hidden;
-  border-radius: 5px;
-  background-color: white;
+  /*border-radius: 5px;*/
+  background-color: #ECECEC;
   padding: 20px;
 }
 
@@ -351,7 +354,6 @@ article div > a:hover, article div > a:focus, article div > a:active {
 article {
   padding: 2rem;
   word-wrap: break-word;
-
 }
 
 .Post-placeholder {
@@ -377,7 +379,7 @@ article {
 }
 
 .Residents-list-header {
-  background: rgba(255, 188, 44, 0.8);
+  background-color: white;
 }
 
 /* Contact */
@@ -408,7 +410,13 @@ footer a:hover, footer a:focus, footer a:active {
 }
 
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
+  #facebook-button {
+    top: 15px;
+  }
+}
+
+@media (max-width: 991px) {
   body {
     padding-top: 3rem;
   }

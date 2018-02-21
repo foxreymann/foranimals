@@ -14,8 +14,11 @@ const Residents = ({ data: { loading, error, allResidents, _allResidentsMeta }, 
   if (!loading) {
     const areMoreResidents = allResidents.length < _allResidentsMeta.count
     return (
-      <section>
+      <section className="">
         <div className='News-ul'>
+          {/* <div className="Residents-list-header p-2">
+            <h2 className="mt-2">Nasi rezydenci :</h2>
+          </div> */}
           {allResidents.map(resident => <Resident key={resident.id} adoption={resident} />)}
         </div>
         <div className='News-showMoreWrapper'>
@@ -29,9 +32,9 @@ const Residents = ({ data: { loading, error, allResidents, _allResidentsMeta }, 
     )
   }
   return (
-    <div className="content">
+    <article>
       <h2 className="text-center">Ładuję...</h2>
-    </div>
+    </article>
   )
 }
 
