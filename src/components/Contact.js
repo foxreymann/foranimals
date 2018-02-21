@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () =>
-  <section className="contact text-center">
+  <section className="contact text-center bg-grey">
     <div className="container p-5">
       <div className="row">
         <div className="col-12 col-md-6">

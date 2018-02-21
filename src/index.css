@@ -11,10 +11,25 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #ECECEC;
+  background-color: #86B86B;
   color: #4D4D4D;
   padding-top: 3rem;
   background-image: url("assets/cat-paws3.png");
+}
+
+.bg-green {
+  background-color: #86B86B;
+  background-image: url("assets/cat-paws3.png");
+}
+
+.bg-yellow {
+  background-color: #FFBC2C;
+  background-image: url("assets/cat-paws3.png");
+}
+
+.bg-grey {
+  background-color: #ECECEC;
+  /*background-image: url("assets/cat-paws3.png");*/
 }
 
 .btn {
@@ -222,6 +237,18 @@ input {
   max-width: 600px;
 }
 
+
+/* Residents */
+
+.residentsPage .header {
+  /*background-color: #86B86B;
+  color: white;*/
+
+}
+
+.residentsPage .header ul {
+  font-size: 20px;
+}
 
 /* News */
 

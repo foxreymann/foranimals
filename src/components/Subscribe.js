@@ -6,7 +6,7 @@ const formProps = {
 }
 
 export default () =>
-  <section className="text-center">
+  <section className="text-center bg-grey">
     <div className="container subscribe">
       <h2 className="pb-3">Newsletter</h2>
       <SubscribeForm {...formProps}/>
