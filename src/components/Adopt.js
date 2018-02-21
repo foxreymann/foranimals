@@ -21,7 +21,7 @@ const Adopt = ({ data: { loading, error, allAdoptions, _allAdoptionsMeta }, load
         <div className='News-showMoreWrapper'>
           {areMoreAdoptions
             ? <button className='News-button' onClick={() => loadMoreAdoptions()}>
-              {loading ? 'Loading...' : 'Show More Adoptions'}
+              {loading ? 'Ładuję...' : 'Pokaż więcej'}
             </button>
             : ''}
         </div>
@@ -30,7 +30,7 @@ const Adopt = ({ data: { loading, error, allAdoptions, _allAdoptionsMeta }, load
   }
   return (
     <div className="content">
-      <h2 className="text-center">Loading posts...</h2>
+      <h2 className="text-center">Ładuję...</h2>
     </div>
   )
 }
