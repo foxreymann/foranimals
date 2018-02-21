@@ -21,7 +21,7 @@ const Residents = ({ data: { loading, error, allResidents, _allResidentsMeta }, 
         <div className='News-showMoreWrapper'>
           {areMoreResidents
             ? <button className='News-button' onClick={() => loadMoreResidents()}>
-              {loading ? 'Loading...' : 'Show More Residents'}
+              {loading ? 'Ładuję...' : 'Pokaż więcej'}
             </button>
             : ''}
         </div>
