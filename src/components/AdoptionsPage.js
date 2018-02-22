@@ -7,11 +7,10 @@ class AdoptionsPage extends React.Component {
     super(props);
     let filteredAdoptions = localStorage.getItem('allAdoptions')
     filteredAdoptions = JSON.parse(filteredAdoptions)
-console.dir(filteredAdoptions)
     this.state = {
       filteredAdoptions: [],
       selectedSpecies: null,
-      species: [{id: 1, name: "cat"}, {id: 2, name: "dog"}]
+      species: [{id: 'cat', name: "kot"}, {id: 'dog', name: "pies"}]
     }
   }
 
