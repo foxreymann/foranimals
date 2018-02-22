@@ -64,6 +64,7 @@ body {
 }
 
 .gallery img:hover {
+  cursor: pointer;
   outline: 4px solid #4D4D4D;
   opacity: 1;
 }
@@ -71,7 +72,19 @@ body {
 #react-modal-image-img {
   outline: none;
   opacity: 1;
+  cursor: default;
 }
+
+button.closeModal {
+  color: white;
+  position: fixed;
+  z-index: 1000000;
+  top: 1rem;
+  right: 4rem;
+  background-color: #86B86B;
+}
+
+
 
 #mainNav.navbar {
   background-color: #7b4397; /* purple */
@@ -429,11 +442,7 @@ footer a:hover, footer a:focus, footer a:active {
     padding-top: 3rem;
   }
 
-  #facebook-button {
-    /*top: 15px;*/
-  }
-
-  .payu-wrap label input {
-    /*width: 6rem;*/
+  button.closeModal {
+    top: 0.75rem;
   }
 }
