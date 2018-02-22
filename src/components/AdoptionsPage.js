@@ -2,10 +2,6 @@ import React from 'react';
 import Adoption from './Adoption'
 import Adoptions from './Adoptions'
 
-let filters = {
-  selectedSpecies: null,
-}
-
 const species = [{id: 'Cat', name: "kot"}, {id: 'Dog', name: "pies"}]
 
 const sex = [
@@ -24,39 +20,49 @@ class AdoptionsPage extends React.Component {
     super(props);
     this.state = {
       filteredAdoptions: [],
-      showAdoptions: true
+      showAdoptions: true,
+      selectedSpecies: null,
+      selectedSex: null
     }
   }
 
   selectSpecies = (id) => {
-    filters.selectedSpecies = id;
+    this.setState({
+      selectedSpecies: id
+    })
     this.filter()
   }
 
   selectSex = (id) => {
-    filters.selectedSex = id;
+    this.setState({
+      selectedSex: id
+    })
     this.filter()
   }
 
   reset = () => {
-    filters = {}
+    this.setState({
+      selectedSpecies: null,
+      selectedSex: null,
+      neutered: null
+    })
     this.filter()
   }
 
   filter = () => {
     let filteredAdoptions = localStorage.getItem('allAdoptions')
     filteredAdoptions = JSON.parse(filteredAdoptions)
-console.log(filteredAdoptions)
-    if(filters.selectedSpecies) {
-      filteredAdoptions = filteredAdoptions.filter(adoption => adoption.species === filters.selectedSpecies)
+    if(this.state.selectedSpecies) {
+      filteredAdoptions = filteredAdoptions.filter(adoption => adoption.species === this.state.selectedSpecies)
     }
-    if(filters.selectedSex) {
-      filteredAdoptions = filteredAdoptions.filter(adoption => adoption.sex === filters.selectedSex)
+    if(this.state.selectedSex) {
+      filteredAdoptions = filteredAdoptions.filter(adoption => adoption.sex === this.state.selectedSex)
     }
     this.setState({
       filteredAdoptions: filteredAdoptions,
       showAdoptions: false
     })
+console.log(this.state.selectedSpecies)
   }
 
   render() {
@@ -67,7 +73,7 @@ console.log(filteredAdoptions)
           (item) => {
             return (
               <div key={item.id}>
-                <input type="radio" name="myRadio" checked={this.state.selectedSpecies === item.id} />
+                <input type="radio" name="species" checked={this.state.selectedSpecies === item.id} />
                 <label onClick={this.selectSpecies.bind(this, item.id)}>{item.name}<span /></label>
               </div>
             );
@@ -77,12 +83,13 @@ console.log(filteredAdoptions)
           (item) => {
             return (
               <div key={item.id}>
-                <input type="radio" name="myRadio" checked={this.state.selectedSex === item.id} />
+                <input type="radio" name="sex" checked={this.state.selectedSex === item.id} />
                 <label onClick={this.selectSex.bind(this, item.id)}>{item.name}<span /></label>
               </div>
             );
           }
         )}
+        <input type="checkbox"  />
         <button onClick={this.reset}>Reset</button>
         </div>
         { this.state.showAdoptions ? <Adoptions /> : null }
