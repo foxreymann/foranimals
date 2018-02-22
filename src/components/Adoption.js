@@ -1,15 +1,29 @@
 import React from 'react';
 import Markdown from 'react-markdown';
-import ModalImage from 'react-modal-image'
+import { Lightbox } from 'react-modal-image'
 import Carer from './Carer'
 import Neutered from './Neutered'
 
 class Adoption extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       adoption: props.adoption
     }
+    this.openLightbox = this.openLightbox.bind(this);
+    this.closeLightbox = this.closeLightbox.bind(this);
+  }
+
+  openLightbox() {
+    this.setState({
+      open: true
+    })
+  }
+  closeLightbox() {
+    this.setState({
+      open: false
+    })
   }
 
   render() {
@@ -28,15 +42,27 @@ class Adoption extends React.Component {
             <ul className="list-unstyled d-flex flex-wrap gallery">
               {gallery.map((handle, i) => (
                 <li className="mr-2 mb-2" key={i}>
-                  <ModalImage
-                    small={`https://media.graphcms.com/resize=w:150,fit:crop/${handle}`}
-                    large={`https://media.graphcms.com/resize=w:500,fit:crop/${handle}`}
-                    alt="Hello World!"
-                  />
+                  {
+                    !this.state.open ?
+                      <img
+                        src={`https://media.graphcms.com/resize=w:150,fit:crop/${handle}`}
+                        onClick={this.openLightbox}
+                        alt="resident"
+                      />
+                    :
+                    <div id="open">
+                      <Lightbox
+
+                        large={`https://media.graphcms.com/resize=w:500,fit:crop/${handle}`}
+                        alt="Hello World!"
+                        onClose={this.closeLightbox}
+                      />
+                      <button className="closeModal" onClick={this.closeLightbox}>Close</button>
+                    </div>
+                  }
                 </li>
               ))}
             </ul>
-
 
             <Markdown
               source={adoption.desc}
