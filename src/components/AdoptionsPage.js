@@ -16,7 +16,14 @@ const sex = [
 ]
 
 const neutered = [
-
+  {
+    id: 'Yes',
+    name: 'Tak'
+  },
+  {
+    id: 'No',
+    name: 'Nie'
+  }
 ]
 
 class AdoptionsPage extends React.Component {
@@ -27,7 +34,7 @@ class AdoptionsPage extends React.Component {
       showAdoptions: true,
       selectedSpecies: null,
       selectedSex: null,
-      neutered: false
+      selectedNeutered: null
     }
   }
 
@@ -43,17 +50,17 @@ class AdoptionsPage extends React.Component {
     })
   }
 
-  selectNeutered = () => {
-    this.setState(prevState => ({
-      neutered: !prevState.neutered
-    }));
+  selectNeutered = (id) => {
+    this.setState({
+      selectedNeutered: id
+    })
   }
 
   reset = () => {
     this.setState({
       selectedSpecies: null,
       selectedSex: null,
-      neutered: false,
+      selectedNeutered: null,
       filteredAdoptions: [],
       showAdoptions: true
     })
@@ -68,14 +75,16 @@ class AdoptionsPage extends React.Component {
     if(this.state.selectedSex) {
       filteredAdoptions = filteredAdoptions.filter(adoption => adoption.sex === this.state.selectedSex)
     }
-    if(this.state.neutered) {
+    if(this.state.selectedNeutered === 'Yes') {
       filteredAdoptions = filteredAdoptions.filter(adoption => adoption.neutered)
+    }
+    if(this.state.selectedNeutered === 'No') {
+      filteredAdoptions = filteredAdoptions.filter(adoption => !adoption.neutered)
     }
     this.setState({
       filteredAdoptions: filteredAdoptions,
       showAdoptions: false
     })
-console.log(this.state.selectedSpecies)
   }
 
   render() {
@@ -102,9 +111,16 @@ console.log(this.state.selectedSpecies)
             );
           }
         )}
-        <label onClick={this.selectNeutered}>Wysterlizowany?</label>
-        <input onClick={this.selectNeutered} type="checkbox" checked={this.state.neutered} />
-        <br/>
+        {neutered.map(
+          (item) => {
+            return (
+              <div key={item.id}>
+                <input type="radio" name="neutered" checked={this.state.selectedNeutered === item.id} />
+                <label onClick={this.selectNeutered.bind(this, item.id)}>{item.name}<span /></label>
+              </div>
+            );
+          }
+        )}
         <button onClick={this.reset}>Reset</button>
         <button onClick={this.filter}>Filtruj</button>
         </div>
