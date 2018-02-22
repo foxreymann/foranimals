@@ -3,7 +3,7 @@ import { graphql } from 'react-apollo'
 import Adoption from './Adoption'
 import gql from 'graphql-tag'
 
-const POSTS_PER_PAGE = 4
+const POSTS_PER_PAGE = 100
 
 const Adoptions = ({ data: { loading, error, allAdoptions, _allAdoptionsMeta }, loadMoreAdoptions }) => {
   if (error) return (
@@ -13,6 +13,8 @@ const Adoptions = ({ data: { loading, error, allAdoptions, _allAdoptionsMeta }, 
   )
   if (!loading) {
     const areMoreAdoptions = allAdoptions.length < _allAdoptionsMeta.count
+console.log(allAdoptions)
+    localStorage.setItem('allAdoptions', JSON.stringify(allAdoptions));
     return (
       <section>
         <div className='News-ul'>
