@@ -47,11 +47,12 @@ class Adoption extends React.Component {
                       <img
                         src={`https://media.graphcms.com/resize=w:150,fit:crop/${handle}`}
                         onClick={this.openLightbox}
+                        alt="resident"
                       />
                     :
                     <div id="open">
                       <Lightbox
-                        
+
                         large={`https://media.graphcms.com/resize=w:500,fit:crop/${handle}`}
                         alt="Hello World!"
                         onClose={this.closeLightbox}
