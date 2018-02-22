@@ -2,29 +2,37 @@ import React from 'react';
 import Adoption from './Adoption'
 import Adoptions from './Adoptions'
 
+let filters = {
+  selectedSpecies: null,
+}
+
 class AdoptionsPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       filteredAdoptions: [],
-      selectedSpecies: null,
-      species: [{id: 'cat', name: "kot"}, {id: 'dog', name: "pies"}],
+      species: [{id: 'Cat', name: "kot"}, {id: 'Dog', name: "pies"}],
       showAdoptions: true
     }
   }
 
   selectSpecies = (id) => {
-    this.setState({selectedSpecies: id});
+    filters.selectedSpecies = id;
     this.filter()
   }
 
   reset = () => {
-    this.setState({selectedSpecies: null});
+    filters = {}
+    this.filter()
   }
 
   filter = () => {
     let filteredAdoptions = localStorage.getItem('allAdoptions')
     filteredAdoptions = JSON.parse(filteredAdoptions)
+console.log(filteredAdoptions)
+    if(filters.selectedSpecies) {
+      filteredAdoptions = filteredAdoptions.filter(adoption => adoption.species === filters.selectedSpecies)
+    }
     this.setState({
       filteredAdoptions: filteredAdoptions,
       showAdoptions: false
