@@ -5,8 +5,6 @@ import Adoptions from './Adoptions'
 class AdoptionsPage extends React.Component {
   constructor(props) {
     super(props);
-    let filteredAdoptions = localStorage.getItem('allAdoptions')
-    filteredAdoptions = JSON.parse(filteredAdoptions)
     this.state = {
       filteredAdoptions: [],
       selectedSpecies: null,
@@ -16,14 +14,25 @@ class AdoptionsPage extends React.Component {
 
   selectSpecies = (id) => {
     this.setState({selectedSpecies: id});
+    this.filter()
   }
 
   reset = () => {
     this.setState({selectedSpecies: null});
   }
 
+  filter = () => {
+    let filteredAdoptions = localStorage.getItem('allAdoptions')
+console.log(filteredAdoptions)
+    filteredAdoptions = JSON.parse(filteredAdoptions)
+console.log(filteredAdoptions)
+    this.setState({
+      filteredAdoptions: filteredAdoptions
+    })
+console.log(this.state.filteredAdoptions)
+  }
+
   render() {
-console.dir(this.state.filteredAdoptions)
     return (
       <div className="adoptionsPage">
         <div className="filter">

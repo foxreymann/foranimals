@@ -13,7 +13,6 @@ const Adoptions = ({ data: { loading, error, allAdoptions, _allAdoptionsMeta }, 
   )
   if (!loading) {
     const areMoreAdoptions = allAdoptions.length < _allAdoptionsMeta.count
-console.log(allAdoptions)
     localStorage.setItem('allAdoptions', JSON.stringify(allAdoptions));
     return (
       <section>
