@@ -8,6 +8,17 @@ let filters = {
 
 const species = [{id: 'Cat', name: "kot"}, {id: 'Dog', name: "pies"}]
 
+const sex = [
+  {
+    id: 'Female',
+    name: 'Samica'
+  },
+  {
+    id: 'Male',
+    name: 'Samiec'
+  }
+]
+
 class AdoptionsPage extends React.Component {
   constructor(props) {
     super(props);
@@ -22,6 +33,11 @@ class AdoptionsPage extends React.Component {
     this.filter()
   }
 
+  selectSex = (id) => {
+    filters.selectedSex = id;
+    this.filter()
+  }
+
   reset = () => {
     filters = {}
     this.filter()
@@ -30,8 +46,12 @@ class AdoptionsPage extends React.Component {
   filter = () => {
     let filteredAdoptions = localStorage.getItem('allAdoptions')
     filteredAdoptions = JSON.parse(filteredAdoptions)
+console.log(filteredAdoptions)
     if(filters.selectedSpecies) {
       filteredAdoptions = filteredAdoptions.filter(adoption => adoption.species === filters.selectedSpecies)
+    }
+    if(filters.selectedSex) {
+      filteredAdoptions = filteredAdoptions.filter(adoption => adoption.sex === filters.selectedSex)
     }
     this.setState({
       filteredAdoptions: filteredAdoptions,
@@ -49,6 +69,16 @@ class AdoptionsPage extends React.Component {
               <div key={item.id}>
                 <input type="radio" name="myRadio" checked={this.state.selectedSpecies === item.id} />
                 <label onClick={this.selectSpecies.bind(this, item.id)}>{item.name}<span /></label>
+              </div>
+            );
+          }
+        )}
+        {sex.map(
+          (item) => {
+            return (
+              <div key={item.id}>
+                <input type="radio" name="myRadio" checked={this.state.selectedSex === item.id} />
+                <label onClick={this.selectSex.bind(this, item.id)}>{item.name}<span /></label>
               </div>
             );
           }
