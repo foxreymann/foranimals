@@ -2,5 +2,5 @@ import React from 'react'
 
 export default ({neutered}) =>
   <div>
-    Wysterlizowany: { neutered ? <span>Tak</span> : <span>Nie</span> }
+    <em>Wysterlizowany:</em> { neutered ? <span>Tak</span> : <span>Nie</span> }
   </div>

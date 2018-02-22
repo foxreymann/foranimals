@@ -11,11 +11,14 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
-  /*background-color: #86B86B;*/
   color: #4D4D4D;
   padding-top: 4rem;
   background: url("assets/cat-paws3.png"), #86B86B;
-  /*background-size:100% 300px;*/
+}
+
+em {
+  font-weight: 700;
+  font-style: normal;
 }
 
 .fixed-top {
@@ -47,6 +50,7 @@ body {
   background-image: url("assets/cat-paws3.png");
 }
 
+
 .btn {
   white-space: normal;
 }
@@ -58,19 +62,21 @@ body {
 .green {
   color: #4d4d4d;
 }
+
 /* Navbar styles */
 
-
 .gallery img {
+  margin: 4px;
   opacity: 0.9;
   outline: 4px solid white;
-  margin: 4px;
+  transition: outline 0.1s ease-in;
 }
 
 .gallery img:hover {
   cursor: pointer;
   outline: 4px solid #4D4D4D;
   opacity: 1;
+  transition: outline 0.1s ease-out;
 }
 
 #react-modal-image-img {
@@ -91,13 +97,9 @@ button.closeModal {
 }
 
 
-
 #mainNav.navbar {
-  background-color: #7b4397; /* purple */
-  background-color: #86B86B; /* green */
   background-color: #4D4D4D;
   color: white;
-
 }
 
 #mainNav.navbar-shrink .navbar-nav > li > a, #mainNav .navbar-toggler {
@@ -187,8 +189,6 @@ header.masthead {
   background: linear-gradient(to bottom,#61854d,#86B86B);
 }
 
-
-
 header h3 {
   font-weight: bold;
 }
@@ -229,7 +229,7 @@ header h3 {
 }
 
 
-/* nt (posts, etc) */
+/* Main Content (posts, etc) */
 
 .content {
   min-height: calc(100vh - 120px);
@@ -239,10 +239,6 @@ header h3 {
 
 
 /* Payments */
-
-.paypal-wrap {
-
-}
 
 .payu-wrap label input {
   width: 5rem;
@@ -276,12 +272,6 @@ input {
 
 /* Residents */
 
-.residentsPage .header {
-  /*background-color: #86B86B;
-  color: white;*/
-
-}
-
 .residentsPage .header ul {
   font-size: 20px;
 }
@@ -307,8 +297,6 @@ article.adopt {
 
 article {
   background-color: #ECECEC;
-  /*background-color: white;*/
-  /*border: 1px solid #CCC;*/
 }
 
 article a {
@@ -334,10 +322,7 @@ article div > a:hover, article div > a:focus, article div > a:active {
 }
 
 .News-li {
-  /*margin-bottom: 16px;*/
-  /*border: 1px solid #CCC;*/
   overflow: hidden;
-  /*border-radius: 5px;*/
   background-color: #ECECEC;
   padding: 20px;
 }
