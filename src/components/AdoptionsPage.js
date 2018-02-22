@@ -15,6 +15,10 @@ const sex = [
   }
 ]
 
+const neutered = [
+
+]
+
 class AdoptionsPage extends React.Component {
   constructor(props) {
     super(props);
@@ -63,6 +67,9 @@ class AdoptionsPage extends React.Component {
     }
     if(this.state.selectedSex) {
       filteredAdoptions = filteredAdoptions.filter(adoption => adoption.sex === this.state.selectedSex)
+    }
+    if(this.state.neutered) {
+      filteredAdoptions = filteredAdoptions.filter(adoption => adoption.neutered)
     }
     this.setState({
       filteredAdoptions: filteredAdoptions,
