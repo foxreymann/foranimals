@@ -18,6 +18,10 @@ body {
   /*background-size:100% 300px;*/
 }
 
+.fixed-top {
+  z-index: 999;
+}
+
 .comma:not(:last-child):after {
   content: ",  ";
 }
@@ -76,12 +80,14 @@ body {
 }
 
 button.closeModal {
-  color: white;
+  color: black;
   position: fixed;
   z-index: 1000000;
   top: 1rem;
   right: 4rem;
-  background-color: #86B86B;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  background-color: #FFBC2C;
 }
 
 
