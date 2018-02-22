@@ -22,7 +22,8 @@ class AdoptionsPage extends React.Component {
       filteredAdoptions: [],
       showAdoptions: true,
       selectedSpecies: null,
-      selectedSex: null
+      selectedSex: null,
+      neutered: false
     }
   }
 
@@ -42,7 +43,7 @@ class AdoptionsPage extends React.Component {
     this.setState({
       selectedSpecies: null,
       selectedSex: null,
-      neutered: null,
+      neutered: false
       filteredAdoptions: [],
       showAdoptions: true
     })
@@ -88,7 +89,7 @@ console.log(this.state.selectedSpecies)
             );
           }
         )}
-        <input type="checkbox"  />
+        <input type="checkbox" checked={this.state.neutered} />
         <button onClick={this.reset}>Reset</button>
         <button onClick={this.filter}>Filter</button>
         </div>
