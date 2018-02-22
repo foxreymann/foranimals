@@ -6,12 +6,13 @@ let filters = {
   selectedSpecies: null,
 }
 
+const species = [{id: 'Cat', name: "kot"}, {id: 'Dog', name: "pies"}]
+
 class AdoptionsPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       filteredAdoptions: [],
-      species: [{id: 'Cat', name: "kot"}, {id: 'Dog', name: "pies"}],
       showAdoptions: true
     }
   }
@@ -29,7 +30,6 @@ class AdoptionsPage extends React.Component {
   filter = () => {
     let filteredAdoptions = localStorage.getItem('allAdoptions')
     filteredAdoptions = JSON.parse(filteredAdoptions)
-console.log(filteredAdoptions)
     if(filters.selectedSpecies) {
       filteredAdoptions = filteredAdoptions.filter(adoption => adoption.species === filters.selectedSpecies)
     }
@@ -43,7 +43,7 @@ console.log(filteredAdoptions)
     return (
       <div className="adoptionsPage">
         <div className="filter">
-        {this.state.species.map(
+        {species.map(
           (item) => {
             return (
               <div key={item.id}>
