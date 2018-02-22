@@ -8,7 +8,8 @@ class AdoptionsPage extends React.Component {
     this.state = {
       filteredAdoptions: [],
       selectedSpecies: null,
-      species: [{id: 'cat', name: "kot"}, {id: 'dog', name: "pies"}]
+      species: [{id: 'cat', name: "kot"}, {id: 'dog', name: "pies"}],
+      showAdoptions: true
     }
   }
 
@@ -23,13 +24,11 @@ class AdoptionsPage extends React.Component {
 
   filter = () => {
     let filteredAdoptions = localStorage.getItem('allAdoptions')
-console.log(filteredAdoptions)
     filteredAdoptions = JSON.parse(filteredAdoptions)
-console.log(filteredAdoptions)
     this.setState({
-      filteredAdoptions: filteredAdoptions
+      filteredAdoptions: filteredAdoptions,
+      showAdoptions: false
     })
-console.log(this.state.filteredAdoptions)
   }
 
   render() {
@@ -48,7 +47,7 @@ console.log(this.state.filteredAdoptions)
         )}
         <button onClick={this.reset}>Reset</button>
         </div>
-        <Adoptions />
+        { this.state.showAdoptions ? <Adoptions /> : null }
         <section>
           <div className='News-ul'>
             {this.state.filteredAdoptions.map(adoption => <Adoption key={adoption.id} adoption={adoption} />)}
