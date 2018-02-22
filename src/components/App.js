@@ -12,7 +12,6 @@ import Sterilizations from './Sterilizations'
 import Clinic from './Clinic'
 import HowToHelp from './HowToHelp'
 import Residents from './ResidentsPage'
-import Search from './Search'
 
 const App = () => (
   <Router>
@@ -27,7 +26,6 @@ const App = () => (
         <Route path='/how-to-help' component={HowToHelp} />
         <Route path='/adopt' component={Adopt} />
         <Route path='/residents' component={Residents} />
-        <Route exact path='/search' component={Search}/>
       <Footer />
     </div>
   </Router>
