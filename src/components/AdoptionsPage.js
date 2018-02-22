@@ -91,6 +91,7 @@ class AdoptionsPage extends React.Component {
     return (
       <div className="adoptionsPage">
         <div className="filter">
+        <h1>Filtry:</h1>
         {species.map(
           (item) => {
             return (
@@ -121,8 +122,8 @@ class AdoptionsPage extends React.Component {
             );
           }
         )}
-        <button onClick={this.reset}>Reset</button>
-        <button onClick={this.filter}>Filtruj</button>
+        <button onClick={this.filter}>Filtruj</button><br />
+        <button onClick={this.reset}>Resetuj</button>
         </div>
         { this.state.showAdoptions ? <Adoptions /> : null }
         <section>
