@@ -39,6 +39,12 @@ class AdoptionsPage extends React.Component {
     })
   }
 
+  selectNeutered = () => {
+    this.setState(prevState => ({
+      neutered: !prevState.neutered
+    }));
+  }
+
   reset = () => {
     this.setState({
       selectedSpecies: null,
@@ -89,9 +95,8 @@ console.log(this.state.selectedSpecies)
             );
           }
         )}
-        <label>Wysterlizowany?
-          <input type="checkbox" checked={this.state.neutered} />
-        </label>
+        <label onClick={this.selectNeutered}>Wysterlizowany?</label>
+        <input onClick={this.selectNeutered} type="checkbox" checked={this.state.neutered} />
         <br/>
         <button onClick={this.reset}>Reset</button>
         <button onClick={this.filter}>Filtruj</button>
