@@ -2,23 +2,130 @@ import React from 'react';
 import Adoption from './Adoption'
 import Adoptions from './Adoptions'
 
+const species = [{id: 'Cat', name: "kot"}, {id: 'Dog', name: "pies"}]
+
+const sex = [
+  {
+    id: 'Female',
+    name: 'Samica'
+  },
+  {
+    id: 'Male',
+    name: 'Samiec'
+  }
+]
+
+const neutered = [
+  {
+    id: 'Yes',
+    name: 'Tak'
+  },
+  {
+    id: 'No',
+    name: 'Nie'
+  }
+]
+
 class AdoptionsPage extends React.Component {
   constructor(props) {
     super(props);
-    let filteredAdoptions = localStorage.getItem('allAdoptions')
-    filteredAdoptions = JSON.parse(filteredAdoptions)
-console.dir(filteredAdoptions)
     this.state = {
-      filteredAdoptions: []
+      filteredAdoptions: [],
+      showAdoptions: true,
+      selectedSpecies: null,
+      selectedSex: null,
+      selectedNeutered: null
     }
   }
 
+  selectSpecies = (id) => {
+    this.setState({
+      selectedSpecies: id
+    })
+  }
+
+  selectSex = (id) => {
+    this.setState({
+      selectedSex: id
+    })
+  }
+
+  selectNeutered = (id) => {
+    this.setState({
+      selectedNeutered: id
+    })
+  }
+
+  reset = () => {
+    this.setState({
+      selectedSpecies: null,
+      selectedSex: null,
+      selectedNeutered: null,
+      filteredAdoptions: [],
+      showAdoptions: true
+    })
+  }
+
+  filter = () => {
+    let filteredAdoptions = localStorage.getItem('allAdoptions')
+    filteredAdoptions = JSON.parse(filteredAdoptions)
+    if(this.state.selectedSpecies) {
+      filteredAdoptions = filteredAdoptions.filter(adoption => adoption.species === this.state.selectedSpecies)
+    }
+    if(this.state.selectedSex) {
+      filteredAdoptions = filteredAdoptions.filter(adoption => adoption.sex === this.state.selectedSex)
+    }
+    if(this.state.selectedNeutered === 'Yes') {
+      filteredAdoptions = filteredAdoptions.filter(adoption => adoption.neutered)
+    }
+    if(this.state.selectedNeutered === 'No') {
+      filteredAdoptions = filteredAdoptions.filter(adoption => !adoption.neutered)
+    }
+    this.setState({
+      filteredAdoptions: filteredAdoptions,
+      showAdoptions: false
+    })
+  }
 
   render() {
-console.dir(this.state.filteredAdoptions)
     return (
       <div className="adoptionsPage">
-        <Adoptions />
+        <div className="filter">
+        <h1>Filtry:</h1>
+        {species.map(
+          (item) => {
+            return (
+              <div key={item.id}>
+                <input type="radio" name="species" checked={this.state.selectedSpecies === item.id} />
+                <label onClick={this.selectSpecies.bind(this, item.id)}>{item.name}<span /></label>
+              </div>
+            );
+          }
+        )}
+        {sex.map(
+          (item) => {
+            return (
+              <div key={item.id}>
+                <input type="radio" name="sex" checked={this.state.selectedSex === item.id} />
+                <label onClick={this.selectSex.bind(this, item.id)}>{item.name}<span /></label>
+              </div>
+            );
+          }
+        )}
+        {neutered.map(
+          (item) => {
+            return (
+              <div key={item.id}>
+                <input type="radio" name="neutered" checked={this.state.selectedNeutered === item.id} />
+                <label onClick={this.selectNeutered.bind(this, item.id)}>{item.name}<span /></label>
+              </div>
+            );
+          }
+        )}
+        <button onClick={this.filter}>Filtruj</button><br />
+        <button onClick={this.reset}>Resetuj</button>
+        </div>
+        { this.state.showAdoptions ? <Adoptions /> : null }
         <section>
           <div className='News-ul'>
             {this.state.filteredAdoptions.map(adoption => <Adoption key={adoption.id} adoption={adoption} />)}
