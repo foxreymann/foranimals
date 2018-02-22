@@ -27,7 +27,7 @@ console.dir(filteredAdoptions)
 console.dir(this.state.filteredAdoptions)
     return (
       <div className="adoptionsPage">
-        <div>
+        <div className="filter">
         {this.state.species.map(
           (item) => {
             return (
