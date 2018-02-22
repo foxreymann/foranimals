@@ -43,7 +43,7 @@ class AdoptionsPage extends React.Component {
     this.setState({
       selectedSpecies: null,
       selectedSex: null,
-      neutered: false
+      neutered: false,
       filteredAdoptions: [],
       showAdoptions: true
     })
@@ -89,9 +89,12 @@ console.log(this.state.selectedSpecies)
             );
           }
         )}
-        <input type="checkbox" checked={this.state.neutered} />
+        <label>Wysterlizowany?
+          <input type="checkbox" checked={this.state.neutered} />
+        </label>
+        <br/>
         <button onClick={this.reset}>Reset</button>
-        <button onClick={this.filter}>Filter</button>
+        <button onClick={this.filter}>Filtruj</button>
         </div>
         { this.state.showAdoptions ? <Adoptions /> : null }
         <section>
