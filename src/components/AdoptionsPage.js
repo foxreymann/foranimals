@@ -30,23 +30,22 @@ class AdoptionsPage extends React.Component {
     this.setState({
       selectedSpecies: id
     })
-    this.filter()
   }
 
   selectSex = (id) => {
     this.setState({
       selectedSex: id
     })
-    this.filter()
   }
 
   reset = () => {
     this.setState({
       selectedSpecies: null,
       selectedSex: null,
-      neutered: null
+      neutered: null,
+      filteredAdoptions: [],
+      showAdoptions: true
     })
-    this.filter()
   }
 
   filter = () => {
@@ -91,6 +90,7 @@ console.log(this.state.selectedSpecies)
         )}
         <input type="checkbox"  />
         <button onClick={this.reset}>Reset</button>
+        <button onClick={this.filter}>Filter</button>
         </div>
         { this.state.showAdoptions ? <Adoptions /> : null }
         <section>
