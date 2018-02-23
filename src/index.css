@@ -13,7 +13,7 @@ body {
   line-height: 1.5;
   color: #4D4D4D;
   padding-top: 4rem;
-  background: url("assets/cat-paws3.png"), #86B86B;
+  background: url("assets/cat-paws4.png"), #86B86B;
 }
 
 em {
@@ -37,17 +37,17 @@ em {
 
 .bg-green {
   background-color: #86B86B;
-  background-image: url("assets/cat-paws3.png");
+  background-image: url("assets/cat-paws4.png");
 }
 
 .bg-yellow {
   background-color: #FFBC2C;
-  background-image: url("assets/cat-paws3.png");
+  background-image: url("assets/cat-paws4.png");
 }
 
 .bg-grey {
   background-color: #ECECEC;
-  background-image: url("assets/cat-paws3.png");
+  background-image: url("assets/cat-paws4.png");
 }
 
 
