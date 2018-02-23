@@ -108,7 +108,6 @@ class AdoptionsPage extends React.Component {
         <label>Wysterilizowany?</label>
         {neutered.map(
           (item) => {
-console.log(item)
             return (
               <div key={item.id}>
                 <input type="radio" name="neutered" checked={this.state.selectedNeutered === item.id} />
