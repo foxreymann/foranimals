@@ -112,6 +112,7 @@ class AdoptionsPage extends React.Component {
             );
           }
         )}
+        <label>Wysterilizowany?</label>
         {neutered.map(
           (item) => {
             return (
