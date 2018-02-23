@@ -102,10 +102,19 @@ button.closeModal {
   color: white;
 }
 
-#mainNav.navbar-shrink .navbar-nav > li > a, #mainNav .navbar-toggler {
+.navbar-nav > li > a, .navbar-toggler {
   color: white;
   font-size: 16px;
 }
+
+.navbar-nav .Header-isActive, .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+  color: #FFBC2C;
+}
+
+.navbar-nav .Header-isActive {
+  text-decoration: none;
+}
+
 
 #mainNav .navbar-toggler {
   font-weight: bold;
@@ -170,6 +179,7 @@ button.closeModal {
 .Header-isActive {
   font-weight: bold;
   text-decoration: underline;
+  color: #FFBC2C;
 }
 
 a .fa-facebook, a .fa-facebook:visited, a .fa-facebook:active, a .fa-facebook:hover {
