@@ -121,7 +121,7 @@ button.closeModal {
   outline: 1px solid #4D4D4D;
   font-size: 16px;
   padding: 0.5rem;
-  color: #FFBC2C;
+  color: white;
 }
 
 #mainNav.navbar-shrink .navbar-nav > li {
