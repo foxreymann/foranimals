@@ -26,7 +26,7 @@ class Adoption extends React.Component {
             { adoption.carer ?
               <Carer carers={adoption.carer} /> : null
             }
-            <ul className="list-unstyled d-flex flex-wrap gallery">
+            <ul className="list-unstyled d-flex flex-wrap gallery pt-2">
               {gallery.map((handle, i) => (
                 <li className="mr-2 mb-2" key={i}>
                   <ModalImage

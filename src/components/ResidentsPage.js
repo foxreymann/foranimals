@@ -2,7 +2,7 @@ import React from 'react';
 import Residents from './Residents'
 
 export default () =>
-  <div className="residentsPage container">
+  <div className="residentsPage">
     <article className="header">
       <section>
         <h2>Jeśli nie możesz mieć zwierzaka...</h2>

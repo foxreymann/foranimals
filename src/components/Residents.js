@@ -14,7 +14,7 @@ const Residents = ({ data: { loading, error, allResidents, _allResidentsMeta }, 
   if (!loading) {
     const areMoreResidents = allResidents.length < _allResidentsMeta.count
     return (
-      <section className="">
+      <section>
         <div className='News-ul'>
           {/* <div className="Residents-list-header p-2">
             <h2 className="mt-2">Nasi rezydenci :</h2>

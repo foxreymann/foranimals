@@ -13,7 +13,7 @@ body {
   line-height: 1.5;
   color: #4D4D4D;
   padding-top: 4rem;
-  background: url("assets/cat-paws3.png"), #86B86B;
+  background: url("assets/cat-paws4.png"), #86B86B;
 }
 
 em {
@@ -37,17 +37,17 @@ em {
 
 .bg-green {
   background-color: #86B86B;
-  background-image: url("assets/cat-paws3.png");
+  background-image: url("assets/cat-paws4.png");
 }
 
 .bg-yellow {
   background-color: #FFBC2C;
-  background-image: url("assets/cat-paws3.png");
+  background-image: url("assets/cat-paws4.png");
 }
 
 .bg-grey {
   background-color: #ECECEC;
-  background-image: url("assets/cat-paws3.png");
+  background-image: url("assets/cat-paws4.png");
 }
 
 
@@ -102,16 +102,26 @@ button.closeModal {
   color: white;
 }
 
-#mainNav.navbar-shrink .navbar-nav > li > a, #mainNav .navbar-toggler {
+.navbar-nav > li > a, .navbar-toggler {
   color: white;
   font-size: 16px;
 }
 
+.navbar-nav .Header-isActive, .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+  color: #FFBC2C;
+}
+
+.navbar-nav .Header-isActive {
+  text-decoration: none;
+}
+
+
 #mainNav .navbar-toggler {
   font-weight: bold;
-  outline: 1px solid #4D4D4D;
+  outline: none;
   font-size: 16px;
-  padding: 0.5rem;
+  padding: 0.5rem 0.25rem;
+  color: white;
 }
 
 #mainNav.navbar-shrink .navbar-nav > li {
@@ -170,6 +180,7 @@ button.closeModal {
 .Header-isActive {
   font-weight: bold;
   text-decoration: underline;
+  color: #FFBC2C;
 }
 
 a .fa-facebook, a .fa-facebook:visited, a .fa-facebook:active, a .fa-facebook:hover {
