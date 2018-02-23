@@ -37,7 +37,7 @@ const News = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts
             </li>
           ))}
         </ul>
-        <div className='News-showMoreWrapper'>
+        <div className='News-showMoreWrapper mb-3'>
           {areMorePosts
             ? <button className='News-button' onClick={() => loadMorePosts()}>
               {loading ? 'Ładuję...' : 'Pokaż więcej'}
