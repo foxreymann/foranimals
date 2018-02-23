@@ -39,30 +39,23 @@ class AdoptionsPage extends React.Component {
   }
 
   selectSpecies = (id) => {
+    const selected = (id === this.state.selectedSpecies) ? null : id
     this.setState({
-      selectedSpecies: id
+      selectedSpecies: selected
     })
   }
 
   selectSex = (id) => {
+    const selected = (id === this.state.selectedSex) ? null : id
     this.setState({
-      selectedSex: id
+      selectedSex: selected
     })
   }
 
   selectNeutered = (id) => {
+    const selected = (id === this.state.selectedNeutered) ? null : id
     this.setState({
-      selectedNeutered: id
-    })
-  }
-
-  reset = () => {
-    this.setState({
-      selectedSpecies: null,
-      selectedSex: null,
-      selectedNeutered: null,
-      filteredAdoptions: [],
-      showAdoptions: true
+      selectedNeutered: selected
     })
   }
 
@@ -115,6 +108,7 @@ class AdoptionsPage extends React.Component {
         <label>Wysterilizowany?</label>
         {neutered.map(
           (item) => {
+console.log(item)
             return (
               <div key={item.id}>
                 <input type="radio" name="neutered" checked={this.state.selectedNeutered === item.id} />
@@ -124,7 +118,6 @@ class AdoptionsPage extends React.Component {
           }
         )}
         <button onClick={this.filter}>Filtruj</button><br />
-        <button onClick={this.reset}>Resetuj</button>
         </div>
         { this.state.showAdoptions ? <Adoptions /> : null }
         <section>
