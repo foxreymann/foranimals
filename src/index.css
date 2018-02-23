@@ -118,9 +118,9 @@ button.closeModal {
 
 #mainNav .navbar-toggler {
   font-weight: bold;
-  outline: 1px solid #4D4D4D;
+  outline: none;
   font-size: 16px;
-  padding: 0.5rem;
+  padding: 0.5rem 0.25rem;
   color: white;
 }
 
