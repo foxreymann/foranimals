@@ -2,8 +2,7 @@ import React from 'react';
 import Adoption from './Adoption'
 import Adoptions from './Adoptions'
 
-const species = [{id: 'Cat', name: "kot"}, {id: 'Dog', name: "pies"}]
-
+const species = [{id: 'Cat', name: "Kot"}, {id: 'Dog', name: "Pies"}]
 const sex = [
   {
     id: 'Female',
@@ -14,7 +13,6 @@ const sex = [
     name: 'Samiec'
   }
 ]
-
 const neutered = [
   {
     id: 'Yes',
@@ -68,45 +66,55 @@ class AdoptionsPage extends React.Component {
 
   render() {
     return (
-      <div className="adoptionsPage">
-        <div className="filter">
-        <h1>Filtry:</h1>
-        {species.map(
-          (item) => {
-            const name = 'species'
-            return (
-              <div key={item.id}>
-                <input type="radio" name={name} checked={this.state[name] === item.id} />
-                <label onClick={this.select.bind(this, name, item.id)}>{item.name}<span /></label>
-              </div>
-            )
-          }
-        )}
-        {sex.map(
-          (item) => {
-            const name = 'sex'
-            return (
-              <div key={item.id}>
-                <input type="radio" name={name} checked={this.state[name] === item.id} />
-                <label onClick={this.select.bind(this, name, item.id)}>{item.name}<span /></label>
-              </div>
-            )
-          }
-        )}
-        <label>Wysterilizowany?</label>
-        {neutered.map(
-          (item) => {
-            const name = 'neutered'
-            return (
-              <div key={item.id}>
-                <input type="radio" name={name} checked={this.state[name] === item.id} />
-                <label onClick={this.select.bind(this, name, item.id)}>{item.name}<span /></label>
-              </div>
-            )
-          }
-        )}
-        <button onClick={this.filter}>Filtruj</button><br />
-        </div>
+      <div className="adoptionsPage content">
+        <article className="filter">
+          <h2>Filtry:</h2>
+          <div className="row">
+            <div className="col-12 col-md-4 d-flex">
+              {species.map(
+                (item) => {
+                  const name = 'species'
+                  return (
+                    <div className="d-flex flex-column" key={item.id}>
+                      <input className="" type="radio" name={name} checked={this.state[name] === item.id} />
+                      <label className={item.id} onClick={this.select.bind(this, name, item.id)}>{item.name}<span /></label>
+                    </div>
+                  )
+                }
+              )}
+            </div>
+            <div className="col-12 col-md-4 d-flex">
+              {sex.map(
+                (item) => {
+                  const name = 'sex'
+                  return (
+                    <div className="d-flex flex-column" key={item.id}>
+                      <input type="radio" name={name} checked={this.state[name] === item.id} />
+                      <label onClick={this.select.bind(this, name, item.id)}>{item.name}<span /></label>
+                    </div>
+                  )
+                }
+              )}
+            </div>
+            <div className="d-flex flex-column" className="col-12 col-md-4 d-flex">
+              <label>Wysterilizowany?</label>
+              {neutered.map(
+                (item) => {
+                  const name = 'neutered'
+                  return (
+                    <div key={item.id}>
+                      <input type="radio" name={name} checked={this.state[name] === item.id} />
+                      <label onClick={this.select.bind(this, name, item.id)}>{item.name}<span /></label>
+                    </div>
+                  )
+                }
+              )}
+            </div>
+            <div className="col-12">
+              <button onClick={this.filter}>Filtruj</button>
+            </div>
+          </div>
+        </article>
         { this.state.showAdoptions ? <Adoptions /> : null }
         <section>
           <div className='News-ul'>
