@@ -33,38 +33,15 @@ class AdoptionsPage extends React.Component {
       filteredAdoptions: [],
       showAdoptions: true,
       species: null,
-      selectedSex: null,
-      selectedNeutered: null
+      sex: null,
+      neutered: null
     }
   }
 
   select = (name, id) => {
-console.log(name, id)
     const selected = (id === this.state[name]) ? null : id
     this.setState({
       [`${name}`]: selected
-    })
-console.log(this.state)
-  }
-
-  selectSpecies = (id) => {
-    const selected = (id === this.state.selectedSpecies) ? null : id
-    this.setState({
-      selectedSpecies: selected
-    })
-  }
-
-  selectSex = (id) => {
-    const selected = (id === this.state.selectedSex) ? null : id
-    this.setState({
-      selectedSex: selected
-    })
-  }
-
-  selectNeutered = (id) => {
-    const selected = (id === this.state.selectedNeutered) ? null : id
-    this.setState({
-      selectedNeutered: selected
     })
   }
 
@@ -74,13 +51,13 @@ console.log(this.state)
     if(this.state.species) {
       filteredAdoptions = filteredAdoptions.filter(adoption => adoption.species === this.state.species)
     }
-    if(this.state.selectedSex) {
-      filteredAdoptions = filteredAdoptions.filter(adoption => adoption.sex === this.state.selectedSex)
+    if(this.state.sex) {
+      filteredAdoptions = filteredAdoptions.filter(adoption => adoption.sex === this.state.sex)
     }
-    if(this.state.selectedNeutered === 'Yes') {
+    if(this.state.neutered === 'Yes') {
       filteredAdoptions = filteredAdoptions.filter(adoption => adoption.neutered)
     }
-    if(this.state.selectedNeutered === 'No') {
+    if(this.state.neutered === 'No') {
       filteredAdoptions = filteredAdoptions.filter(adoption => !adoption.neutered)
     }
     this.setState({
@@ -102,28 +79,30 @@ console.log(this.state)
                 <input type="radio" name={name} checked={this.state[name] === item.id} />
                 <label onClick={this.select.bind(this, name, item.id)}>{item.name}<span /></label>
               </div>
-            );
+            )
           }
         )}
         {sex.map(
           (item) => {
+            const name = 'sex'
             return (
               <div key={item.id}>
-                <input type="radio" name="sex" checked={this.state.selectedSex === item.id} />
-                <label onClick={this.selectSex.bind(this, item.id)}>{item.name}<span /></label>
+                <input type="radio" name={name} checked={this.state[name] === item.id} />
+                <label onClick={this.select.bind(this, name, item.id)}>{item.name}<span /></label>
               </div>
-            );
+            )
           }
         )}
         <label>Wysterilizowany?</label>
         {neutered.map(
           (item) => {
+            const name = 'neutered'
             return (
               <div key={item.id}>
-                <input type="radio" name="neutered" checked={this.state.selectedNeutered === item.id} />
-                <label onClick={this.selectNeutered.bind(this, item.id)}>{item.name}<span /></label>
+                <input type="radio" name={name} checked={this.state[name] === item.id} />
+                <label onClick={this.select.bind(this, name, item.id)}>{item.name}<span /></label>
               </div>
-            );
+            )
           }
         )}
         <button onClick={this.filter}>Filtruj</button><br />
