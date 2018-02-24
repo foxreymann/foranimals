@@ -70,13 +70,13 @@ class AdoptionsPage extends React.Component {
         <article className="filter">
           <h2>Szukam:</h2>
           <div className="row">
-            <div className="col-12 col-md-4">
+            <div className="col-12 col-md-4 mb-2">
               <div className="row">
                 {species.map(
                   (item) => {
                     const name = 'species'
                     return (
-                      <div className="col-6 text-center mb-4" key={item.id}>
+                      <div className="col-6 text-center" key={item.id}>
                         <input className="" type="radio" name={name} checked={this.state[name] === item.id} />
                         <label className={item.id} onClick={this.select.bind(this, name, item.id)}>{item.name}<span /></label>
                       </div>
@@ -85,7 +85,7 @@ class AdoptionsPage extends React.Component {
                 )}
               </div>
             </div>
-            <div className="col-12 col-md-4 mb-4">
+            <div className="col-12 col-md-4 mb-2">
               <div className="row">
                 {sex.map(
                   (item) => {
@@ -100,7 +100,7 @@ class AdoptionsPage extends React.Component {
                 )}
               </div>
             </div>
-            <div className="col-12 col-md-4 text-center mb-4">
+            <div className="col-12 col-md-4 text-center mb-2">
               <span>Wysterilizowany?</span>
               <div className="row">
                 {neutered.map(
