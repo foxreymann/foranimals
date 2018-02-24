@@ -312,36 +312,33 @@ input[type="radio"] {
   cursor: pointer;
   padding: 10px;
   border: 4px solid #86B86B;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .filter input[type="radio"]+label.Cat span {
   background-image: url("assets/cat-head.png");
-  background-repeat: no-repeat;
+
 }
 
 .filter input[type="radio"]+label.Dog span {
   background-image: url("assets/dog-head.png");
-  background-repeat: no-repeat;
 }
 
 .filter input[type="radio"]+label.Male span {
   background-image: url("assets/male.svg");
-  background-repeat: no-repeat;
 }
 
 .filter input[type="radio"]+label.Female span {
   background-image: url("assets/female.svg");
-  background-repeat: no-repeat;
 }
 
 .filter input[type="radio"]+label.Yes span {
   background-image: url("assets/tick.svg");
-  background-repeat: no-repeat;
 }
 
 .filter input[type="radio"]+label.No span {
   background-image: url("assets/cross.svg");
-  background-repeat: no-repeat;
 }
 
 
