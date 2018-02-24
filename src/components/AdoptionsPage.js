@@ -70,50 +70,56 @@ class AdoptionsPage extends React.Component {
         <article className="filter">
           <h2>Szukam:</h2>
           <div className="row">
-            <div className="col-12 col-md-4 d-flex">
-              {species.map(
-                (item) => {
-                  const name = 'species'
-                  return (
-                    <div className="d-flex flex-column w-50" key={item.id}>
-                      <input className="" type="radio" name={name} checked={this.state[name] === item.id} />
-                      <label className={item.id} onClick={this.select.bind(this, name, item.id)}>{item.name}<span /></label>
-                    </div>
-                  )
-                }
-              )}
+            <div className="col-12 col-md-4">
+              <div className="row">
+                {species.map(
+                  (item) => {
+                    const name = 'species'
+                    return (
+                      <div className="col-6 text-center mb-4" key={item.id}>
+                        <input className="" type="radio" name={name} checked={this.state[name] === item.id} />
+                        <label className={item.id} onClick={this.select.bind(this, name, item.id)}>{item.name}<span /></label>
+                      </div>
+                    )
+                  }
+                )}
+              </div>
             </div>
-            <div className="col-12 col-md-4 d-flex">
-              {sex.map(
-                (item) => {
-                  const name = 'sex'
-                  return (
-                    <div className="d-flex flex-column w-50" key={item.id}>
-                      <input type="radio" name={name} checked={this.state[name] === item.id} />
-                      <label className={item.id} onClick={this.select.bind(this, name, item.id)}>{item.name}<span /></label>
-                    </div>
-                  )
-                }
-              )}
+            <div className="col-12 col-md-4 mb-4">
+              <div className="row">
+                {sex.map(
+                  (item) => {
+                    const name = 'sex'
+                    return (
+                      <div className="col-6 text-center" key={item.id}>
+                        <input type="radio" name={name} checked={this.state[name] === item.id} />
+                        <label className={item.id} onClick={this.select.bind(this, name, item.id)}>{item.name}<span /></label>
+                      </div>
+                    )
+                  }
+                )}
+              </div>
             </div>
-            <div className="d-flex flex-column" className="col-12 col-md-4 d-flex">
-              <label>{/*Wysterilizowany?*/}</label>
-              {neutered.map(
-                (item) => {
-                  const name = 'neutered'
-                  return (
-                    <div className="d-flex flex-column w-50" key={item.id}>
-                      <input type="radio" name={name} checked={this.state[name] === item.id} />
-                      <label className={item.id} onClick={this.select.bind(this, name, item.id)}>{
-                          item.name === 'Tak' ? 'Wysterilizowany' : 'Nie'
-                      }<span /></label>
-                    </div>
-                  )
-                }
-              )}
+            <div className="col-12 col-md-4 text-center mb-4">
+              <span>Wysterilizowany?</span>
+              <div className="row">
+                {neutered.map(
+                  (item) => {
+                    const name = 'neutered'
+                    return (
+                      <div className="col-6 text-center" key={item.id}>
+                        <input type="radio" name={name} checked={this.state[name] === item.id} />
+                        <label className={item.id} onClick={this.select.bind(this, name, item.id)}><span /></label>
+                      </div>
+                    )
+                  }
+                )}
+              </div>
             </div>
-            <div className="">
-              <button className="col-12 btn btn-primary btn-xl mt-3 mb-3" onClick={this.filter}>Szukaj</button>
+          </div>
+          <div className="row">
+            <div className="col-12 col-md-4">
+              <button className="btn btn-block btn-primary btn-xl pt-3 pb-3" onClick={this.filter}>Szukaj</button>
             </div>
           </div>
         </article>
