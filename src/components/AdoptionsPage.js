@@ -90,7 +90,7 @@ class AdoptionsPage extends React.Component {
                   return (
                     <div className="d-flex flex-column w-50" key={item.id}>
                       <input type="radio" name={name} checked={this.state[name] === item.id} />
-                      <label onClick={this.select.bind(this, name, item.id)}>{item.name}<span /></label>
+                      <label className={item.id} onClick={this.select.bind(this, name, item.id)}>{item.name}<span /></label>
                     </div>
                   )
                 }
@@ -104,7 +104,7 @@ class AdoptionsPage extends React.Component {
                   return (
                     <div className="d-flex flex-column w-50" key={item.id}>
                       <input type="radio" name={name} checked={this.state[name] === item.id} />
-                      <label onClick={this.select.bind(this, name, item.id)}>{
+                      <label className={item.id} onClick={this.select.bind(this, name, item.id)}>{
                           item.name === 'Tak' ? 'Wysterilizowany' : 'Nie'
                       }<span /></label>
                     </div>

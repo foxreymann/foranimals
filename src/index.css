@@ -324,6 +324,27 @@ input[type="radio"] {
   background-repeat: no-repeat;
 }
 
+.filter input[type="radio"]+label.Male span {
+  background-image: url("assets/male.svg");
+  background-repeat: no-repeat;
+}
+
+.filter input[type="radio"]+label.Female span {
+  background-image: url("assets/female.svg");
+  background-repeat: no-repeat;
+}
+
+.filter input[type="radio"]+label.Yes span {
+  background-image: url("assets/tick.svg");
+  background-repeat: no-repeat;
+}
+
+.filter input[type="radio"]+label.No span {
+  background-image: url("assets/cross.svg");
+  background-repeat: no-repeat;
+}
+
+
 .filter input[type="radio"]:checked+label span {
   /*background-color: #FFBC2C;*/
   background-color: #FFBC2C;
