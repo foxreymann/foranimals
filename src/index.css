@@ -68,13 +68,13 @@ em {
 .gallery img {
   margin: 4px;
   opacity: 0.9;
-  outline: 4px solid white;
+  outline: 4px solid #ECECEC;
   transition: outline 0.1s ease-in;
 }
 
 .gallery img:hover {
   cursor: pointer;
-  outline: 4px solid #4D4D4D;
+  outline: 4px solid white;
   opacity: 1;
   transition: outline 0.1s ease-out;
 }
@@ -303,11 +303,15 @@ input[type="radio"] {
 
 .filter input[type="radio"]+label span {
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
+  background-color: #86B86B;
+  border-radius: 50%;
   /*margin-left: 4px;*/
   vertical-align: middle;
   cursor: pointer;
+  padding: 10px;
+  border: 4px solid #86B86B;
 }
 
 .filter input[type="radio"]+label.Cat span {
@@ -317,10 +321,17 @@ input[type="radio"] {
 
 .filter input[type="radio"]+label.Dog span {
   background-image: url("assets/dog-head.png");
+  background-repeat: no-repeat;
 }
 
 .filter input[type="radio"]:checked+label span {
-  background-color: orange;
+  /*background-color: #FFBC2C;*/
+  background-color: #FFBC2C;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 4px solid white;
+  padding: 20px;
 }
 
 /* News Page */

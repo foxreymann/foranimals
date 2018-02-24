@@ -75,7 +75,7 @@ class AdoptionsPage extends React.Component {
                 (item) => {
                   const name = 'species'
                   return (
-                    <div className="d-flex flex-column" key={item.id}>
+                    <div className="d-flex flex-column w-50" key={item.id}>
                       <input className="" type="radio" name={name} checked={this.state[name] === item.id} />
                       <label className={item.id} onClick={this.select.bind(this, name, item.id)}>{item.name}<span /></label>
                     </div>
@@ -88,7 +88,7 @@ class AdoptionsPage extends React.Component {
                 (item) => {
                   const name = 'sex'
                   return (
-                    <div className="d-flex flex-column" key={item.id}>
+                    <div className="d-flex flex-column w-50" key={item.id}>
                       <input type="radio" name={name} checked={this.state[name] === item.id} />
                       <label onClick={this.select.bind(this, name, item.id)}>{item.name}<span /></label>
                     </div>
@@ -97,21 +97,23 @@ class AdoptionsPage extends React.Component {
               )}
             </div>
             <div className="d-flex flex-column" className="col-12 col-md-4 d-flex">
-              <label>Wysterilizowany?</label>
+              <label>{/*Wysterilizowany?*/}</label>
               {neutered.map(
                 (item) => {
                   const name = 'neutered'
                   return (
-                    <div key={item.id}>
+                    <div className="d-flex flex-column w-50" key={item.id}>
                       <input type="radio" name={name} checked={this.state[name] === item.id} />
-                      <label onClick={this.select.bind(this, name, item.id)}>{item.name}<span /></label>
+                      <label onClick={this.select.bind(this, name, item.id)}>{
+                          item.name === 'Tak' ? 'Wysterilizowany' : 'Nie'
+                      }<span /></label>
                     </div>
                   )
                 }
               )}
             </div>
-            <div className="col-12">
-              <button onClick={this.filter}>Filtruj</button>
+            <div className="">
+              <button className="col-12 btn btn-primary btn-xl mt-3 mb-3" onClick={this.filter}>Filtruj</button>
             </div>
           </div>
         </article>
