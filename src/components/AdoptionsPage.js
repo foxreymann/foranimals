@@ -68,7 +68,7 @@ class AdoptionsPage extends React.Component {
     return (
       <div className="adoptionsPage content">
         <article className="filter">
-          <h2>Filtry:</h2>
+          <h2>Szukam:</h2>
           <div className="row">
             <div className="col-12 col-md-4 d-flex">
               {species.map(
@@ -113,7 +113,7 @@ class AdoptionsPage extends React.Component {
               )}
             </div>
             <div className="">
-              <button className="col-12 btn btn-primary btn-xl mt-3 mb-3" onClick={this.filter}>Filtruj</button>
+              <button className="col-12 btn btn-primary btn-xl mt-3 mb-3" onClick={this.filter}>Szukaj</button>
             </div>
           </div>
         </article>
@@ -122,6 +122,13 @@ class AdoptionsPage extends React.Component {
           <div className='News-ul'>
             {this.state.filteredAdoptions.map(adoption => <Adoption key={adoption.id} adoption={adoption} />)}
           </div>
+          { (!this.state.showAdoptions && !this.state.filteredAdoptions.length) ?
+          <div>
+            <article className="adopt">
+              Brak wyników.
+            </article>
+          </div>
+          : null }
         </section>
       </div>
     )
