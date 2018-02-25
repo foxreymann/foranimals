@@ -109,7 +109,7 @@ export default class Header extends React.Component {
                 activeClassName='Header-isActive'
                 onClick={this.collapseNavbar}
               >
-                Sterylizajce
+                Sterylizacje
               </NavLink>
             </li>
             <li className="nav-item">
