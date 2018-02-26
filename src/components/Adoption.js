@@ -26,17 +26,15 @@ class Adoption extends React.Component {
             { adoption.carer ?
               <Carer carers={adoption.carer} /> : null
             }
-            <ul className="list-unstyled d-flex flex-wrap gallery pt-2">
+            <div className="list-unstyled gallery pt-2 pb-2">
               {gallery.map((handle, i) => (
-                <li className="mr-2 mb-2" key={i}>
-                  <ModalImage
-                    small={`https://media.graphcms.com/resize=w:170,fit:crop/${handle}`}
-                    large={`https://media.graphcms.com/resize=w:500,fit:crop/${handle}`}
-                    alt={adoption.name}
-                  />
-                </li>
+                <ModalImage
+                  small={`https://media.graphcms.com/resize=w:170,fit:crop/${handle}`}
+                  large={`https://media.graphcms.com/resize=w:500,fit:crop/${handle}`}
+                  alt={adoption.name}
+                />
               ))}
-            </ul>
+            </div>
 
             <Markdown
               source={adoption.desc}
