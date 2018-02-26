@@ -1,42 +1,44 @@
 import React from 'react'
+import gql from 'graphql-tag'
+import { graphql } from 'react-apollo'
+import Markdown from 'react-markdown'
 
-const Clinic = () => (
-  <article id="post-41" className="content">
-    <h2>Gabinet oferuje usługi z&nbsp;zakresu:</h2>
+const Page = ({ data: { loading, error, post } }) => {
+  if (error) return (
+    <div className="content">
+      <h1 className="text-center mt-5">Error fetching the post!</h1>
+    </div>
+  )
+  if (!loading) {
+    return (
+      <article className="content Page">
+        <Markdown
+          source={post.content}
+          escapeHtml={false}
+        />
+      </article>
+    )
+  }
+  return (
+    <div className="content">
+      <h2 className="text-center">Loading post...</h2>
+    </div>
+  )
+}
 
-    <p>JEDYNY W&nbsp;WOJEWÓDZTWIE GABINET WETERYNARYJNY PROWADZONY PRZEZ ORGANIZACJĘ POZARZĄDOWĄ</p><p> GABINET WETERYNARYJNY FUNDACJI FOR ANIMALS</p>
+export const singlePage = gql`
+  query singlePage($slug: String!) {
+    post: Page(slug: $slug) {
+      slug
+      content
+    }
+  }
+`
 
-    <ul>
-      <li>profilaktyki (szczepienia profilaktyczne zwierząt, odrobaczenie),</li>
-      <li>profilaktyka przeciwko pchłom i&nbsp;kleszczom,</li>
-      <li>diagnostyki laboratoryjnej:
-        <ul>
-          <li>badanie morfologiczne oraz&nbsp;biochmeczne krwi,</li>
-          <li>rozmazy krwi,</li>
-          <li>badanie kału,</li>
-          <li>moczu,</li>
-        </ul>
-      </li>
-      <li>stomatologii:
-        <ul>
-          <li>zdejmowanie kamienia nazębnego,</li>
-          <li>leczenie chorób przyzębia,</li>
-          <li>ekstrakcja zębów,</li>
-        </ul>
-      </li>
-    <li>dermatologii:
-      <ul>
-        <li>zeskrobiny,</li>
-        <li>wymazy,</li>
-      </ul>
-    </li>
-    <li>chorób wewnętrznych,</li>
-    <li>kastracja,</li>
-    <li>sterylizacja,</li>
-    <li>wizyty domowe</li>
-  </ul>
-
-</article>
-)
-
-export default Clinic
+export default graphql(singlePage, {
+  options: () => ({
+    variables: {
+      slug: 'clinic'
+    }
+  })
+})(Page)
