@@ -21,7 +21,7 @@ const Page = ({ data: { loading, error, post } }) => {
   }
   return (
     <div className="content">
-      <h2 className="text-center">Loading post...</h2>
+      <h2 className="text-center">Ładuję stronę...</h2>
     </div>
   )
 }
