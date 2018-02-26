@@ -65,6 +65,29 @@ em {
 
 /* Navbar styles */
 
+.masonry-layout {
+  column-count: 3;
+  column-gap: 0;
+}
+.masonry-layout-panel {
+  break-inside: avoid;
+  padding: 5px;
+}
+.masonry-layout-panel__content {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.gallery {
+  column-count: 4;
+  column-gap: 0;
+}
+
+.gallery > div {
+  break-inside: avoid;
+  padding: 5px;
+}
+
 .gallery img {
   margin: 4px;
   opacity: 0.9;
@@ -503,5 +526,12 @@ footer a:hover, footer a:focus, footer a:active {
 
   button.closeModal {
     top: 0.75rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery {
+    column-count: 2;
+    column-gap: 0;
   }
 }
