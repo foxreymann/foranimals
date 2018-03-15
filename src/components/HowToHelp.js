@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { Component } from 'react';
+import cofnij from '../assets/cofnij.doc'
+import polecenie_zaplaty from '../assets/polecenie_zaplaty.doc'
 
-const HowToHelp = () => (
+class HowToHelp extends Component {
+  render() {
+    return (
                         <article id="post-37" class=" bd-article-6 clearfix post-37 page type-page status-publish hentry">
 <h1>
   Polecenie zapłaty dla FFA
 </h1>
-<div class="article_desc_short">
+<div>
   <p>
 
     <strong>Twoja
@@ -46,11 +50,9 @@ const HowToHelp = () => (
     Katowice
   </div>
 
-  <p>
     <div className="btn btn-primary btn-xl mt-2 mb-2 pt-2 pb-2">
-      <a href='./polecenie_zaplaty.doc'>ściągnij polecenie zaplaty</a>
+      <a href={polecenie_zaplaty}>ściągnij polecenie zaplaty</a>
     </div>
-  </p>
 
   <p>
     Możesz w każdej
@@ -59,11 +61,9 @@ const HowToHelp = () => (
     formularz:
   </p>
 
-  <p>
     <div className="btn btn-primary btn-xl mt-2 mb-2 pt-2 pb-2">
-      <a href='./cofnij.doc'>ściągnij cofnięcie polecenia zapłaty</a>
+      <a href={cofnij}>ściągnij cofnięcie polecenia zapłaty</a>
     </div>
-  </p>
 
   <p>
 
@@ -288,6 +288,8 @@ const HowToHelp = () => (
   </p>
 </div>
 </article>
-)
+    )
+  }
+}
 
 export default HowToHelp
