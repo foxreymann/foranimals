@@ -44,7 +44,7 @@ class AdoptionsPage extends React.Component {
   }
 
   filter = () => {
-    let filteredAdoptions = localStorage.getItem('allAdoptions')
+    let filteredAdoptions = localStorage.getItem('adoptions')
     filteredAdoptions = JSON.parse(filteredAdoptions)
     if(this.state.species) {
       filteredAdoptions = filteredAdoptions.filter(adoption => adoption.species === this.state.species)

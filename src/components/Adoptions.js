@@ -5,19 +5,20 @@ import gql from 'graphql-tag'
 
 const POSTS_PER_PAGE = 100
 
-const Adoptions = ({ data: { loading, error, allAdoptions, _allAdoptionsMeta }, loadMoreAdoptions }) => {
+const Adoptions = ({ data: { loading, error, adoptions, adoptionsConnection }, loadMoreAdoptions }) => {
   if (error) return (
     <div className="content">
       <h1 className="text-center">Error fetching posts!</h1>
     </div>
   )
   if (!loading) {
-    const areMoreAdoptions = allAdoptions.length < _allAdoptionsMeta.count
-    localStorage.setItem('allAdoptions', JSON.stringify(allAdoptions));
+console.log(adoptions)
+    const areMoreAdoptions = adoptions.length < adoptionsConnection.aggregate.count
+    localStorage.setItem('adoptions', JSON.stringify(adoptions));
     return (
       <section>
         <div className='News-ul'>
-          {allAdoptions.map(adoption => <Adoption key={adoption.id} adoption={adoption} />)}
+          {adoptions.map(adoption => <Adoption key={adoption.id} adoption={adoption} />)}
         </div>
         <div className='News-showMoreWrapper'>
           {areMoreAdoptions
@@ -37,8 +38,8 @@ const Adoptions = ({ data: { loading, error, allAdoptions, _allAdoptionsMeta }, 
 }
 
 export const allAdoptions = gql`
-  query allAdoptions($first: Int!, $skip: Int!) {
-    allAdoptions(orderBy: date_DESC, first: $first, skip: $skip) {
+  query adoptions($first: Int!, $skip: Int!) {
+    adoptions(orderBy: date_DESC, first: $first, skip: $skip) {
         id
         name
         date
@@ -50,8 +51,10 @@ export const allAdoptions = gql`
         species
         neutered
     },
-    _allAdoptionsMeta {
-      count
+    adoptionsConnection {
+      aggregate {
+        count
+      }
     }
   }
 `
