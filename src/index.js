@@ -14,8 +14,8 @@ import './index.css'
 
 import registerServiceWorker from './registerServiceWorker'
 
-//const GRAPHCMS_API = 'https://api.graphcms.com/simple/v1/starterBlog'
-const GRAPHCMS_API = 'https://api.graphcms.com/simple/v1/cjbodt3bk06gq0153k8p4f0jp'
+//const GRAPHCMS_API = 'https://api.graphcms.com/simple/v1/cjbodt3bk06gq0153k8p4f0jp'
+const GRAPHCMS_API = 'https://api-euwest.graphcms.com/v1/ck7a9g1p60kno01dv15gl7vu7/master'
 
 const client = new ApolloClient({
   link: new HttpLink({ uri: GRAPHCMS_API }),
