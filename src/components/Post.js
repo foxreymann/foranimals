@@ -44,7 +44,7 @@ const Post = ({ data: { loading, error, post } }) => {
 
 export const singlePost = gql`
   query singlePost($slug: String!) {
-    post: Post(slug: $slug) {
+    post(where: {slug: $slug}) {
       id
       slug
       title
