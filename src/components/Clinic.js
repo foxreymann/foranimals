@@ -27,18 +27,11 @@ const Page = ({ data: { loading, error, post } }) => {
 }
 
 export const singlePage = gql`
-  query singlePage($slug: String!) {
-    post: Page(slug: $slug) {
-      slug
+  query pages {
+    pages (where: { slug: "clinic" }) {
       content
     }
   }
 `
 
-export default graphql(singlePage, {
-  options: () => ({
-    variables: {
-      slug: 'clinic'
-    }
-  })
-})(Page)
+export default graphql(singlePage)(Page)
