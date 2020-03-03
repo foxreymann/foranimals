@@ -3,7 +3,7 @@ import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
 import Markdown from 'react-markdown'
 
-const Page = ({ data: { loading, error, post } }) => {
+const Page = ({ data: { loading, error, pages } }) => {
   if (error) return (
     <div className="content">
       <h1 className="text-center mt-5">Error fetching the post!</h1>
@@ -13,7 +13,7 @@ const Page = ({ data: { loading, error, post } }) => {
     return (
       <article className="content Page">
         <Markdown
-          source={post.content}
+          source={pages[0].content}
           escapeHtml={false}
         />
       </article>
