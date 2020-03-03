@@ -12,7 +12,6 @@ const Adoptions = ({ data: { loading, error, adoptions, adoptionsConnection }, l
     </div>
   )
   if (!loading) {
-console.log(adoptions)
     const areMoreAdoptions = adoptions.length < adoptionsConnection.aggregate.count
     localStorage.setItem('adoptions', JSON.stringify(adoptions));
     return (
@@ -37,7 +36,7 @@ console.log(adoptions)
   )
 }
 
-export const allAdoptions = gql`
+export const adoptions = gql`
   query adoptions($first: Int!, $skip: Int!) {
     adoptions(orderBy: date_DESC, first: $first, skip: $skip) {
         id
@@ -64,7 +63,7 @@ export const queryVars = {
   first: POSTS_PER_PAGE
 }
 
-export default graphql(allAdoptions, {
+export default graphql(adoptions, {
   options: {
     variables: queryVars
   },
@@ -73,7 +72,7 @@ export default graphql(allAdoptions, {
     loadMoreAdoptions: () => {
       return data.fetchMore({
         variables: {
-          skip: data.allAdoptions.length
+          skip: data.adoptions.length
         },
         updateQuery: (previousResult, { fetchMoreResult }) => {
           if (!fetchMoreResult) {
@@ -81,7 +80,7 @@ export default graphql(allAdoptions, {
           }
           return Object.assign({}, previousResult, {
             // Append the new posts results to the old one
-            allAdoptions: [...previousResult.allAdoptions, ...fetchMoreResult.allAdoptions]
+            adoptions: [...previousResult.adoptions, ...fetchMoreResult.adoptions]
           })
         }
       })

@@ -3,23 +3,23 @@ import { graphql } from 'react-apollo'
 import Resident from './Adoption'
 import gql from 'graphql-tag'
 
-const POSTS_PER_PAGE = 4
+const POSTS_PER_PAGE = 100
 
-const Residents = ({ data: { loading, error, allResidents, _allResidentsMeta }, loadMoreResidents }) => {
+const Residents = ({ data: { loading, error, residents, _residentsMeta }, loadMoreResidents }) => {
   if (error) return (
     <div className="content">
       <h1 className="text-center">Error fetching posts!</h1>
     </div>
   )
   if (!loading) {
-    const areMoreResidents = allResidents.length < _allResidentsMeta.count
+    const areMoreResidents = residents.length < _residentsMeta.count
     return (
       <section>
         <div className='News-ul'>
           {/* <div className="Residents-list-header p-2">
             <h2 className="mt-2">Nasi rezydenci :</h2>
           </div> */}
-          {allResidents.map(resident => <Resident key={resident.id} adoption={resident} />)}
+          {residents.map(resident => <Resident key={resident.id} adoption={resident} />)}
         </div>
         <div className='News-showMoreWrapper'>
           {areMoreResidents
@@ -38,9 +38,9 @@ const Residents = ({ data: { loading, error, allResidents, _allResidentsMeta }, 
   )
 }
 
-export const allResidents = gql`
-  query allResidents($first: Int!, $skip: Int!) {
-    allResidents(orderBy: date_DESC, first: $first, skip: $skip) {
+export const residents = gql`
+  query residents($first: Int!, $skip: Int!) {
+    residents(orderBy: date_DESC, first: $first, skip: $skip) {
       id
       name
       date
@@ -50,8 +50,10 @@ export const allResidents = gql`
       desc
       carer
     },
-    _allResidentsMeta {
-      count
+    residentsConnection {
+      aggregate {
+        count
+      }
     }
   }
 `
@@ -61,7 +63,7 @@ export const queryVars = {
   first: POSTS_PER_PAGE
 }
 
-export default graphql(allResidents, {
+export default graphql(residents, {
   options: {
     variables: queryVars
   },
@@ -70,7 +72,7 @@ export default graphql(allResidents, {
     loadMoreResidents: () => {
       return data.fetchMore({
         variables: {
-          skip: data.allResidents.length
+          skip: data.residents.length
         },
         updateQuery: (previousResult, { fetchMoreResult }) => {
           if (!fetchMoreResult) {
@@ -78,7 +80,7 @@ export default graphql(allResidents, {
           }
           return Object.assign({}, previousResult, {
             // Append the new posts results to the old one
-            allResidents: [...previousResult.allResidents, ...fetchMoreResult.allResidents]
+            residents: [...previousResult.residents, ...fetchMoreResult.residents]
           })
         }
       })
