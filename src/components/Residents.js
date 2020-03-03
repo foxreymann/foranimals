@@ -5,20 +5,17 @@ import gql from 'graphql-tag'
 
 const POSTS_PER_PAGE = 100
 
-const Residents = ({ data: { loading, error, residents, _residentsMeta }, loadMoreResidents }) => {
+const Residents = ({ data: { loading, error, residents, residentsConnection }, loadMoreResidents }) => {
   if (error) return (
     <div className="content">
       <h1 className="text-center">Error fetching posts!</h1>
     </div>
   )
   if (!loading) {
-    const areMoreResidents = residents.length < _residentsMeta.count
+    const areMoreResidents = residents.length < residentsConnection.aggregate.count
     return (
       <section>
         <div className='News-ul'>
-          {/* <div className="Residents-list-header p-2">
-            <h2 className="mt-2">Nasi rezydenci :</h2>
-          </div> */}
           {residents.map(resident => <Resident key={resident.id} adoption={resident} />)}
         </div>
         <div className='News-showMoreWrapper'>

@@ -4,20 +4,20 @@ import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'
 import Moment from 'react-moment'
 
-const POSTS_PER_PAGE = 4
+const POSTS_PER_PAGE = 100
 
-const News = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts }) => {
+const News = ({ data: { loading, error, posts, postsConnection }, loadMorePosts }) => {
   if (error) return (
     <div className="content">
       <h1 className="text-center">Error fetching posts!</h1>
     </div>
   )
   if (!loading) {
-    const areMorePosts = allPosts.length < _allPostsMeta.count
+    const areMorePosts = posts.length < postsConnection.aggregate.count
     return (
       <section className="content">
         <ul className='News-ul'>
-          {allPosts.map(post => (
+          {posts.map(post => (
             <li className='News-li mb-4' key={`post-${post.id}`}>
               <Link to={`/post/${post.slug}`} className='News-link'>
                 <div className='News-placeholder text-center'>
@@ -54,9 +54,9 @@ const News = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts
   )
 }
 
-export const allPosts = gql`
-  query allPosts($first: Int!, $skip: Int!) {
-    allPosts(orderBy: date_DESC, first: $first, skip: $skip) {
+export const posts = gql`
+  query posts($first: Int!, $skip: Int!) {
+    posts(orderBy: date_DESC, first: $first, skip: $skip) {
       id
       slug
       title
@@ -65,27 +65,29 @@ export const allPosts = gql`
         handle
       }
     },
-    _allPostsMeta {
-      count
+    postsConnection {
+      aggregate {
+        count
+      }
     }
   }
 `
 
-export const allPostsQueryVars = {
+export const postsQueryVars = {
   skip: 0,
   first: POSTS_PER_PAGE
 }
 
-export default graphql(allPosts, {
+export default graphql(posts, {
   options: {
-    variables: allPostsQueryVars
+    variables: postsQueryVars
   },
   props: ({ data }) => ({
     data,
     loadMorePosts: () => {
       return data.fetchMore({
         variables: {
-          skip: data.allPosts.length
+          skip: data.posts.length
         },
         updateQuery: (previousResult, { fetchMoreResult }) => {
           if (!fetchMoreResult) {
@@ -93,7 +95,7 @@ export default graphql(allPosts, {
           }
           return Object.assign({}, previousResult, {
             // Append the new posts results to the old one
-            allPosts: [...previousResult.allPosts, ...fetchMoreResult.allPosts]
+            posts: [...previousResult.posts, ...fetchMoreResult.posts]
           })
         }
       })
