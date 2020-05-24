@@ -12,7 +12,6 @@ const Home = () => {
       <div className="bg-grey">
         <Payments />
         <Subscribe />
-        <Ad />
         <Contact />
       </div>
     </div>
